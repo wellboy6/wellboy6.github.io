@@ -1,0 +1,741 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="有限通讯" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="有限通讯" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="因为工作的原因，近半年来接触了一些P2P业务相关的诉讼催收工作。本文尝试探讨平台在以自己为原告起诉借款人的过程中，如何在身份上实现从居间方到债权人的转变。
+缘起P2P平台线上合同多为四方：居间方、借款人、出借人、担保人，若没有担保人则为三方合同，多数情况下担保人会出具纸质《担保函》。若到期后借款人不履行还款义务，由于出借人的分散导致诉讼成本的增加，加之平台为了声誉多具备隐形刚性兑付的宣传，绝大多数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="P2P诉讼实务中的债权转让模式">
+<meta property="og:url" content="http://blog.zhangyahui.cn/2017/05/25/P2P诉讼实务中的债权转让模式/index.html">
+<meta property="og:site_name" content="有限通讯">
+<meta property="og:description" content="因为工作的原因，近半年来接触了一些P2P业务相关的诉讼催收工作。本文尝试探讨平台在以自己为原告起诉借款人的过程中，如何在身份上实现从居间方到债权人的转变。
+缘起P2P平台线上合同多为四方：居间方、借款人、出借人、担保人，若没有担保人则为三方合同，多数情况下担保人会出具纸质《担保函》。若到期后借款人不履行还款义务，由于出借人的分散导致诉讼成本的增加，加之平台为了声誉多具备隐形刚性兑付的宣传，绝大多数">
+<meta property="og:updated_time" content="2017-05-25T05:08:56.268Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="P2P诉讼实务中的债权转让模式">
+<meta name="twitter:description" content="因为工作的原因，近半年来接触了一些P2P业务相关的诉讼催收工作。本文尝试探讨平台在以自己为原告起诉借款人的过程中，如何在身份上实现从居间方到债权人的转变。
+缘起P2P平台线上合同多为四方：居间方、借款人、出借人、担保人，若没有担保人则为三方合同，多数情况下担保人会出具纸质《担保函》。若到期后借款人不履行还款义务，由于出借人的分散导致诉讼成本的增加，加之平台为了声誉多具备隐形刚性兑付的宣传，绝大多数">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://blog.zhangyahui.cn/2017/05/25/P2P诉讼实务中的债权转让模式/"/>
+
+
+
+
+
+  <title> P2P诉讼实务中的债权转让模式 | 有限通讯 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">有限通讯</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Ltd. News</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.zhangyahui.cn/2017/05/25/P2P诉讼实务中的债权转让模式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tyrion Y. Chang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有限通讯">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                P2P诉讼实务中的债权转让模式
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-25T13:03:42+08:00">
+                2017-05-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/法律/" itemprop="url" rel="index">
+                    <span itemprop="name">法律</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>因为工作的原因，近半年来接触了一些P2P业务相关的诉讼催收工作。本文尝试探讨平台在以自己为原告起诉借款人的过程中，如何在身份上实现从居间方到债权人的转变。</p>
+<h2 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h2><p>P2P平台线上合同多为四方：居间方、借款人、出借人、担保人，若没有担保人则为三方合同，多数情况下担保人会出具纸质《担保函》。若到期后借款人不履行还款义务，由于出借人的分散导致诉讼成本的增加，加之平台为了声誉多具备隐形刚性兑付的宣传，绝大多数诉讼催收都是以平台名义进行起诉。在这一过程中，平台需在身份上完成从居间方向债权人的转变。而不同的平台对此有不同的做法。</p>
+<a id="more"></a>
+<h2 id="点融网：极其精妙的线上合同"><a href="#点融网：极其精妙的线上合同" class="headerlink" title="点融网：极其精妙的线上合同"></a>点融网：极其精妙的线上合同</h2><p>点融网两位创始人苏海德和郭宇航分别具备技术和法律的背景，其线上电子合同也相当精妙。</p>
+<p>其中，借款协议8.5与8.6条款规定了涉及诉讼催收时债权发生的转移。</p>
+<blockquote>
+<p>8.5为集中维护各出借人权利，如借款人出现逾期还款，或出现逃避、拒绝沟通或拒绝承认欠款事实等恶意行为的，<strong>全体出借人一致同意将本协议项下债权无偿转让给居间服务人</strong>，由居间服务人统一向借款人追索，并委托居间服务人发送债权转让通知。但因借款人失踪或还款能力丧失等原因导致债权的追索不能实现或部分不能实现的，本协议项下债权经居间服务人书面通知出借人后重新转让还给出借人。出借人收到居间服务人书面通知后有权自行向借款人进行债权的追索，居间服务人应当配合提供出借人为实现债权所需文件。出借人应当承担因债权无法追索产生的一切法律责任及结果。若因在债务追索过程中居间服务人本人的重大过失导致出借人的利益无法实现的，居间服务人将对上述损失承担赔偿责任。</p>
+<p>8.6当借款人出现逾期还款或逃避，拒绝沟通或拒绝承认欠款事实等恶意行为时，如居间服务人认定借款人系疑似欺诈，且居间服务人同意先行支付本金给出借人的，出借人同意将债权不可撤销地转让给居间服务人。</p>
+</blockquote>
+<p>8.5中加粗部分条款直接规定若借款出现逾期需要诉讼时，出借人将其债权无偿转让给居间方。因为点融网一直以来都不承诺兜底而着重宣传其风险分散的特点，即时在发展过程中产生了复杂的本金保障计划，也未改变其平台出借人需自担部分风险的特点，在这种情况下平台若以居间方名义进行诉讼则需诸多出借人出具授权委托书或签署债权转让协议，成本较高。这种情况下，直接规定诉讼时无偿进行转让，既不打破点融网希望出借人自担风险的态度，又能以极高地效率使平台完成从居间方到债权人的身份转变。加之上述条款直接规定在线上电子合同中，在众多P2P平台中实属难得。8.5条款的其他规定均在此基础上，一不兜底，二强调其居间方身份为借贷双方提供服务，三在必要时能够以非常低的成本、非常高的效率完成身份上向债权人的转变，设计极其精妙。</p>
+<p>除此之外，考虑到多数平台在合同中都约定管辖地，在P2P借贷中借款人分布在不同地域，很难联系而只能公告送达，特别是恶意逾期的情况下，大多都是缺席判决，上述电子合同中的规定即便有一定的瑕疵也没有被告去进行质证，在实务中操作起来能够节约不少时间和金钱上的成本。具体的案例可参考中国裁判文书网公布的<a href="http://wenshu.court.gov.cn/content/content?DocID=82520a66-1730-49d2-90fb-a34974437c5c&amp;KeyWord=%E4%B8%8A%E6%B5%B7%E7%82%B9%E8%8D%A3%E9%87%91%E8%9E%8D%E4%BF%A1%E6%81%AF%E6%9C%8D%E5%8A%A1%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8" target="_blank" rel="external">《上海点荣金融信息服务有限责任公司与四川永志融资担保有限公司、敖丹借款合同纠纷一审民事判决书》</a>。</p>
+<p>根据中国裁判文书网的另一个判决，推测8.6条款主要是出于处理欺诈等恶意行为的目的制定。详见<a href="http://wenshu.court.gov.cn/content/content?DocID=8dd6f7ac-51b6-4b00-ad5e-1033f013a278&amp;KeyWord=%E4%B8%8A%E6%B5%B7%E7%82%B9%E8%8D%A3%E9%87%91%E8%9E%8D%E4%BF%A1%E6%81%AF%E6%9C%8D%E5%8A%A1%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8" target="_blank" rel="external">《孙梦楠合同诈骗一审刑事判决书》</a>。</p>
+<h2 id="人人贷：线上线下结合的典范"><a href="#人人贷：线上线下结合的典范" class="headerlink" title="人人贷：线上线下结合的典范"></a>人人贷：线上线下结合的典范</h2><p>与点融网不同的是，人人贷在某种程度上还秉持兜底的态度，故其借款协议合同条款与点融网有所不同，具体如下。</p>
+<blockquote>
+<p>6.1 各方在此确认，对于乙方在本协议项下应付借款本息，如果因任何原因导致丙方未能根据第5.2.1条足额划扣或收取乙方应付资金的，丙方应以其根据丁方要求提取的风险准备金为限代乙方进行偿付（下称为“垫付”）。<strong>丙方进行垫付的，则乙方在本协议项下相应义务视为履行完毕，丙方即取得甲方对乙方享有之相应债权，丙方有权相应行使本协议规定的甲方之各项权利。</strong></p>
+<p>6.2 各方在此确认，乙方在本协议项下应付借款本息，在乙方逾期且丙方未垫付的情况下，适用丁方不时公布之《用户利益保障机制》（点击查阅）。甲方债权如果根据《用户利益保障机制》得到偿付后，本协议项下甲方作为债权人享有之各项权利即按照届时有效之《用户利益保障机制》予以转移，甲方对此完全知晓并予以同意。</p>
+</blockquote>
+<p>上述6.1条款规定了平台在兜底的情况下，实现从居间方向债权人的转变。有所不同的是，人人贷采取了线上线下两套服务体系，线上主体为人人贷商务顾问（北京）有限公司、即运行人人贷网站的主体，线下主体为友众信业金融信息服务（上海）有限公司。除去上述借款协议外，友众信业与借款人还在线下签订了《信用咨询及管理服务协议》，其中包含了含垫付服务费计算说明，约定当借款人逾期归还本息时，其应向友众信业支付“垫付服务费”、逾期违约金等。</p>
+<p>人人贷是从线上线下两套合同中保证了平台（友众信业）从居间方向债权人身份的转变。不过与点融网不同的是，点融网是追索到资金后扣除平台成本将剩余资金归还出借人，人人贷是先进行垫付，而后在以债权人的名义进行诉讼。从P2P本身的角度来看，点融网的设计更为合理；但是考虑到中国的国情，人人贷的做法则更受大众欢迎。同时若先行垫付，大多情况下是将利息也一并进行垫付，实际占用的资金成本更高，还需要承担判决后借款人没有可执行财产的风险。具体的判例可查看中国裁判文书网公布的<a href="http://wenshu.court.gov.cn/content/content?DocID=aab34a6d-66be-49da-9d80-ea1307ccc9f5&amp;KeyWord=%E4%BA%BA%E4%BA%BA%E8%B4%B7" target="_blank" rel="external">《友众信业金融信息服务(上海)有限公司与康水良金融借款合同纠纷一审民事判决书》</a>。另外，对P2P诉讼相关有兴趣的朋友也可以搜索查看下人人贷相关的判决书，会有很有趣的发现。</p>
+<p>此外，6.2条款是对平台（人人贷）《用户利益保障机制》的相关约定，亦是为了更好地实现从居间方到债权人身份的转变。该保障机制与P2P平台主流的兜底条款如彩虹计划、穹顶计划、本金保障计划类似，不再赘述。</p>
+<h2 id="积木盒子：利用保障计划进行资产处置"><a href="#积木盒子：利用保障计划进行资产处置" class="headerlink" title="积木盒子：利用保障计划进行资产处置"></a>积木盒子：利用保障计划进行资产处置</h2><p>积木盒子近期开始向智能投顾领域发展，其业务模式也是P2P平台中扩展较快较广的一个。需要说明的是，未在中国裁判文书网搜索到其相关的裁判文书，无法进行深入的分析。但是由于其是利用保障计划收购平台不良资产的典型，故特别提出，其借款协议中相应条款如下。</p>
+<blockquote>
+<p>10.1本协议指向之融资项目由“穹顶计划”保护，保护机制适用同期生效的《穹顶计划说明》，条款以该《穹顶计划说明》载明为准。</p>
+<p>10.2乙方同意：在甲方逾期情形下，乙方依据上述《穹顶计划说明》将本协议债权不可撤销地转让给于穹顶计划项下发起债权收购的任意第三方。</p>
+<p>10.3甲方确认，乙方将其持有债权出让给上述第三方，则该第三方即就其收购的债权成为合法的债权持有人，有权向甲方主张此等债权，甲方不得就该第三方的债权人地位进行任何形式的抗辩。</p>
+</blockquote>
+<p>简要来看，该模式就是利用保障计划，将不良资产的债权转移给第三方，实现债权的转移，同时也使平台的资产负债表更为好看。但是也由于将不良资产转移给第三方，无法确认这些资产的实际处置效率，虽然平台有公布逾期率和代偿率，也只是从操作上转嫁了风险，类似人人贷属于一种变相的兜底。</p>
+<h2 id="结语：服务是未来"><a href="#结语：服务是未来" class="headerlink" title="结语：服务是未来"></a>结语：服务是未来</h2><p>除去上述几种方式外，还有很多小规模的P2P平台通过线下的方式取得债权，线上电子合同仅用来证明原始的借贷关系，同时辅以相关资金流水提起诉讼。</p>
+<p>就P2P本身而言，我更期待未来的发展方向是P2P平台强化自己居间方的身份，类似点融网，诉讼催收成为平台提供的一种服务，脱离刚性兑付，无论借款人是否履约，均可从中收取手续费。同时，也因为平台属性的强化，有望摆脱经济周期的影响，无论晴天雨天均可正常开展业务，无需过于强调优质资产端。从这里起步，互联网金融才能从金融线上化转向科技金融，真正比拼平台的硬实力。</p>
+<p>最后引用《影子银行内幕》作者张化桥的一段话结尾——</p>
+<blockquote>
+<p>戴：欧美政府迫于大众的压力，才把监管搞得如此严密。中国的老百姓会不会要求政府加强监管？</p>
+<p>张：市场是最好的监管。绝大多数坏企业不需要监管，就会自己垮台。任何监管都有成本。监管的最大成本是破坏了创新，破坏了竞争。还有啊。<strong>它阻碍了老百姓应该受到的活生生的教育。我们必须打破刚性兑付，让该亏钱的人亏钱。</strong>这是唯一有效的教育。西方国家的政府通过严密的措施挡住了大家亏钱的可能性。太不应该了。</p>
+</blockquote>
+<p>——2016.06.30 16:50</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/25/一代人有一代人的梦想和声音/" rel="next" title="一代人有一代人的梦想和声音">
+                <i class="fa fa-chevron-left"></i> 一代人有一代人的梦想和声音
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/05/25/我是谁：认识你自己/" rel="prev" title="我是谁：认识你自己">
+                我是谁：认识你自己 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.png"
+               alt="Tyrion Y. Chang" />
+          <p class="site-author-name" itemprop="name">Tyrion Y. Chang</p>
+           
+              <p class="site-description motion-element" itemprop="description">自知者明、强行者有志</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">90</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#缘起"><span class="nav-number">1.</span> <span class="nav-text">缘起</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#点融网：极其精妙的线上合同"><span class="nav-number">2.</span> <span class="nav-text">点融网：极其精妙的线上合同</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#人人贷：线上线下结合的典范"><span class="nav-number">3.</span> <span class="nav-text">人人贷：线上线下结合的典范</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#积木盒子：利用保障计划进行资产处置"><span class="nav-number">4.</span> <span class="nav-text">积木盒子：利用保障计划进行资产处置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结语：服务是未来"><span class="nav-number">5.</span> <span class="nav-text">结语：服务是未来</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  1992 - 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tyrion Y. Chang</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

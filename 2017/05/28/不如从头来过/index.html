@@ -1,0 +1,714 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="有限通讯" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="有限通讯" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="SQLserver自从安装之后就没好好用过，印象中只有配置时候连接成功过一次，之前以及之后总是出现各种各样的毛病，连带的VS2010也无法使用。双学位考完试后，卸载这两个东西和之前安装的一些杂七杂八的软件，结果卸载太过火，直接把windows玩崩了，崩的相当干脆。无奈，恢复出厂设置。
+前段时间朋友推荐我听张国荣演唱会，看他的电影，包括上面这部《春光乍泄》，英文名《Happy Togetter》。电">
+<meta property="og:type" content="article">
+<meta property="og:title" content="不如从头来过">
+<meta property="og:url" content="http://blog.zhangyahui.cn/2017/05/28/不如从头来过/index.html">
+<meta property="og:site_name" content="有限通讯">
+<meta property="og:description" content="SQLserver自从安装之后就没好好用过，印象中只有配置时候连接成功过一次，之前以及之后总是出现各种各样的毛病，连带的VS2010也无法使用。双学位考完试后，卸载这两个东西和之前安装的一些杂七杂八的软件，结果卸载太过火，直接把windows玩崩了，崩的相当干脆。无奈，恢复出厂设置。
+前段时间朋友推荐我听张国荣演唱会，看他的电影，包括上面这部《春光乍泄》，英文名《Happy Togetter》。电">
+<meta property="og:updated_time" content="2017-05-28T06:05:08.439Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="不如从头来过">
+<meta name="twitter:description" content="SQLserver自从安装之后就没好好用过，印象中只有配置时候连接成功过一次，之前以及之后总是出现各种各样的毛病，连带的VS2010也无法使用。双学位考完试后，卸载这两个东西和之前安装的一些杂七杂八的软件，结果卸载太过火，直接把windows玩崩了，崩的相当干脆。无奈，恢复出厂设置。
+前段时间朋友推荐我听张国荣演唱会，看他的电影，包括上面这部《春光乍泄》，英文名《Happy Togetter》。电">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://blog.zhangyahui.cn/2017/05/28/不如从头来过/"/>
+
+
+
+
+
+  <title> 不如从头来过 | 有限通讯 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">有限通讯</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Ltd. News</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.zhangyahui.cn/2017/05/28/不如从头来过/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tyrion Y. Chang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有限通讯">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                不如从头来过
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-28T14:01:08+08:00">
+                2017-05-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">随笔</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>SQLserver自从安装之后就没好好用过，印象中只有配置时候连接成功过一次，之前以及之后总是出现各种各样的毛病，连带的VS2010也无法使用。双学位考完试后，卸载这两个东西和之前安装的一些杂七杂八的软件，结果卸载太过火，直接把windows玩崩了，崩的相当干脆。无奈，恢复出厂设置。</p>
+<p>前段时间朋友推荐我听张国荣演唱会，看他的电影，包括上面这部《春光乍泄》，英文名《Happy Togetter》。电影里张国荣饰演的张国荣有一句台词：“不如我们从头来过”。让人不忍拒绝。想想这半年来，一直混混沌沌，处于“混”的状态，混了这半年，这两年。一直没有把中心放在自己身上，放在当下，而是不断揭开结痂的伤疤，作茧自缚。那，不如从头来过。</p>
+<a id="more"></a>
+<p>去年年末搭建在GAE上的博客很少更新，免费限额也总是不够，垃圾点击太多，不熟悉Micolog，不能好好维护。加上之前注册的那些Google账号，密码过于私密，不想再去登陆；加上寒假头脑发热注册的两个域名，已经闲置了半年，不如重新做起。计划如下：</p>
+<p>1.<a href="http://www.shenc.cn/" target="_blank" rel="external">http://www.shenc.cn/</a></p>
+<p>搭建在RedHat的云计算平台OpenShift上面，平台对PHP无限制，根据目前的收费策略，不会像GAE一样对免费用户形成巨大冲击。架构使用WordPress。</p>
+<p>以后博客不再使用wellboy.net，改成现在这个，随笔什么的都写在这里。</p>
+<p>2.<a href="http://www.wellboy.net/" target="_blank" rel="external">http://www.wellboy.net/</a></p>
+<p>链接到GitHub提供的主页服务上，方便以后整理自己的代码。</p>
+<p>3.<a href="http://www.wellboy.cn/" target="_blank" rel="external">http://www.wellboy.cn/</a></p>
+<p>寒假答应蚁翔的事情一直没有做好，前段时间本来打算写个HTML+CSS的中文主页，结果因为jQuery不熟练做崩了，之前想的是放到GAE或者SourceForge上，后来由于种种原因，也是太懒，连续做了两个网站太累，就直接链接到了网易的轻博客LOFTER上，域名绑定正在审核，预计没有问题，以后照片可以放到LOFTER上。诚如老鬼所说，点点前途已经显现渺茫，LOFTER背靠大树好乘凉应该撑得下去。</p>
+<p>前天重装系统，一怒之下把手机、iPad、kindle、MP4、电脑硬盘以及两个U盘全部格式化，所有信息删除，包括一年来积攒了接近300G的电影和视频。不如从头来过。至于之前网络上众多账号，也都一并不再使用，除非需要备份。于是重新注册了三个邮箱：wellboy#yeah.net，TyrionChang#Gmail.com，TyrionChang#hotmail.com。其他有需要的账号都通过这三个账号重新注册。至于QQ，能不装就不装吧，WebQQ差不多够用了。</p>
+<hr>
+<p>装完系统之后整个人还是比较悠闲的，需要什么装什么，速度快了许多，无用的软件也都不再碍眼了。虚拟机里面装个Ubuntu，有什么东西都更方便。只是，我泱泱景德镇是无敌的。</p>
+<p>前几天想学习Git，准备去Ubuntu控制台安装。显示Git-scm.com无法访问，只能重新配置一遍GoAgent；本想直接控制台用sudo命令安装，结果应该是服务器IP在GFW的黑名单里，找不到软件包；好不容易翻墙下了Git源码跑到控制台去编译安装，结果提示我缺少某个头文件，Google到一个解决方案，然后好像有事应为被墙无法安装；无奈，只能直接windows下安装Cygwin，索性国内游镜像服务器，速度不慢。</p>
+<p>其实这只是昨晚噩梦的开始。</p>
+<p>RedHat的OpenShift本身没有在黑名单里，但是建立的应用使用的rdcloud.com大量被屏蔽，如同GAE使用的二级域名appspot.com。导致使用PuTTYgen公钥生成之后无法使用WinSCP连接OpenShift的服务器，无奈在命令行窗口里面ping二级域名的IP，IP依然被屏蔽，无法使用。然后找来找去还是台湾同胞帮我解决了这个问题：通过SSH账户连接。然后就去Google免费的SSH账户，发现这年头共享SSH账户的网站基本都已经长草，得之不易。借助SSH才最终完成OpenShift上WordPress博客的搭建。</p>
+<p>有几个经验分享一下，windows下使用PuTTYgen和WinSCP两个工具足够了，大部分都可以在图形化界面下完成；之前需要命令行绑定域名，现在OpenShift后台已经有了图形化的选项，非常方便。唯一需要更改代码的地方就是将默认的英文版WordPress升级成中文版的设置。也比较简单，可以自行Google教程。</p>
+<p>相比较而言，到是配置GitHub主页最为方便，GitHub托管的代码可以在线编辑，无疑方便了许多。搞定之后直接选个模板即可。之后本来打算把wellboy.cn绑定到SourceForge上托管成静态网站，之后如果有机会做UnionCar中文页面就直接放到SF.NET上面，不用再为服务器操心，不过现在看来还不如直接放到GitHub上做成主页更加方便。吃过晚饭之后突然犯困，想到床上躺会。突然想到能不能帮到点点上，又因为老鬼说的点点前途渺茫，想改到网易的Lofter上，之前Lofter一直不能绑定域名，就一直没有关注，现在可以绑定域名了，就果断直接先绑定到Lofter上，避免域名闲置折价，花钱买的放着不好，总要慢慢来用。</p>
+<p>不如从头来过，前途很好。抑郁了一整个学期，反反复复的烦躁暴戾，一个又一个轮回，陷入自我牢笼里面；突然跳出来看看，才知道自己应该做减法的。wellboy这个昵称怎么看都有些幼稚，申请新的Gmail邮箱时候，决定使用TyrionChang。Tyrion：提利昂·兰尼斯特。</p>
+<hr>
+<p>不如从头来过，微博关注被我删的只剩下两个：朝闻道和蚁翔。他们都还在路上，我却一直怯于出发，一直到今天失去了出发的欲望，那就停下来吧。两天前烦躁到极点的时候写日记回忆这两年、这五年、这八年、这十年、这二十一年的点点滴滴，决定从头来过，意味着遗忘过去。离去是背叛，忘记过去亦是背叛。黎耀辉，你还记不记得何宝荣？</p>
+<p>不如，从头来过。</p>
+<hr>
+<p>关于我</p>
+<p>Tyrion Y. Chang</p>
+<p>目前生活在：山东大学（威海）</p>
+<p>非常感兴趣的领域：互联网法律</p>
+<hr>
+<p>Email：wellboy#yeah.net</p>
+<p>Gmail：TyrionChang#Gmail.com</p>
+<p>Hotmail：TyrionChang#hotmail.com</p>
+<p>——2013.7.21</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/28/2001：太空漫游/" rel="next" title="2001：太空漫游">
+                <i class="fa fa-chevron-left"></i> 2001：太空漫游
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/05/28/思绪纷飞/" rel="prev" title="思绪纷飞">
+                思绪纷飞 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.png"
+               alt="Tyrion Y. Chang" />
+          <p class="site-author-name" itemprop="name">Tyrion Y. Chang</p>
+           
+              <p class="site-description motion-element" itemprop="description">自知者明、强行者有志</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">90</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  1992 - 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tyrion Y. Chang</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

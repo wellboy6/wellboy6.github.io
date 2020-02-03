@@ -1,0 +1,1435 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="有限通讯" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="有限通讯" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="去年校招失利后，在拉勾投递了一些初创公司的产品/运营的岗位，很幸运有一家从事在线教育的初创公司愿意给我机会。今年1月份到4月份期间在这家初创公司实习了三个月，学到了很多东西，希望能把感悟记录下来，顺便整理一下这几年思考和学习的东西。
+这家创业公司自己做的产品类似「猿题库」，到目前为止产品还未上线。当时之所以选择去这家公司实习，是因为创始人之前就从事教育信息化的相关工作，并且公司自去年成立后，以消费">
+<meta property="og:type" content="article">
+<meta property="og:title" content="产品经理学习笔记">
+<meta property="og:url" content="http://blog.zhangyahui.cn/2017/05/29/产品经理学习笔记/index.html">
+<meta property="og:site_name" content="有限通讯">
+<meta property="og:description" content="去年校招失利后，在拉勾投递了一些初创公司的产品/运营的岗位，很幸运有一家从事在线教育的初创公司愿意给我机会。今年1月份到4月份期间在这家初创公司实习了三个月，学到了很多东西，希望能把感悟记录下来，顺便整理一下这几年思考和学习的东西。
+这家创业公司自己做的产品类似「猿题库」，到目前为止产品还未上线。当时之所以选择去这家公司实习，是因为创始人之前就从事教育信息化的相关工作，并且公司自去年成立后，以消费">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/67116-5d94a5a92d5d8ad1.png">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/67116-25bf935b613f4464.png">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/67116-9801eb51ea6fd828.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/67116-bd5c0c809999a06b.png">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/67116-edb0afea72d92d11.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/67116-07ee718e699e9ec3.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/67116-5182cb60233954ea.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/67116-a5dab3ffa4f2e0b0.jpg">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/67116-df74c735746727d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-05-28T13:24:45.417Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="产品经理学习笔记">
+<meta name="twitter:description" content="去年校招失利后，在拉勾投递了一些初创公司的产品/运营的岗位，很幸运有一家从事在线教育的初创公司愿意给我机会。今年1月份到4月份期间在这家初创公司实习了三个月，学到了很多东西，希望能把感悟记录下来，顺便整理一下这几年思考和学习的东西。
+这家创业公司自己做的产品类似「猿题库」，到目前为止产品还未上线。当时之所以选择去这家公司实习，是因为创始人之前就从事教育信息化的相关工作，并且公司自去年成立后，以消费">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/67116-5d94a5a92d5d8ad1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://blog.zhangyahui.cn/2017/05/29/产品经理学习笔记/"/>
+
+
+
+
+
+  <title> 产品经理学习笔记 | 有限通讯 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">有限通讯</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Ltd. News</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.zhangyahui.cn/2017/05/29/产品经理学习笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tyrion Y. Chang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有限通讯">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                产品经理学习笔记
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-29T23:35:21+08:00">
+                2017-05-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品经理/" itemprop="url" rel="index">
+                    <span itemprop="name">产品经理</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品经理/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>去年校招失利后，在拉勾投递了一些初创公司的产品/运营的岗位，很幸运有一家从事在线教育的初创公司愿意给我机会。今年1月份到4月份期间在这家初创公司实习了三个月，学到了很多东西，希望能把感悟记录下来，顺便整理一下这几年思考和学习的东西。</p>
+<p>这家创业公司自己做的产品类似「猿题库」，到目前为止产品还未上线。当时之所以选择去这家公司实习，是因为创始人之前就从事教育信息化的相关工作，并且公司自去年成立后，以消费者市场为目标开发产品；除此之外，这一年里公司一直没有对外融资，靠之前接到的一些项目保持资金稳定，加上我非常好奇软件公司和互联网公司之间的区别，当时有这样一个机会，公司既有软件方面的项目又有移动互联网的产品，非常希望去体验一下。</p>
+<p>我入职的时候产品的后台已经基本搭建完毕，同时产品的APP设计草图已经设计了几个版本，Demo也做了一两个版本，后台方面已经能支撑第一版APP的功能需要。因此入职初期我主要负责内容运营，也就是产品的内容构建——题库内容的筛选和搭建，并简单对产品相关的领域做一些针对性调研。持续大概有一个月左右的时间，初期的内容构建基本完成，期间还参与了对产品后台的测试工作，以及简单的竞品分析。</p>
+<p>今年3月份也就是春节过后，APP的开发进度稍慢，公司又加入了一些同事，所以创始人决定开始启动第二版的APP的开发和第一版的Web端设计。之后我就一直负责APP端和Web端的原型设计工作。期间有一位前辈指导我去画用户画像，收获良多。</p>
+<p>三个月的时间，一年的四分之一，说长不长说短不短。在工作间歇，也不断给自己充电学习，加上之前的一些思考和这次的自己的实践体会，希望能够把这些感悟记录下来，整理一番继续前行。</p>
+<a id="more"></a>
+<hr>
+<h2 id="一、思维和沟通"><a href="#一、思维和沟通" class="headerlink" title="一、思维和沟通"></a>一、思维和沟通</h2><p>这篇文章应该算是这份学习笔记里面我最为注重的一篇文章，有自己的一些学习体会以及工作经历中的一些思考。也许对成熟的产品经理没有什么参考价值，但是对于想要入门的同学应该还有不小的帮助。如果说现在让我论述产品经理的思维，我肯定是讲不好的；毕竟经验还是太少了，所以这篇文章更多的是读书过程中的一些思考。在这里只讲一些个人的经验和思考，而非系统化论述产品经理的思维体系。</p>
+<h3 id="（一）什么是产品经理"><a href="#（一）什么是产品经理" class="headerlink" title="（一）什么是产品经理"></a>（一）什么是产品经理</h3><p>知乎上有人吐槽「<a href="http://www.zhihu.com/question/20538364/answer/35770517" target="_blank" rel="external">为何产品经理这个职位这么火</a>」：每个小区门口，都会有几个下棋的大爷。这个机灵抖的极为有趣，不然产品人员也不会自嘲是产品狗。</p>
+<p>根据实习的经验以及学习的一些知识，感觉「画原型/写文档/沟通」只是产品经理工作的一种方式；我没有足够的经验给出自己对于产品经理的定义，不过我对产品经理工作内容的看法是：找到真正的需求，做出正确的产品。</p>
+<p>找出真正的需求：不管是利用数据分析还是用户调研，都要找到真正的需求，这是一切的起点。举个新东方的例子，可能说的不对。有不少人都表示自己身边的人去了新东方之后，英语能力也没有提升，我也有类似的感觉。但是从另一个角度讲，去新东方是为了提高英语能力还是为了提高英语考试能力是两码事，英语能力和英语考试能力显然是两个不同的事情。从某种意义上讲，提高英语考试能力才是学员真正的需求。恰好今天在知乎上看到了另一个回答：<a href="http://www.zhihu.com/question/22361144/answer/29234568" target="_blank" rel="external">新浪微博是怎么一步步衰退的？</a></p>
+<blockquote>
+<p>核心上讲，类推产品有一个关键的死穴，就是其产品愿景的平民化和发展必然的“精英”化之间不可调和的矛盾。……所以“人人都是自媒体”从一开始就是个伪命题，“媒体”的本质就是对话语权的垄断。而话语权自然不可能被每个人垄断。（推荐看完整回答）</p>
+</blockquote>
+<p>新浪微博一直都被贴上「媒体」的标签，那么从需求的角度上来看，用户需要的微博是「媒体」还是「社交」？我个人倾向于社交。这个话题比较大，只是今天恰巧看到所以提出来，未经严谨思考。</p>
+<p>数据分析、用户调研、场景分析等等以及类似的说法或方法都是为了找到真正的用户需求。</p>
+<p>做出正确的产品：有了真正的需求作为起点，接下来就是要满足这一需求。如果说找到需求还是比较实在的说法，做出正确的产品就属于非常务虚的说法。关于这一点我希望通过细节性的描述来表达。先举一个不是很恰当的例子：APP的第三方登陆。</p>
+<p>现在很多APP以及网站都拥有第三方登陆功能，较为普遍的有QQ/微信/新浪微博三个，除外还有豆瓣/人人/腾讯微博等。「能够非常方便地享受注册用户的功能」是用户的一个真正需求（我的想法，降低用户进入门槛/提高转化率是从公司的角度出发），所以需要让用户很方便地注册/登陆，第三方登陆是一个很好的选择，免去或简化了注册这一过程；但是，要想做出正确的产品就需要作出选择：使用哪些第三方登陆，不使用哪些第三方登陆。我入职时候团队做的DEMO选择的四个第三方登陆，分别是「QQ/微信/新浪微博/人人网」，QQ/微信/新浪微博在第一页，右滑后第二页是人人网；在内测版开发接近尾声的时候，一致决定砍掉人人网，一是为了简洁，与其第二页只放一个人人网的登陆按钮不如砍掉，二是人人网的影响率每况愈下，甚至流量被知乎超越，砍掉之后应该不会对登陆的便捷性产生较大的影响。</p>
+<p>类似的，按钮、表单、交互等细节都是「做出正确的产品」需要注意的事情。这些细节都属于《用户体验要素》一书中提到的「框架层」的内容，除此之外还有表现层、结构层、范围层和战略层需要考虑。「做出正确的产品」是一个务虚的说法，但是「如何做出正确的产品」就是一个比较实在的问题。可用性设计、用户体验设计这些也都是为了「做出正确的产品」提出的说法。</p>
+<p>我的想法中理想的产品经理的工作方式是这样的：思维——用户、需求、功能、流程——沟通。</p>
+<ul>
+<li>思维：批判性思维</li>
+<li>用户：产品目标用户</li>
+<li>需求：产品的方向、目标用户的动机</li>
+<li>功能：需求文档——产品功能点</li>
+<li>流程：产品开发流程</li>
+<li>沟通：与团队其他成员的沟通</li>
+</ul>
+<p>以批判性思维为起点，通过用户调研和数据分析，找到真正的需求；攥写产品需求文档明确产品功能点，掌握产品开发流程，通过与BOSS/设计人员/开发人员/测试人员/市场营销人员的沟通保证产品的最终成型及后续迭代。前半部分属于「找到真正的需求」，后半部分属于「作出真正的产品」；思维和沟通穿插在整个流程当中。</p>
+<p>本段属于思维发散之后写的，跑的比较远，看后不要用心思考。</p>
+<h3 id="（二）两个概念：场景分析和关键路径"><a href="#（二）两个概念：场景分析和关键路径" class="headerlink" title="（二）两个概念：场景分析和关键路径"></a>（二）两个概念：场景分析和关键路径</h3><p>在《书籍篇》里提到，场景分析是非常重要的一个方法。对这个概念我之前只知道有这样一个名词出现，不懂内涵。纯银V推荐了一篇博文：<a href="http://www.webppd.com/thread-6064-1-1.html" target="_blank" rel="external">用户动机是“以用户为中心”的方法论</a>，感觉很有道理的样子，没有实践过无从评判。</p>
+<p>此外，在阅读胡澈博客的时候注意到一个词：关键路径。</p>
+<blockquote>
+<p>除此之外，我还发现一个有趣的现象，术语叫做“关键路径”。用户的行为并不是理性的，并不是像个证明题一样一步一步下去，而是按照自己的理解和使用习惯。比如早些年有个段子就说了这样一件事情：用google 查找百度，然后用百度去找自己想要的内容。我自己也遭遇了这样的问题。今年9月份我自驾去了一趟阳朔。当时我从阳朔出发，先去了漓江风景区，然后再去桂林市。最后某个导航app把我带到了山沟沟里面，偏执地要我把车开到山上。最后我放弃了导航，走原路回到阳朔重新走高速去到了桂林。对于app来说，如何规划路线其实就是一个数学题，但对于用户来说，如何规划路线并不是两点之间取最短。via：<a href="http://huchao.me/what-are-product-manager-thinking-about" target="_blank" rel="external">产品经理在想什么？</a></p>
+</blockquote>
+<p>实习初期经常以用户的身份发表自己的看法，Leader一直告诫要学会带入用户的角度思考，不要错把自己的想法当做用户的想法。换个词语就是学会「换位思考」。场景分析（从用户动机出发）和关键路径（找到用户的行为模式）两种方法都有利于更好地带入用户的角色，进行换位思考。</p>
+<h3 id="（三）可用性设计（以及用户体验设计）"><a href="#（三）可用性设计（以及用户体验设计）" class="headerlink" title="（三）可用性设计（以及用户体验设计）"></a>（三）可用性设计（以及用户体验设计）</h3><p>实习期间的讨论会上，讲到用户体验设计的时候，leader用了三个层次来表达：可用性——易用性——用户体验。当时对可用性设计/用户体验设计了解不深，简单做了一个对应：功能——可用性；交互——易用性；设计——体验。这当然是不那么准确的。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/67116-5d94a5a92d5d8ad1.png" alt="User Experience"></p>
+<p>在《点石成金》一书的导读中，作者将可用性的定义，分解为以下几个方面：</p>
+<blockquote>
+<ul>
+<li>有用：能否帮助人们完成一些必须的事务？</li>
+<li>可学习：人们能否明白如何使用它？</li>
+<li>可记忆：人们每次使用的时候，是否都需要重新学习？</li>
+<li>有效：它们能完成任务吗？</li>
+<li>高效：它们是否只需花费适当的时间和努力就能完成任务？</li>
+<li><p>合乎期望：是人们想要的吗？</p>
+<p>  最近甚至又有了</p>
+</li>
+<li><p>令人愉悦：人们使用的时候觉得有意思甚至好玩吗？</p>
+</li>
+</ul>
+</blockquote>
+<p>此外还有一本非常棒的书——《用户体验要素》，这本书还没有阅读完毕，所以不在赘述。不过书中的一些例子让我想起一件事，产品经理并非互联网产品的独特产物，传统行业也有这种职业，从各种不同的角度提升用户体验：罐装饮料的拉环、瓶装水的瓶盖，都在为提升用户体验/可用性而努力。（用户体验设计/可用性设计应该不是一个概念）从这个角度上看，除去用户体验设计/可用性设计的知识，传统行业领域的商业策划也值得涉猎。</p>
+<h3 id="（四）批判性思维"><a href="#（四）批判性思维" class="headerlink" title="（四）批判性思维"></a>（四）批判性思维</h3><p>当我们在讲逻辑的时候，我们在讲些什么。从学术意义上讲，逻辑是一门关于一切一般思维的学科。（临时借来的康德《逻辑学讲义》一书中的说法）不过我并非哲学科班出身，所以这部分不会讲逻辑，而转向另一个名词：批判性思维。法学专业里的「批判性思维」课程给了我很大的帮助，本来「法律逻辑」这门课也非常具有价值，不过当时过于惫懒，没有认真学习，有些遗憾。</p>
+<p>在讲批判性思维之前，先提另外一个名词：元认知。</p>
+<blockquote>
+<p>元认知能力，就是“对于认知的认知”和“关于知识的知识”，简单来说就是对于自我的认知过程的思考。关于元认知，网上有不少资料，大家可以通过搜索引擎找一下通俗的材料，感兴趣的也可以找相关的心理学文献读一下。</p>
+<p>具有强元认知能力的人，通常表现是学习能力很强，因为他们对于自己的认知和学习过程很了解，能够在快速的自我思考和自省后产生出优化过的学习策略。</p>
+<p>他们对自己的认知能力有较强的管控能力，懂得利用自己的认知能力的优势和已有知识框架来调节和评估新知识的摄入，这些人能够很快的把新知识融入到已有的知识当中。用乔布斯的话说，就是把已经划出的点连起来，而元认知能力高的人连得特别快。</p>
+<p>via：<a href="http://www.zhihu.com/question/28484672/answer/41115593" target="_blank" rel="external">知乎@谢熊猫君</a></p>
+</blockquote>
+<p>然后说一下批判性思维：</p>
+<blockquote>
+<p>存在着一种思维：他让我们形成意见、做出判断、做出决定、形成结论。同时，存在着另一种思维——批判性思维：它批判前一种思维，让前述思考过程接受理性评估。可以说，批判性思维是对思维展开的思维，我们进行批判性思维是为了考量我们自己（或者他人）的思维是否符合逻辑、是否符合好的标准。via：《<a href="http://book.douban.com/subject/7057936/" target="_blank" rel="external">批判性思维</a>》</p>
+</blockquote>
+<p>网络论辩中，公知大开嘲讽的一句话就是：喷子没有独立思考的能力。而缺乏独立思考能力的一个原因，就是缺乏评判的标准。从这一角度讲，批判性思维提供了一个评价/判断一种思维是否正确（符合逻辑）的方法。上面提到的那本《批判性思维》后半部分关于逻辑相关的内容非常多，不是很适合入门阅读。所以推荐阅读另一本书——《<a href="http://book.douban.com/subject/6021913/" target="_blank" rel="external">Beyond Feelings</a>》，推荐阅读英文原版，中译本翻译质量实在太差；如果英文能力较差的话，可以参考中译本《超越感觉》来阅读。这本书相对来逻辑学相关的内容较少，不会太抽象；案例非常多，并且用很大的篇幅来讲述阻碍思考的各种错误，非常值得一看。</p>
+<p>如果无法确定自己的思维是否「自洽」，可以翻一翻《你以为你以为的就是你以为的吗》，里面给出<a href="http://tieba.baidu.com/p/2412717524" title="贴吧里的一部分题目" target="_blank" rel="external">一些题目</a>用来测试“思考清晰度”，不过整体上学术价值不高，对批判性思维不了解的可以读读这本书找到自己的不足；考过公务员行测或者逻辑课考试的人可以忽略这本书。另外，有很多人推荐《提问的艺术》一书，准备找时间补档学习。</p>
+<p>最后提一句我并不是很喜欢但是又不甚了解的辩证法：哲学意义上的辨证法的目的在于认识事物而非价值判断，而诡辩术中对事物的分析只是手段，它的目的总是影响价值判断。（via：<a href="http://www.zhihu.com/question/20299429/answer/14667314" target="_blank" rel="external">知乎@陈甫鸼</a>）我在这里提到「批判性思维」主要是希望通过学习批判性思维形成良好的思考方式，重点在于评价而非认识。至于辩论（诡辩）属于修辞学的范围，不在讨论。</p>
+<h3 id="（五）沟通"><a href="#（五）沟通" class="headerlink" title="（五）沟通"></a>（五）沟通</h3><p>实习期间有一次画的原型被BOSS批评的一文不值，心里很是郁闷，感觉自己的想法不被BOSS理解；于是第二天完全按照BOSS的说法做了新的一版原型，给Leader提交的时候，却再次被Leader批评，不过Leader给了我一些建议让我非常受用。在工作成果被BOSS否定之后，不要完全否定自己，一定要搞明白是哪里除了问题。这在一方面是对自己的想法有所坚持，另一方面又考验了一个人的理解能力和抗压能力，这时候一定要在压力之下尝试理解BOSS的准确意思，搞明白为什么批评你，批评的点在哪里。我后来感觉当时自己就是在压力下完全乱了分寸，没有仔细思考。就像Leader跟我说的，<strong>这种情况下完全推翻自己的工作成果，就不是能力的问题，而是为人的问题。</strong>非常感谢Leader给我的建议。简言之，有时在沟通过程中，BOSS急了乱了自己也不能急不能乱，一定要搞清楚问题所在！然后解决掉。</p>
+<p>除此之外，与BOSS交流，尽量避免大而空泛的问题；关于概念性的/媒体性的/趋势性的问题，个人的关注点都不同，不是很好谈到一个维度上；反过来，尽量言之有物，讨论概念不如沟通细节，将大而宽泛的问题留到闲谈的时候聊聊放松心情。不然，若得到合适的回应还好，但如果问得方式和时机不对很容易尴尬。</p>
+<p>此外，很多公司还不适应把什么问题都拿到纸面上谈的节奏，加上求职者大多处于弱势地位，所以言行不要太跳脱，这点自己处理的不算太好（这句话可以忽略）。如果自身不是八面玲珑的人，回避职场的八卦和潜规则是一个较为明智的选择，也许会错过一些机会，不过对自己的原则有所坚守也是一件值得开心的事情。</p>
+<p>在《点石成金》第八章《农场主和牧牛人应该是朋友》里对「信仰大战」的情形有很精彩的描述，CEO/BOSS、开发、产品、设计师、市场/营销对产品有各自理解的角度，也有各自的期许，容易导致浪费时间的争论。书中给出的解决问题的方法是「测试」，在测试中观察用户的“看法和用法”，这样可以跳出自身的局限，避免把自己的想法套在用户的头上。从这个角度看，能够与用户「换位思考」而不单纯按照自己的想法考虑问题的产品经理有很大的优势。在这一章，作者还简单讲到提问题的方法，例如不要问“大部分人喜欢下拉框吗”，正确的问题应该是“在这个页面，这样的上下文中 ，这个下拉框以及这些下拉项目和措辞会让可能使用这个网站的大部分人产生一种良好的体验吗”。学会正确提问有利于区分「伪需求」和「真需求」。</p>
+<p>因为价值观或者类似互联网思维的东西争吵，也类似上段提到的「信仰大战」，很难通过言语说服对方。这种「信仰大战」吃饭下班时候闲聊就好，切忌不要把自己阅读过没消化的知识拿到实际中生搬硬套。还有产品方向的问题，记得知乎上的某个回答，作为员工一天上班才八九个小时，而作为老板恨不得一天二十四个小时都在思考，相对来说最后的决定更为可靠，不应该因为类似的问题生出抵触情绪。一旦决定，就去执行，不能带着一肚子气去工作。当然，这点不适用天才。</p>
+<h3 id="（六）互联网思维和用户体验要素"><a href="#（六）互联网思维和用户体验要素" class="headerlink" title="（六）互联网思维和用户体验要素"></a>（六）互联网思维和用户体验要素</h3><p><a href="http://www.zhihu.com/question/19992568" target="_blank" rel="external">什么是互联网思维？</a>这是一个极其虚的概念，有两种出现互联网思维较高的状况：一是炒作概念，二是媒体总结。所以说，互联网思维并不是产品经理必备的要素。以「互联网思维是媒体思维」这个角度看，市场和营销用起来可能会更得心应手，BOSS也可以据此讲讲战略上的思路，跟媒体接轨，不过刚入门的产品经理并不一定适合利用这些思维做产品。相对来说刚入门做产品需要关注的是比较微观和实在的东西，需要关注相当多的细节，做出很多纠结的选择，这些是互联网思维里面的「简洁至上」等说法无法简单套用的。并且，「简洁至上」这一点，不仅仅互联网思维，Unix编程艺术里面也有论及，相当多不同领域的思维/准则都有某种共通性，但并不意味着这些共通的思维可以非常简单地套用在产品经理的工作中。</p>
+<p>相比较互联网思维，《用户体验要素》一书中提到的「战略层-范围层-结构层-框架层-表现层」几个要素更加值得学习。一直以来我对很多宏观的概念都比较好奇，反过来并没有很认真锻炼手上的功夫，虽说这样也是一种进步，不过实习期间经常有某种力不从心的感觉，无法得心应手地将自己知道的概念和要做的工作很好地结合起来。究其原因，宏观的概念太过务虚，这并不是坏事，不过确实对初期琐碎的工作影响不大；一般而言，刚开始要从事的工作大多是琐碎而重复的，这需要更加务实的技能而非高大上的思维体系。这也是我为什么把工具篇放在第一篇的原因（写作时放在了第一篇，后来发现工具的重要性确实在其次就放到了后面）。总而言之，正如经由Java培训出来的程序员不如CS科班出身的程序员有优势是一个道理，技能决定起点，思维决定高度。</p>
+<h3 id="（七）马斯洛金字塔"><a href="#（七）马斯洛金字塔" class="headerlink" title="（七）马斯洛金字塔"></a>（七）马斯洛金字塔</h3><p>之前读过一些博客和文章，提到做产品的时候瞄准人性/欲望这些东西，并举出陌陌以及微信的摇一摇来说明。这是比较通俗的说法，想要高大上一点就可以祭出「马斯洛金字塔」这个理论了。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/67116-25bf935b613f4464.png" alt="Maslows Hierarchy Of Needs"></p>
+<p>近几年很多心理/新闻专业的人开始从事产品经理这个行业，跟这也有一定的关系。我对心理专业的知识了解不多，只多附图一张，不再多做阐述。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/67116-9801eb51ea6fd828.jpg" alt="利用人性弱点的互联网服务"></p>
+<h3 id="（八）其他：虚与实、小与大"><a href="#（八）其他：虚与实、小与大" class="headerlink" title="（八）其他：虚与实、小与大"></a>（八）其他：虚与实、小与大</h3><p>互联网思维也好，产品方法论也好，一概大而宽泛地概括不利于初期的入门，包括赞叹谷歌主页的简洁等等，都只是产品的一个方面。在没有高度去务虚之前，一定要务实，从小处着手锻炼自己。</p>
+<p>有时候甚至感觉一直常说的「痛点」一次也是比较虚的，特别是很多初创公司，没有明确思路之前妄图一举找到「痛点」是得不偿失的事情，甚至不如快速上线进而根据反馈实现迭代比较靠谱。缩短一个版本的周期，整理反馈，进而调整方向。这一点有时候不仅需要与开发人员沟通好，还需要跟BOSS沟通好。像苹果一样追求完美而后发布只是一种方式。这段只是私人的一些想法，不算干货。</p>
+<p>实习入职期间，我认为第二版的DEMO已经做的很不错了，感觉可以很快找一些接近真实用户的内测用户获取一些反馈。（或者向《点石成金》一书中说到的，进行频繁的可用性测试）一是因为可以快速的推向市场，然后不断修改甚至重构；二是我认为创业公司在推出正式版之前应当有一定的反馈数据，不能仅仅闭门造车，拍脑袋决定。不过之后又发生了一些事情，所以把产品上线日往后推了一段时间，期间发现DEMO的代码架构着实糟糕，倒是值得庆幸当初没有草率地加快开发进度。顺便提一下重构/改版，感叹一下当年<a href="http://kb.cnblogs.com/page/61898/" target="_blank" rel="external">腾讯广研院对QQmail的重构</a>，无愧涅槃重生一说。反面教材就是人人网的历次不明不白的改版和前段时间豆瓣把「豆邮」改为「私信」再改为「豆邮」的做法（我是比较反对改名为私信的，不过拉勾的CEO马德龙先生对此有不同的看法，该问题在知乎的讨论值得一读：<a href="http://www.zhihu.com/question/30435503/answer/48423878" target="_blank" rel="external">知乎</a>）。</p>
+<p>很久之前跟一个朋友聊天，说到自己的思维不具备体系性，有些不伦不类，最后朋友说不要太过注重体系。虽说如此，最近越来越感觉从事某个行业（不限于产品经理），一定要具备一个大致构成体系的方法论；思维不能无限制发散，一定要能聚焦在某一处，捋顺流程。从职业技能这个角度上来讲，养成一个良好的思考体系还是比较重要的，毕竟不能老是走野路子。如同文章前面提到的，批判性思维提供了一个思考的入口，良好的思维体系能够给自己提供一个解决问题的入口，碰到问题时候能够有目的地思考，而不是单纯瞎想。</p>
+<p>不过，上个月<a href="http://weibo.com/cicada" target="_blank" rel="external">@纯银V</a>在简书写了一篇文章值得阅读：<a href="http://www.jianshu.com/p/ae3c81878bb3" target="_blank" rel="external">为什么我不喜欢产品方法论</a>。除了文章的主题，作者提到的产品经理老三样「视野、品位、逻辑」也值得留意。正如文中所说的，“而新手想看几本书，听几次分享，读几条方法即可初窥门径？恐怕连门槛都挨不到。”当然，在入门之前，阅读不可以放弃、学习和探索也不可以放弃，但是最重要的是，一定要着手去做，在实践中不断学习。</p>
+<hr>
+<h2 id="二、文案和其他能力"><a href="#二、文案和其他能力" class="headerlink" title="二、文案和其他能力"></a>二、文案和其他能力</h2><h3 id="（一）文案三个关键词：简洁、讲明白、有逻辑"><a href="#（一）文案三个关键词：简洁、讲明白、有逻辑" class="headerlink" title="（一）文案三个关键词：简洁、讲明白、有逻辑"></a>（一）文案三个关键词：简洁、讲明白、有逻辑</h3><ul>
+<li><p>简洁：要求文案不罗嗦，全面表达观点的同时突出核心。</p>
+</li>
+<li><p>讲明白：把事情说清楚，不要有错别字，不要有错别字。</p>
+</li>
+<li><p>有逻辑：文案要有层次性，因果关系也好层级关系也好要清晰明了。切忌一团乱麻。</p>
+</li>
+</ul>
+<p>就文案能力而言，还是要多练习。特别是格式化的文案，并不需要很高的天赋。产品经理常用的格式化文档推荐苏杰博客的资源，在「媒体与博客」篇里已经给出链接，这里直接给百度网盘的下载地址：<a href="http://pan.baidu.com/s/1o6FOAt8" target="_blank" rel="external">产品经理的常用文档</a>。同时推荐《金字塔原理》一书，能够很好地锻炼文案的逻辑性。</p>
+<h3 id="（二）产品需求文档-PRD、BRD和MRD"><a href="#（二）产品需求文档-PRD、BRD和MRD" class="headerlink" title="（二）产品需求文档:PRD、BRD和MRD"></a>（二）产品需求文档:<a href="http://www.cnblogs.com/emouse/p/3230397.html" target="_blank" rel="external">PRD、BRD和MRD</a></h3><ul>
+<li><p>PRD，产品需求文档——Product Requirement Document</p>
+</li>
+<li><p>BRD，商业需求文档——Business Requirements Document</p>
+</li>
+<li><p>MRD，市场需求文档——Market Requirements Document</p>
+</li>
+</ul>
+<p>产品经理最重要的就是撰写PRD——产品需求文档。不过，产品经理跟需求工程师不同，所以需求文档虽然重要但相对没有那么严肃。举例而言，开发人员对需求文档的要求自然是越详尽明白越好，设计人员则不必，用草图/线框图要比文档的效果好的多。</p>
+<p>胡澈在《缔造企鹅》中提到，产品需求文档有三方面要求：可读性、结构化、可扩展性。前两者应该属于文案的基本能力，不限于需求文档，可扩展性则是针对互联网产品特性而言，不像标书中标之后很难更改，随着“需求的变化或者细节的调整”，文档不可避免需要进行相应调整。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/67116-bd5c0c809999a06b.png" alt="PRD文档截图-苏杰"></p>
+<p>另外，值得留意的是，文档是文档，沟通是沟通。不能只注重文档不注重沟通。文档是死的东西，之所以需要格式化的文案，一方面由于公司或团队规定和习惯，另一方面是考虑到提高效率的问题；同样的，考虑到效率的问题就不能单单依靠文档。</p>
+<p>在实习中感觉，日常工作中，产品经理大部分时间在从事基础性的工作，只有少部分时间才能静心思考产品相关的一些东西。文案是基础能力/必备能力，但并不是万能灵药，究其根本，更广阔的视野和更敏锐的洞察力这些虚的东西才真正决定一个产品经理的高度。</p>
+<p>知乎上有一个回答，链接已经找不到了，根据理解复述一下，有知道出处的同学欢迎告诉我。这个回答把知识分为几个分类：你知道自己知道的知识，你知道自己不知道的知识，你不知道自己不知道的知识。第三个分类给我的感触是比较深的，<strong>你不知道自己不知道</strong>是一件很可怕的事情，这一领域的知识组成了一个人的认知盲区。上面提到「广阔的视野、敏锐的洞察力」这些比较虚的东西，就需要不断开拓「自己不知道自己不知道」的那些领域。谢熊猫君（在人人和北斗名为谢至理）在「<a href="http://www.zhihu.com/question/28484672/answer/41115593" target="_blank" rel="external">如何辨认身边的聪明人</a>」中的回答值得了解：“好奇心和聪明程度是个鸡和蛋的情况。一个人的学习能力再强，如果好奇心不够，那他也不会去了解各种新东西；而如果一个人缺乏对事物的广泛了解，他就很难看到那些自己不理解的东西，也就不容易产生较强的好奇心。”</p>
+<p>再说一遍：世界很大！勤思考，抱有好奇心，关注新的领域。从了解到深入，正如谢熊猫君所说的，越聪明的人对自己不熟悉的领域就越少发言，这种沉默的背面则是学习；纵然能够在不熟悉的领域保持沉默，但是在好奇心的推动下，也更加渴望了解新的知识。</p>
+<p>最后，提一下发散性思维的事情。实习期间的一个分享会上，一位同事说，在事实基础上的发散性思维叫发散性思维，在发散性思维上的发散性思维就是胡扯。深以为然。必须要说，民科往往就习惯在发散性思维上进行发散性思维，搞出很多似是而非的东西。</p>
+<p>除去好奇心，勤思考勤总结也是非常好的习惯。比如想一想腾讯的登陆窗口现在为何只能是经典的小矩形而不能在设置成长条形。也可以随意总结一下，腾讯大概从QQ2009开始，主题色基调定型为蓝色；网易则逐步定型为红色。这些东西并不是很严谨，不值得严肃讨论，但对个人而言是一件很愉悦的事情。</p>
+<hr>
+<h2 id="三、技术和设计"><a href="#三、技术和设计" class="headerlink" title="三、技术和设计"></a>三、技术和设计</h2><p>我本身的专业是法学，出于一直以来对互联网领域的兴趣，修读了软件工程的第二学位。虽然实际的编程能力还是很弱，不过实实在在的专业学习还是有很大的帮助。</p>
+<p>我本身并不擅长技术，对设计相关的内容也仅限于了解一些基础概念，避免出现低级错误。所以这个章节算是对沟通部分的补充，并不是很专业地技术/设计入门推荐，只希望了解一些常识有助于和设计人员、开发人员的交流。</p>
+<h3 id="（一）关于技术"><a href="#（一）关于技术" class="headerlink" title="（一）关于技术"></a>（一）关于技术</h3><p>先说技术。这些都是纸上谈兵，我属于编程能力比较弱的那种人，只不过比较喜欢关注技术领域的一些新闻，只是简单说一说技术相关的内容。</p>
+<p>如果非计算机专业的同学想认真学技术的话，可以阅读<a href="http://www.zhihu.com/people/xiao-jing-mo" target="_blank" rel="external">@萧井陌</a>和<a href="http://www.zhihu.com/people/badger" target="_blank" rel="external">@Badger</a>的《<a href="http://zhuanlan.zhihu.com/xiao-jing-mo/19959253" target="_blank" rel="external">编程入门指南</a>》或者《<a href="http://blog.knownsec.com/Knownsec_RD_Checklist/v2.2.html" target="_blank" rel="external">知道创宇研发技能表</a>》，同时推荐网易云课堂的《<a href="http://study.163.com/curricula/cs.htm" target="_blank" rel="external">计算机专业体系</a>》。</p>
+<p>此外，推荐想要成为产品经理的同学学习一些前端相关的知识或者学习一些脚本类语言比如Python。前端相关知识相对来说注重前端呈现，不像后端特别追求性能，并且前端有自身的设计规则（类似的，iOS/Android/WindowsPhone也都有各自的人机界面指南），对产品设计有很大的帮助；与C/JAVA相比，不需要那么多的数理知识和算法要求。而脚本类语言相对更为友好，没有那么抽象，编译器/IDE也较轻，适合入门。</p>
+<p>简要介绍一些编程语言相关的内容。</p>
+<h4 id="HTML-CSS-JavaScript"><a href="#HTML-CSS-JavaScript" class="headerlink" title="HTML/CSS/JavaScript"></a>HTML/CSS/JavaScript</h4><ul>
+<li><p>前端相关，HTML算是比较熟悉的，毕竟是简单的标记语言，相对来说对逻辑的要求没那么高；CSS没深入学过，能简单改一改；JS简单用过框架，没深入了解过框架源码和架构。前面说过，我认为这部分应该是最应该了解的，个人感觉C系列的编程语言以及脚本类编程语言都比较偏向技术实现，而前端类的编程语言比较注重呈现的效果，这一点在产品设计阶段需要关注到。</p>
+</li>
+<li><p>从另一个角度来说，随着 HTML5 在移动领域的表现越来越好，学习web相关的知识，对移动端也有很大的帮助。</p>
+</li>
+</ul>
+<h4 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h4><ul>
+<li>没接触过，据说更加类似搭积木，没有那么抽象。如果一点没有接触过编程，推荐先玩一玩<a href="http://www.smallbasic.cn/portal.php" target="_blank" rel="external">Small Basic</a>，类似很久之前的LOGO语言，很有意思，<a href="http://www.smallbasic.com/" target="_blank" rel="external">英文官网</a>疑似被墙，我这里现在无法访问。</li>
+</ul>
+<h4 id="C-C-C"><a href="#C-C-C" class="headerlink" title="C/C++/C"></a>C/C++/C</h4><ul>
+<li>C还算好点，最好的时候能弄懂一点指针的概念，很久不写也就忘记了。C++/C#有个好处，可以使用MS的IDE——VS2013。</li>
+</ul>
+<h4 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h4><ul>
+<li>仅仅入门过，有意从事安卓相关职业的同学可以学习。</li>
+</ul>
+<h4 id="Python-Ruby"><a href="#Python-Ruby" class="headerlink" title="Python/Ruby"></a>Python/Ruby</h4><ul>
+<li>脚本类语言。Python入门，Ruby没学过。相对，Python的免费电子书比较多，推荐「<a href="http://www.pythondoc.com/" target="_blank" rel="external">Python 中文学习大本营</a>」。</li>
+</ul>
+<h4 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h4><ul>
+<li>推荐《<a href="http://vbird.dic.ksu.edu.tw/" target="_blank" rel="external">鸟哥的Linux私房菜</a>》，想入门安全的可以搞搞<a href="https://www.kali.org/" target="_blank" rel="external">Kali Linux</a>。</li>
+</ul>
+<h4 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h4><ul>
+<li>数据库方面无法推荐，图形化操作还可以，SQL没有认真学习，数据库只了解一些概念性的东西。</li>
+</ul>
+<p>相对来说，了解一些技术性的概念有很大帮助，比如「高内聚低耦合」等。适当熟悉一些简单的编程语言，对产品设计时的思路有所帮助。从另一个角度，也有利于估算产品的开发进度。</p>
+<p>严格来说，软件工程专业的学习对我帮助最大的并不是编程语言的课程，而是《软件工程》/《软件项目管理》两门课程。虽然最后终于确认自己没有编程上的天赋和耐心，与其吐槽自己Hello World级别的编程能力，倒不如讲讲一些其他的体会更好。</p>
+<h3 id="（二）关于软件工程"><a href="#（二）关于软件工程" class="headerlink" title="（二）关于软件工程"></a>（二）关于软件工程</h3><p>软件工程里对我帮助最大是「软件生存周期模型」，其次是需求分析的一些方法和文档，UML图等更偏向详细设计，并不十分适合互联网产品快速迭代的开发模式。</p>
+<p>我们可以看一些软件生存周期模型和产品研发流程的示意图：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/67116-edb0afea72d92d11.jpg" alt="瀑布模型"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/67116-07ee718e699e9ec3.jpg" alt="快速原型模型"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/67116-5182cb60233954ea.jpg" alt="产品研发流程"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/67116-a5dab3ffa4f2e0b0.jpg" alt="又一个产品研发流程"></p>
+<p>两者虽然不尽相同，但是却有着某种共性：需求——设计——开发——运营。</p>
+<p>互联网产品由于其特性，不断循环这样一个流程；而快速迭代，实质上也就是将每一个这样的流程缩短，尽快推给用户，得到反馈，继续下一个这样的流程。也因为跟传统软件公司的不同，没有甲方的存在，必须要从用户中获取反馈，所以产品经理必须要有一定的<strong>数据分析和用户调研</strong>能力，辨别真需求和伪需求。也就是经常说的，找准用户的痛点。</p>
+<p>有些产品经理的入门书籍中说过产品经理和项目经理的区别，知乎上也有<a href="http://www.zhihu.com/question/19667544" target="_blank" rel="external">一些回答</a>。一般大公司分得比较细，两个职位都有专职人员，小公司很多都是一人兼两个职位。即便如此，学习《软件工程》相关的知识绝对对成为产品经理有所帮助。像刚才所说的，最基础意义上的，理解软件的生命周期，对理解快速迭代、理解产品的开发流程非常有帮助。撇开产品经理/项目经理的区别这点不谈，软件工程领域有一本书推荐阅读：《<a href="http://book.douban.com/subject/1102259/" target="_blank" rel="external">人月神话</a>》。这本书我仅限于了解，并未深入地精读。《人月神话》本身是比较偏向项目经理方向，但是学习一些其中的观点还是很有用处的，避免在策划中忽略一些定量/变量，率性而为。</p>
+<p>因为大学期间在图书馆的兼职经历，对图书的分类比较敏感，相当多的产品经理书籍都分到了F类——即经济管理，这本书也属于F类。从管理的角度上来说，《软件工程》就属于对软件（产品）的管理。用vczh的<a href="http://www.zhihu.com/question/26465236/answer/32874687" target="_blank" rel="external">一个回答</a>来介绍这本书：“这本书的主要内容是，一个程序让vczh一年刚好可以写出来，但是你如果找到了12个vczh同时写，一个月肯定是写不出来的。人和月是两个单位，人月自然是它们相乘了，神话的意思就是说，这两个量是不能乘的。”</p>
+<p>虽然说产品经理不一定要会设计，但是有必要了解一些设计相关的知识，避免出现一些低级的错误。推荐阅读《众妙之门》系列，都是小册子，比较简单；还有王坚在《结网》中推荐的《点石成金》、《GUI设计禁忌》以及《写给大家看的设计书》。</p>
+<ul>
+<li>《<a href="http://book.douban.com/subject/26313852/" target="_blank" rel="external">点石成金</a>》就是大名鼎鼎的《Don’t Make Me Think》一书的中译本，我也是返校之后才去补课读的这本书，短小精悍，即便第三版加入了移动应用相关的内容，依然简洁，全书不到200页，一个下午的时间足够做到通读第一遍。除了总结一些基本的可用性设计准则外，对可用性测试做了相当详细的叙述。此外还有一本《<a href="http://book.douban.com/subject/6523997/" target="_blank" rel="external">用户体验要素</a>》也有很多人推荐，准备这几天补课；同时推荐豆瓣上根据此书整理的一个书单：<a href="http://book.douban.com/review/5271203/" target="_blank" rel="external">以《用户体验要素》整理互联网产品经理书单</a>。</li>
+</ul>
+<p>在「媒体和博客」那一篇里提到过一些大公司的UED团队，推荐了一些链接，特别是。针对移动产品的策划，十分推荐了解相应的人机交互规范：<a href="https://developer.apple.com/library/ios/navigation/" target="_blank" rel="external">iOS</a>/<a href="http://developer.android.com/design/index.html" target="_blank" rel="external">Android</a>/<a href="https://msdn.microsoft.com/en-us/library/hh202915" target="_blank" rel="external">WindowsPhone</a>，这里的链接都是英文版的，国内的一些团队都有针对性翻译一些中文文档，在「媒体和博客」一篇中已经有所推荐，不再多给链接。还有一个之前没有提到过的，谷歌去年提出的「<a href="http://www.zhihu.com/topic/20005114" target="_blank" rel="external">Material Design</a>」。</p>
+<p>最后，多说一句：我认为互联网上本质依然是技术驱动的，开发人员才是核心。所以，尊重技术，不迷信产品。</p>
+<hr>
+<h2 id="四、运营和测试"><a href="#四、运营和测试" class="headerlink" title="四、运营和测试"></a>四、运营和测试</h2><p>去年年末确定入职时确定的职位是内容运营而非产品经理，所以初期主要负责内容的构建，入职第二天BOSS为了让我尽快熟悉工作内容，就让团队Leader直接带着我去甲方公司，确实起到了很大作用。所以后续的工作比较顺利。</p>
+<h3 id="（一）关于运营"><a href="#（一）关于运营" class="headerlink" title="（一）关于运营"></a>（一）关于运营</h3><p>入职之前在知乎上看<a href="http://www.zhihu.com/topic/19551958" target="_blank" rel="external">产品运营</a>话题里的一些答案，包括<a href="http://www.zhihu.com/people/zhangleo" target="_blank" rel="external">@张亮</a>在百度阅读写的那本《<a href="http://yuedu.baidu.com/ebook/5e5a74d102d276a200292ebc" target="_blank" rel="external">从零开始做运营</a>》（以及<a href="http://yuedu.baidu.com/ebook/c949f711cf84b9d528ea7aae" target="_blank" rel="external">进阶篇</a>）。书里的内容是比较全面的，只不过我当时只需要负责内容部分的运营，相对来说没有那么辛苦。</p>
+<p>张亮提到运营要在产品之前，换句话说，运营和市场都要提前进行调研，确保内容的质量。具体的调研过程不再详述，只是搜索引擎、贴吧、微博、豆瓣小组、论坛以及相关的垂直网站是必不可少的途径，在「媒体和博客」篇里面提到很多科技媒体，但是不同领域也要关注相应的科技媒体，手游、网游、教育、O2O要关注的相关网站都有所不同，在线教育方面的科技媒体就有比较好的「<a href="http://www.jmdedu.com/" target="_blank" rel="external">芥末堆</a>」。除此之外，还要对竞品进行分析、学习。说起来真正搭建内容并没有浪费太多的时间，反过来倒是内容的选择耗费了很大的精力，取舍之间需要权衡很多因素，必须要在调研过程对产品和所要运营的内容形成基本的认识，才能准确决定如何搭建内容。</p>
+<p>毕竟实习期间更多是关于内容运营的工作，对用户/社区运营的经验不算太多，所以更具体的细节不再详述。当时学习运营时候有一些想法，感觉好运营代表就是「<a href="http://www.liwushuo.com/" target="_blank" rel="external">礼物说</a>」（内容）和在知乎极为活跃的拉勾运营<a href="http://www.zhihu.com/people/lydia-62" target="_blank" rel="external">@lydia</a> （用户/品牌）；烂运营的代表就是传统的web企业，靠量取胜，核心内容不突出，把运营当farmer用。最后推荐两个《从零开始学运营》笔记——《<a href="http://www.niaogebiji.com/article-5866-1.html" target="_blank" rel="external">读书笔记：从零开始学运营</a>》、《<a href="http://www.niaogebiji.com/article-6045-1.html" target="_blank" rel="external">从零开始做运营（入门篇）100%</a>》。</p>
+<h3 id="（二）关于测试"><a href="#（二）关于测试" class="headerlink" title="（二）关于测试"></a>（二）关于测试</h3><p>从事内容运营的过程中还有一件事，就是要对产品的后台进行测试。软件测试这方面只在大学的课程上接触过一些理论，实践之后还是有一些收获。</p>
+<p>我负责的后台测试基本是白盒测试&amp;功能性测试。现在回过头看，在测试之前一定要对产品有所了解，不能死搬硬套代入极端值，而要尽可能模拟真实的环境进行测试，确保产品符合预期目的。</p>
+<p>举例子，插入图片这个功能，不能只是简单测试能否插入图片，而要根据具体的情况看插入后的效果、插入后的编辑功能能否满足产品的要求，这才是重点。否则在后续的真实内容搭建过程中就不得不忍受各种之前没有注意到的缺陷。从这个角度上来说，尽可能地模拟真实环境进行测试是一个更好的选择。</p>
+<p>当然，具体如何还需要考虑实际的情况。比如对APP进行测试，就必须要把整个流程走一遍，每一个功能点都不放过（测试后台也一样），还要考虑页面的层级等问题，避免出现逻辑上的漏洞产生一个只有入口没有出口的界面，或者因为设计问题同一个页面有两个按钮指向同一入口。</p>
+<p>最后，测试还需要提到的一点就是测试文档的问题，正常情况下测试文档一般都是使用excel表格提交，这一点便于备份和存档。但是也要考虑其他情况，比如说测试APP需要截图，使用Word文档甚至PPT就更为实用；或者说测试过程中只出现了一两个小问题，属于不重要但是紧急的问题，完全可以在txt文件里描述清楚，而不一定还需要写一个excel表格文件。简言之，有规定按照规定，没有规定可以根据实际情况进行选择，不能死板。</p>
+<p>测试这部分不再多说，大多数公司都有专门的测试人员，运营所进行地更多地像是一种反馈而非专业地测试。</p>
+<p>上面提到的一些关于测试的经验是在运营过程中穿插的。相对来说，运营在第一时间接触到产品/用户/内容，多多留心能更迅速地了解产品和用户，可以说是一个快速熟悉产品的途径。换句话说，实习第一个月的运营经历让我充分认识到了产品的属性：要做什么、为什么人做。开发期间没有合适的用户模型，能够从内容运营中了解这些非常重要；了解产品的属性之后，才能很好地明白产品需要的功能点以及功能点的优先级。</p>
+<hr>
+<h2 id="五、数据和市场"><a href="#五、数据和市场" class="headerlink" title="五、数据和市场"></a>五、数据和市场</h2><p>这部分是最后写的，写到这里的时候发现不知道该写些什么，索性空着不写了，希望有经验的朋友推荐一些文章学习下。</p>
+<p>前面提到说产品经理要有用户调研和数据分析的能力，找准用户真正的需求。感觉要做到这两点需要产品经理能够正确分析数据，同时对市场有一定的敏锐度。不过我个人着实经验不多，一些书籍和资源之前也都推荐过，所以不再赘述。最后推荐几个网站如下。</p>
+<p><a href="http://www.mikecrm.com/" target="_blank" rel="external">麦客</a>：一个很好的在线表单网站，虽然调查问卷没以前那么高大上了，仍然是个不错的选择</p>
+<p><a href="http://www.iresearch.cn/" target="_blank" rel="external">艾瑞咨询</a>：我平常查询行业数据的网站</p>
+<p><a href="http://umindex.com/" target="_blank" rel="external">友盟指数</a>：移动互联网相关数据</p>
+<p><a href="http://jk.coolchuan.com/report/total-downloads" target="_blank" rel="external">酷传应用监控</a>：APP下载排名数据分析</p>
+<p><a href="http://newrank.cn/index.html" target="_blank" rel="external">新媒体排行榜</a>：微信公众号的相关数据，很有帮助</p>
+<hr>
+<h2 id="六、工具篇"><a href="#六、工具篇" class="headerlink" title="六、工具篇"></a>六、工具篇</h2><p>之前提到的一些内容可能会涉及到一些工具，所以先把我常用的和正在学习使用一些工具整理出来。如果仅仅是想要找到一些工具教程，下拉到文末使用美团的章鱼计划即可。</p>
+<h3 id="（一）基础性工具"><a href="#（一）基础性工具" class="headerlink" title="（一）基础性工具"></a>（一）基础性工具</h3><p>Office系列：推荐使用<a href="http://item.shop.edu.cn/item?id=411" title="office 2013 专业增强版-校园先锋教育优惠版本" target="_blank" rel="external">office 2013 专业增强版</a>，如果没有可以使用<a href="http://zh-cn.libreoffice.org/" title="Libre Office" target="_blank" rel="external">Libre Office 套装</a> 或者<a href="http://www.openoffice.org/zh-cn/" title="Open Office" target="_blank" rel="external">Open Office 套装</a>，这三个套装都比WPS要稳定的多，无广告。</p>
+<ol>
+<li><p>Word：我的word技能得益于之前做电子杂志、给朋友的网站写年终总结的经历，锻炼出不少的技巧，不具有普适性，所以只能建议大家在知乎等网站上学一些小技巧。另外，这篇文章所涉及的所有工具可以说都是实践性的，所以在实践中学习要比对照书籍、教程学习快的多。最后，注意合理利用Word的导出PDF版本功能，以免在不同版本的Word中出现样式失真的情况。</p>
+</li>
+<li><p>Excel：这算是我的软肋，实习期间一直没有机会熟悉这个工具，学习数据透视表的时候也只是大概了解，没有真正实践过，所以不多做评价。不过还是推荐一下我学数据透视表的那本书<a href="http://book.douban.com/subject/6712457/" target="_blank" rel="external">《你早该这么玩Excel》</a>，除去数据透视表，里面提到了不少需要注意的事项非常有用。此外，如果对SPSS比较了解的话，在数据分析上会有不小的帮助，这个软件我没有使用过，所以教程和学习书籍之类的东西没办法推荐，只是提到Excel顺便说一下。</p>
+</li>
+<li><p>PPT：如果想做的好看，学秋叶老师的教程就好，秋叶老师曾在微博分享过他书籍的一些实例，可以用来学习，百度网盘链接：<a href="http://pan.baidu.com/s/1gdzVIz5" title="秋叶老师在微博分享的一些实例" target="_blank" rel="external">秋叶老师分享的一些实例</a>。这里需要提示一点，个人认为团队内部日常交流和分享的过程中，不要太纠结形式和模板，重点是思路和内容；这一点做好了PPT的作用也就发挥出来了，并且很多时候白板也是一个补充。</p>
+</li>
+</ol>
+<p>这里推荐一本书，<a href="http://book.douban.com/subject/25984063/" target="_blank" rel="external">《用图表说话》</a>，这本书有好几个版本，链接是比较新的一个全彩版本。书中用简洁明了的例子说明哪些数据应该使用哪些图表，可以快速了解五种图表的基本用法。</p>
+<h3 id="（二）技能类工具"><a href="#（二）技能类工具" class="headerlink" title="（二）技能类工具"></a>（二）技能类工具</h3><h4 id="原型草图：Balsamiq-Mockups"><a href="#原型草图：Balsamiq-Mockups" class="headerlink" title="原型草图：Balsamiq Mockups"></a>原型草图：<a href="https://moqups.com/" title="Balsamiq Mockups 官网" target="_blank" rel="external">Balsamiq Mockups</a></h4><ul>
+<li>优点是手绘风格、上手容易、能够快速完成原型页面；缺点是交互和演示太弱。我一般都用来快速完成草图跟Leader沟通下，避免理解出现错误造成原型上的重大失误。这个软件完全不需要教程或者汉化，非常友好，基本上安装之后就可以上手使用。</li>
+</ul>
+<h4 id="原型工具：Axure"><a href="#原型工具：Axure" class="headerlink" title="原型工具：Axure"></a>原型工具：<a href="http://www.axure.com/" title="Axure 官网" target="_blank" rel="external">Axure</a></h4><ul>
+<li><p>神器，Web和APP原型设计起来都相当给力，交互能力极强。并且可以用来画流程图，买不起Visio的可以用Axure来画流程图，我在实习后期负责的原型都是用Axure画的。</p>
+</li>
+<li><p>学习书籍方面推荐吕皓月的两本书：<a href="http://book.douban.com/subject/10829320/" title="网站蓝图" target="_blank" rel="external">《网站蓝图》</a>和<a href="http://book.douban.com/subject/26346450/" title="APP蓝图" target="_blank" rel="external">《APP蓝图》</a>，这两本书的缺点就是，太纠结细节了，好多地方过度追求高保真，真正用的时候可能不需要那么高保真的原型。另外，如果不想买书直接按照书籍的实例学习也可以，百度网盘地址：<a href="http://pan.baidu.com/s/1mg45qre" title="网站蓝图的实例" target="_blank" rel="external">网站蓝图的实例</a>、<a href="http://pan.baidu.com/s/1gdmy2Kr" title="APP蓝图的实例" target="_blank" rel="external">APP蓝图的实例</a>。</p>
+</li>
+<li><p>除此之外，还可以通过Axure官网学习<a href="http://www.axure.com/learn" title="Online Training for Axure RP" target="_blank" rel="external">learn板块</a>进行学习，包括一些视频教程和PDF训练手册。有网友翻译过这些视频和PDF训练手册，链接如下：<a href="http://www.axure.me/question/35" target="_blank" rel="external">中文版视频教程</a>|<a href="http://www.webppd.com/thread-9347-1-1.html" target="_blank" rel="external">中文PDF训练手册</a>，不过中文版的视频教程只免费放出了前两个，后几个需要捐助才能获得观看密码，但是考虑到教程英文比较简单，直接看英文教程也是不错的选择。</p>
+</li>
+<li><p>最后请注意：一定要汉化一定要汉化一定要汉化，重要的事情说三遍，不然初期学起来你会被各种头疼的交互单词搞得焦头烂额。</p>
+</li>
+<li><p>下面是一些Axure相关的学习博客/社区：</p>
+<ol>
+<li><a href="http://www.axure.org/axure/" target="_blank" rel="external">Axure 中文社区</a></li>
+<li><a href="http://www.yuanxingku.com/" target="_blank" rel="external">原型库</a></li>
+<li><a href="http://www.iaxure.com/" target="_blank" rel="external">Axure 中文教程网</a></li>
+<li><a href="http://www.axure.us/" target="_blank" rel="external">Axure 中文网</a></li>
+<li><a href="http://www.myaxure.cn/" target="_blank" rel="external">Axure 爱好者</a></li>
+</ol>
+</li>
+</ul>
+<p>其他原型工具还有国产的墨刀、摩客之类的，只是体验过，不做评价。不过据悉Mac平台的<a href="http://sketchcn.com/" title="Sketch 中文网" target="_blank" rel="external">Sketch</a>相当炫酷，可以拿来提升哔格。</p>
+<h4 id="流程图：visio"><a href="#流程图：visio" class="headerlink" title="流程图：visio"></a>流程图：visio</h4><ul>
+<li><p>大家都说visio强大，不过visio不包含在微软的Office 2013套装里面，买不起所以只在试用期内熟悉了一下软件，不多做评价。印象中Open Office和Libre Office中的都有个工具可以用来画流程图，也可以用来学习。实习期间的流程图和线框图我都是使用Axure完成的。</p>
+</li>
+<li><p>国内有一个在线作图网站<a href="https://www.processon.com/" title="一个免费在线作图网站" target="_blank" rel="external">ProcessOn</a>，没有实际使用过，不过倒是在其中看过一些图用来学习。</p>
+</li>
+</ul>
+<h4 id="图像处理类：画图"><a href="#图像处理类：画图" class="headerlink" title="图像处理类：画图"></a>图像处理类：画图</h4><ul>
+<li><p>这方面最厉害的软件就是Photoshop，简单免费的有国产的光影魔术手。</p>
+</li>
+<li><p>我个人的PS能力比较弱，只在学单反的时候学过一些极为简单的图像处理，虽然这里推荐的软件是Windows自带的画图，不过还是推荐安装PS，不然连PSD的文件都打不开，了解设计相关知识的时候很不方便。</p>
+</li>
+<li><p>光影魔术手和画图可以用来做简单的切图以及调整大小等工作，非常实用。我个人在做运营期间碰到一些图片需要统一大小就直接使用画图来调整，方便快捷。画图虽简易，但是很多时候相当实用，推荐之。</p>
+</li>
+</ul>
+<h3 id="（三）辅助性工具"><a href="#（三）辅助性工具" class="headerlink" title="（三）辅助性工具"></a>（三）辅助性工具</h3><h4 id="笔记类软件：OneNote"><a href="#笔记类软件：OneNote" class="headerlink" title="笔记类软件：OneNote"></a>笔记类软件：<a href="http://www.onenote.com/" title="OneNote 官网" target="_blank" rel="external">OneNote</a></h4><ul>
+<li><p>这一类软件还有<a href="https://www.yinxiang.com/" title="印象笔记官网" target="_blank" rel="external">印象笔记</a>/<a href="http://www.wiz.cn/" title="为知笔记官网" target="_blank" rel="external">为知笔记</a>/<a href="http://note.youdao.com/" title="有道云笔记官网" target="_blank" rel="external">有道云笔记</a>，相对来说印象笔记的设计最好也最为简洁，但从功能上来说为知笔记更为强大，剪藏网页功能比印象笔记要好用，有道云笔记很久没用过了，不做评价。</p>
+</li>
+<li><p>我之所以选择OneNote，有很多方面的原因，包括购买的校园先锋版Office附带了可供本地存储版本的的OneNote（免费版OneNote不能在本地创建笔记）、笔记的构建上更有体系、写作上更自由、以及我使用的Lumia手机本身带有OneNote软件——配合桌面版使用比较方便等。当然了，最重要的是我比较钟意OneNote图片相关的功能，具体的可以自己发掘，非常实用。除此之外，OneNote还支持各种插件，不过我没有怎么使用过插件，就不再做推荐。</p>
+</li>
+<li><p>这里推荐网友分享的一个英文教学视频以及知乎的几个答案：</p>
+<ol>
+<li><a href="http://pan.baidu.com/s/1bnCVidp" target="_blank" rel="external">OneNote 2013 Essential Training 视频教程</a></li>
+<li><a href="http://www.zhihu.com/question/23427617" target="_blank" rel="external">如何构建自己的笔记系统？</a></li>
+<li><a href="http://www.zhihu.com/question/21928562" target="_blank" rel="external">如何充分利用 OneNote，发挥它的全部价值和潜力？</a></li>
+</ol>
+</li>
+</ul>
+<h4 id="文本编辑器：Sublime-Text"><a href="#文本编辑器：Sublime-Text" class="headerlink" title="文本编辑器：Sublime Text"></a>文本编辑器：<a href="http://www.sublimetext.com/" title="Sublime Text 官网" target="_blank" rel="external">Sublime Text</a></h4><ul>
+<li>一直在使用的工具，阅读文本文件相对方便；没用Notepad++的原因是因为感觉Notepad++太丑。Sublime更深入的技能基本没有使用过，不过在需要阅读源码的时候非常方便。另外提一下微软新出的<a href="https://code.visualstudio.com/" title="Visual Studio Code 官网" target="_blank" rel="external">Visual Studio Code</a>，个人很是期待。</li>
+</ul>
+<h4 id="写作软件：MarkdownPad"><a href="#写作软件：MarkdownPad" class="headerlink" title="写作软件：MarkdownPad"></a>写作软件：<a href="http://www.markdownpad.com/" title="MarkdownPad 官网" target="_blank" rel="external">MarkdownPad</a></h4><ul>
+<li>不得不说，单纯写作，<a href="http://wowubuntu.com/markdown/" title="Markdown 语法说明 （简体中文版）" target="_blank" rel="external">Markdown</a> 是一个极佳的工具，专注、实时反馈、样式控制简单实用。我使用的离线软件是<a href="http://www.markdownpad.com/" target="_blank" rel="external">MarkdownPad</a>，极为方便，这个系列的学习笔记就是使用 Markdown Pad 写作完成的；如果你有mac的话，大家都推荐 mou，我没有使用过不做评价。</li>
+</ul>
+<h4 id="思维导图：xMind"><a href="#思维导图：xMind" class="headerlink" title="思维导图：xMind"></a>思维导图：<a href="http://www.xmind.net/" title="xMind 官网" target="_blank" rel="external">xMind</a></h4><ul>
+<li>大家都说最强大的是MindManager，买不起所以用了免费版的xMind。实习期间没有使用过思维导图，之前尝试利用其弄过一些书籍的思维导图，结果最后发现画出来的导图像目录，就没有深入学习。可替代的有在线版的<a href="http://naotu.baidu.com/" title="百度脑图官网" target="_blank" rel="external">百度脑图</a>，需要百度脑图似乎将数据存到用户的百度网盘的「我的应用数据」文件夹，我还没找到删除的办法，所以有洁癖的慎用。</li>
+</ul>
+<h4 id="邮箱客户端：Outlook-Foxmail"><a href="#邮箱客户端：Outlook-Foxmail" class="headerlink" title="邮箱客户端：Outlook/Foxmail"></a>邮箱客户端：Outlook/Foxmail</h4><ul>
+<li><p>如果团队内部使用腾讯企业邮箱的话，<a href="http://www.foxmail.com/" title="Foxmail 官网" target="_blank" rel="external">Foxmail</a> 就很不错。如果不是，上面提到的校园先锋版的Office套装里含有OutLook，很好很强大，可以配合手机的日历功能以及OneNote使用。</p>
+</li>
+<li><p>说到这里多提一句，这篇文章不再推荐其他的时间管理类工具。实际上手机也好PC也好，有诸多系统自带的工具极为使用，日历就是我最常使用的一个工具，手机、平板、PC三处的同步，特别方便。时间管理方面我个人只使用日历功能，配合OneNote足够满足需求。</p>
+</li>
+<li><p>在这里顺便提一下写邮件相关的事情，东东枪三月份的一条<a href="http://weibo.com/1647865744/C9yYfmMLI" title="东东枪关于邮件的一条微博" target="_blank" rel="external">微博</a>提到：“邮件里1分钟能看明白的事儿，电话就得聊5分钟；电话里5分钟的事儿，换微信就得来回半个小时；微信里半小时能说完的，找个咖啡馆见面聊就得1个半小时起；找个咖啡馆见面聊1个半小时就能解决的事儿，要是非要约吃饭，算上路上时间，四五个小时也就过去了。”所以在工作中，必要的邮件技巧和礼仪需要掌握，可以在知乎等网站上看一些文章学习下，比如这篇<a href="http://www.zhihu.com/question/20137814" target="_blank" rel="external">《怎样写一封得体的电子邮件》</a>；简单来说，要注意两点，<strong>一是突出重点，二是方便对方</strong>。</p>
+</li>
+</ul>
+<h4 id="同步盘：暂时没有使用过"><a href="#同步盘：暂时没有使用过" class="headerlink" title="同步盘：暂时没有使用过"></a>同步盘：暂时没有使用过</h4><ul>
+<li><p>一直没养成使用同步盘的习惯，OneDrive和Dropbox因为某些原因，感觉使用不是特别顺畅；加之很早就开始使用百度网盘，所以有需要一般直接用了百度网盘。不过表示百度网盘的客户端太蛋疼，所以基本都是使用网页版的。</p>
+</li>
+<li><p>如果对同步盘要求特别高的话，是不推荐使用百度网盘的，包括他家的同步盘，功能和性能上都比较差，容易出错。金山快盘也不推荐，之前使用时候也出现过一些问题。至于其他同步盘就暂时不再作推荐。</p>
+</li>
+</ul>
+<h4 id="订阅软件：阅读空间"><a href="#订阅软件：阅读空间" class="headerlink" title="订阅软件：阅读空间"></a>订阅软件：阅读空间</h4><ul>
+<li><p>Google Reader 替代工具，QQmail自带的功能，主要是感觉方便；其他的还有有道阅读等等，不再一一举例，可以自行搜索选择。</p>
+</li>
+<li><p>在后面的「科技和博客」篇里面我会给出一个整理好的XML文件，方便大家订阅学习。</p>
+</li>
+</ul>
+<h3 id="（四）其他工具"><a href="#（四）其他工具" class="headerlink" title="（四）其他工具"></a>（四）其他工具</h3><h4 id="Git-GitHub"><a href="#Git-GitHub" class="headerlink" title="Git/GitHub"></a><a href="http://www.git-scm.com/" target="_blank" rel="external">Git</a>/<a href="https://github.com/" target="_blank" rel="external">GitHub</a></h4><ul>
+<li><p>我用<a href="http://hexo.io/zh-cn/" title="Hexo 简体中文首页" target="_blank" rel="external">Hexo</a>在GitHub提供的<a href="https://pages.github.com/" target="_blank" rel="external">GitHub Pages</a>服务上搭建了个人博客<a href="http://technium.science/" title="探索技术和科学的界限与边界" target="_blank" rel="external">「第六元素」</a>，主要用来备份写过的文章。GitHub主站上也有许多值得关注的东西，如果学技术应该是不得不关注的一个网站。去年尝试学习CSS的时候，就在上面下载了CSS禅意花园的一些代码阅读。</p>
+</li>
+<li><p>之于Git本身，之前有人说过可以用它来做文件的备份和对比，我没有尝试过，到目前位置我对他的使用仅限于利用Hexo本身的命令更新我的博客而已。</p>
+</li>
+</ul>
+<h4 id="Project-2013"><a href="#Project-2013" class="headerlink" title="Project 2013"></a>Project 2013</h4><ul>
+<li>没用过，这个不知道以后会不会用到，不过现在应该来说是用不到的；提这个软件的原因，是因为之前在知乎有人说过，看到刚入门产品经理的人就学用这个软件，不知道他到底学来干嘛，所以如果对这个软件有兴趣，推荐延后学习，不要着急。据悉并不是很难掌握。</li>
+</ul>
+<p>最后提醒一下还在校园的同学们，如果是还有学生身份的话，会有相当多的便利，微软的 <a href="https://www.dreamspark.com/" target="_blank" rel="external">DreamSpark</a>，GitHub 家的 <a href="https://education.github.com/" target="_blank" rel="external">GitHub Student Developer Pack</a>，以及<a href="http://shop.edu.cn/" target="_blank" rel="external">校园先锋</a>的软件和电子产品，优惠多多。并且可以多留意一下心仪软件的主页，一般价格都有两种，正常的和教育版的价格，包括<a href="http://www.axure.com/edu" title="Free Licenses For Students and Teachers" target="_blank" rel="external">Axure</a>和Balsamiq Mockups都有针对教育领域的优惠（Mockups曾经有过一段时间的优惠），所以希望大家珍惜自己的学生身份，提前学习。</p>
+<p>不说GitHub Student Developer Pack里一系列的优惠，单单DreamSpark一项，在VS2013社区版没有免费之前就可以下载到VS2013的专业版教育授权版本，双学位过程中学习C#和数据库我在自己笔记本上一直使用的DreamSpark版本的软件，相当好用。</p>
+<p>虽然在这里推荐大家使用教育版学习，但是工作期间关于盗版和破解版的问题我就不再论述，保持回避的态度。</p>
+<p>对于产品经理来说，纸、笔和笔记本是必不可少的灵感工具，我在画原型的时候，很多时候都是把灵感在纸上简单勾画出来再用工具去画，有时候直接使用工具会纠结细节以至于忘记灵感，并且在纸上写批准和备忘录比用工具方便的多。很多时候，脑子里有了想法立刻在笔记本上记录下来，最后再使用工具整理汇总，输出结果（其实是字体太烂没法见人不然就直接在笔记本上整理了）。总而言之，感觉工具只是辅助性的东西，不像技术人员，一定要靠技术本身进行工作，产品经理的工作内容并不十分依赖工具，只要肚里有货，工具都不是太大的问题。并且考虑到做产品也有偏向运营/内容/数据的，也有偏向设计的，各有侧重，按需取舍，不能贪多求全。</p>
+<p>工具篇的结尾，推荐给大家美团网2013年时候太监掉的<a href="http://blog.sina.com.cn/s/articlelist_3244706501_0_1.html" title="美团网章鱼计划新浪博客" target="_blank" rel="external">章鱼计划</a>，虽然是两年前的教程，不过还没有过时，可以拿来学习。虽说章鱼计划本身是想做产品经理的培训课程，不过因为没有把坑填完，只做了书籍、网站、工具这三部分，所以把他的课程当成工具箱使用还是可以的。</p>
+<ol>
+<li><a href="http://blog.sina.com.cn/s/blog_c1664ac501019fkv.html" target="_blank" rel="external">产品经理十大信息源</a></li>
+<li><a href="http://blog.sina.com.cn/s/blog_c1664ac501019g5a.html" target="_blank" rel="external">产品经理之必备书籍</a></li>
+<li><a href="http://www.zhihu.com/question/20737184" target="_blank" rel="external">产品经理获取最新信息的来源都有哪些？</a></li>
+<li><a href="http://blog.sina.com.cn/s/blog_c1664ac50101ew2x.html" target="_blank" rel="external">第1课：产品经理入门</a></li>
+<li><a href="http://blog.sina.com.cn/s/blog_c1664ac50101f1f8.html" target="_blank" rel="external">第2课：线框图(Axure和Visio)</a></li>
+<li><a href="http://blog.sina.com.cn/s/blog_c1664ac50101falv.html" target="_blank" rel="external">第3课：用图表说话和PPT演示</a></li>
+<li><a href="http://blog.sina.com.cn/s/blog_c1664ac50101fisg.html" target="_blank" rel="external">第4课：Word和Excel</a></li>
+<li><a href="http://blog.sina.com.cn/s/blog_c1664ac50101g0rz.html" target="_blank" rel="external">第5课：思维导图、PS基础和其他</a></li>
+</ol>
+<p>整个计划到这里就太监了，说好的进阶目前看来是没法补完了。上述课程中的「第1课：产品经理入门」中的PPT推荐大家阅读了解，其中有几个非常不错的资源，比如那篇「Pony对QQMail的邮件摘录-腾讯广研院-2008」虽然时间较早，但是非常有参考价值，毕竟从2011年开始到现在，QQmail都没有大版本的更新。里面提到的对<a href="http://blog.sina.com.cn/s/blog_4eaa91130100bka2.html" target="_blank" rel="external">视障模式</a>的支持给我的印象十分深刻（还顺手黑了把163），腾讯的CDC部门在出版的<a href="http://book.douban.com/subject/20471302/" target="_blank" rel="external">《在你身边，为你设计》</a>一书中也曾提到过QQ客户端对视障模式的支持，这一点尤为难得。</p>
+<p>工具篇最后，为了方便大家下载章鱼计划的教程，我把前后五份打包的教程整理到一个文件夹分享给大家，可以<a href="http://pan.baidu.com/s/1mg67hbU" target="_blank" rel="external">点击此处</a>从百度网盘下载。</p>
+<hr>
+<h2 id="七、书籍篇"><a href="#七、书籍篇" class="headerlink" title="七、书籍篇"></a>七、书籍篇</h2><p>这篇文章主要提到了我先后阅读过的一些书籍，可能还包括我准备阅读的一些书籍。书的种类会比较多，建议选择性地阅读而非一股脑全部看完；推荐不同类型的书都挑着翻一翻。需要指出，这并不是一个产品的必读书单，只是一些不同领域的推荐阅读书籍——个人书单总结。</p>
+<p>这篇写到最后发现写偏了，不能算是产品经理的推荐书单，最多只是一个产品经理的扩展书单，但是质量上还是可以保证的，依然诚意推荐阅读。</p>
+<h3 id="（一）产品经理入门书籍"><a href="#（一）产品经理入门书籍" class="headerlink" title="（一）产品经理入门书籍"></a>（一）产品经理入门书籍</h3><h4 id="推荐阅读：缔造企鹅"><a href="#推荐阅读：缔造企鹅" class="headerlink" title="推荐阅读：缔造企鹅"></a>推荐阅读：<a href="http://book.douban.com/subject/25954934/" target="_blank" rel="external">缔造企鹅</a></h4><p>类似书籍：<a href="http://book.douban.com/subject/4723970/" target="_blank" rel="external">人人都是产品经理</a>/<a href="http://book.douban.com/subject/4736118/" target="_blank" rel="external">结网</a>等等，在豆瓣搜索<a href="http://book.douban.com/subject_search?search_text=%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86&amp;cat=1001" target="_blank" rel="external">产品经理</a>会出现相当多的入门书籍，不在一一举例。</p>
+<ul>
+<li><p>之所以推荐《缔造企鹅》这门书，最大的原因是这本书是我在实习过程中阅读的，印象比较深刻，并且一遍工作一边阅读，体会比较深；加上这本书出版时间比较晚，时效性比较高；可能是因为边学习边实践的原因，对这本书比较大的印象是「实在」、「务实」，相对来说不「务虚」，入门很有帮助。</p>
+</li>
+<li><p>《人人都是产品经理》和《结网》是比较早阅读的，具体内容记不大清了，只记得《人人都是产品经理》里面使用了不少情景化的例子，当时感觉比较无聊；实习时候才发现<a href="http://www.woshipm.com/pmd/12948.html" title="分析需求场景对产品设计的意义" target="_blank" rel="external">场景分析</a>是确认需求经常要使用的一个方法，才明白书里情景化例子如此多的原因。《结网》当年是很热的一本书，趁着作者做糗百的东风，带动了这本书的销量，当时我也是糗百用户之一，所以去图书馆借阅了这本书。</p>
+</li>
+<li><p>相对而言，入门类的书籍选择一本阅读就可以了，以便于对产品经理的工作和需要的资质有个简单的了解，再按图索骥选择性地学习一些工具、阅读一些其他的书籍，换句话说读太多入门类的书籍也不会有太大的提升。并且不同领域的产品经理需要关注的方向并不完全相同，需要根据需求和方向选择书籍。</p>
+</li>
+</ul>
+<h3 id="（二）扩展阅读书单"><a href="#（二）扩展阅读书单" class="headerlink" title="（二）扩展阅读书单"></a>（二）扩展阅读书单</h3><p>这部分的书籍一是参考我大学期间的阅读记录、二是参考网络上流行的其他书单，尽量挑选自己阅读过的书籍给出推荐语，部分没有阅读过的也算是自己的待读书单。</p>
+<h4 id="克里斯·安德森"><a href="#克里斯·安德森" class="headerlink" title="克里斯·安德森"></a><a href="http://www.ted.com/speakers/chris_anderson_wired" target="_blank" rel="external">克里斯·安德森</a></h4><ul>
+<li>《连线》杂志前主编，不是TED那个克里斯·安德森。先后看过他的<a href="http://book.douban.com/subject/1919072/" target="_blank" rel="external">《长尾理论》</a>、<a href="http://book.douban.com/subject/3932520/" target="_blank" rel="external">《免费》</a>、<a href="http://book.douban.com/subject/20365163/" target="_blank" rel="external">《创客》</a>三本书，相对来说时效性比较强，是一个值得关注的作者，推荐阅读他的这三本书。有意思的事情是三本书的都没离开「长尾理论」这个概念，中文版都是中信出版社出版的；读过该社出版的很多翻译巨烂无比的书，所以大多数中信出版社出版的书我都推荐略读。</li>
+</ul>
+<h4 id="马尔科姆·格拉德威尔"><a href="#马尔科姆·格拉德威尔" class="headerlink" title="马尔科姆·格拉德威尔"></a><a href="http://www.newyorker.com/contributors/malcolm-gladwell" target="_blank" rel="external">马尔科姆·格拉德威尔</a></h4><ul>
+<li><p>《纽约客》专栏作家，<a href="http://book.douban.com/subject/3900987/" target="_blank" rel="external">《引爆点》</a>是我非常喜欢的一本书，偏传播学；<a href="http://book.douban.com/subject/3900987/" target="_blank" rel="external">《异类》</a>倒是翻过，不过不是特别喜欢，在这本书里作者提出了被各种心灵鸡汤文引用的<a href="http://baike.baidu.com/view/3244949.htm" target="_blank" rel="external">「一万小时定律」</a>，更不喜欢了。他的书类似<a href="http://weibo.com/1933585575/Cg5agxw5V" target="_blank" rel="external">yolfilm在微博</a>提到的「现象归纳」类的书籍，而不是无中生有创作出一个理论体系，不过还是值得一看。</p>
+</li>
+<li><p>推荐阅读《引爆点》，《异类》看个人喜好；还是中信出版的书，冏。</p>
+</li>
+</ul>
+<h4 id="凯文·凯利"><a href="#凯文·凯利" class="headerlink" title="凯文·凯利"></a><a href="http://kk.org/" title="kevin kelly" target="_blank" rel="external">凯文·凯利</a></h4><ul>
+<li><p>我读过凯文·凯利的三本书：<a href="http://book.douban.com/subject/5375620/" target="_blank" rel="external">《失控》</a>、<a href="http://book.douban.com/subject/6965746/" target="_blank" rel="external">《科技想要什么》</a>、<a href="http://book.douban.com/subject/10588021/" target="_blank" rel="external">《技术元素》</a>。较早的那本<a href="http://book.douban.com/subject/1059824/" target="_blank" rel="external">《网络经济的十种策略》</a>没有阅读过。其中《失控》是很早之前略读的一本书，这本书实在是个大部头书籍，没有精读的勇气，虽然如此，其中一些诸如众包、社会化协作、蜂群思维的概念也给了我很大的启发，至少在新闻中碰到相关的报道时心里有个概念存在。相对《失控》，《科技想要什么》更接地气，也没《失控》那么厚，更值得精度。《技术元素》是KK博客里一些内容的结集，没有那么系统化，可以略读。</p>
+</li>
+<li><p>推荐：《科技想要什么》精度；剩下两本看个人兴趣，《技术元素》略读，《失控》跳着读、翻翻就好，有精力再精读。</p>
+</li>
+<li><p>另外，在阅读书籍之前，十分推荐观看KK在TED的几次演讲：<a href="http://www.ted.com/speakers/kevin_kelly" target="_blank" rel="external">KK@TED</a> </p>
+</li>
+</ul>
+<h4 id="劳伦斯·莱斯格"><a href="#劳伦斯·莱斯格" class="headerlink" title="劳伦斯·莱斯格"></a><a href="http://www.lessig.org/" target="_blank" rel="external">劳伦斯·莱斯格</a></h4><ul>
+<li><p>相对来说，可能很多人对这位作者较为陌生，我之所以阅读莱斯格的一些书籍，是因为大二前后对互联网法律相关的内容非常有兴趣，阅读了莱斯格的<a href="http://book.douban.com/subject/3843136/" target="_blank" rel="external">《代码 2.0》</a>一书，收获颇多，其对网络空间和网络管制的论述很有意思，由于是学者，文风跟KK有很大不同。莱斯格本人先后任教斯坦福大学和哈佛大学，还是<a href="http://baike.baidu.com/view/1224852.htm?fromtitle=CC%E5%8D%8F%E8%AE%AE#3" title="知识共享" target="_blank" rel="external">CC协议</a>的创始人和主席，如果你看过<a href="http://www.tudou.com/programs/view/jefojo_-HjQ" target="_blank" rel="external">《互联网之子》</a>这部纪录片可能会对他有所印象。</p>
+</li>
+<li><p>推荐：《代码 2.0》一书推荐精读，毕竟是两位博士翻译，质量上较为可靠；<a href="http://book.douban.com/subject/4050757/" target="_blank" rel="external">《免费文化》</a>不推荐购买阅读，有兴趣略读即可，中信出版的，翻译质量不高；<a href="http://book.douban.com/subject/1186899/" target="_blank" rel="external">《思想的未来》</a>，比较老的一本书，介绍了公共资源的概念（via结网），看过《代码 2.0》可以略过不看。</p>
+</li>
+<li><p>扩展阅读：<a href="http://www.ted.com/speakers/larry_lessig" target="_blank" rel="external">Lawrence Lessig @ TED</a>；<a href="http://tech.qq.com/a/20110423/000147_3.htm" target="_blank" rel="external">《IT史记连载：劳伦斯·莱斯格》</a>，<a href="http://www.douban.com/search?source=suggest&amp;q=IT%E5%8F%B2%E8%AE%B0" target="_blank" rel="external">《IT史记》</a>是方兴东主编的一套图书，2004年出版，年代比较久远，曾在图书馆翻过，可以了解，结构上类似人物志，跟《浪潮之巅》的结构不大一样。</p>
+</li>
+</ul>
+<h4 id="《怪诞心理学》-amp-《怪诞心理学2》"><a href="#《怪诞心理学》-amp-《怪诞心理学2》" class="headerlink" title="《怪诞心理学》&amp;《怪诞心理学2》"></a><a href="http://book.douban.com/subject/3908032/" target="_blank" rel="external">《怪诞心理学》</a>&amp;<a href="http://book.douban.com/subject/6712304/" target="_blank" rel="external">《怪诞心理学2》</a></h4><ul>
+<li><p>第一册很久之前读过，内容已经记不大清了；第二部没有读过。心理学这块的科普类读物还是比较多的，我个人阅读的比较少，有兴趣的可以找找豆瓣的书单和知乎的推荐。</p>
+</li>
+<li><p>说到这里推荐另一本书<a href="http://book.douban.com/subject/5287474/" target="_blank" rel="external">《影响力》</a>，也是很久之前阅读的书籍，虽然具体内容已经记不起来，不过相对上面两本来说印象更深，也更广为流传，推荐阅读。</p>
+</li>
+</ul>
+<h4 id="《怪诞行为学》-amp-《怪诞行为学2》"><a href="#《怪诞行为学》-amp-《怪诞行为学2》" class="headerlink" title="《怪诞行为学》&amp;《怪诞行为学2》"></a><a href="http://book.douban.com/subject/4929844/" target="_blank" rel="external">《怪诞行为学》</a>&amp;<a href="http://book.douban.com/subject/5253757/" target="_blank" rel="external">《怪诞行为学2》</a></h4><ul>
+<li>推荐阅读这两本书，记得阅读这两本书的时候断断续续在看哈佛公开课<a href="http://v.163.com/special/justice/" target="_blank" rel="external">《公正》</a>，书籍讲的是行为经济学，公开课讨论功利主义，都很有收获。对诸如「占小便宜真的占到便宜了吗」、「无私真的对社会有益吗」之类的胡思乱想有很大帮助。</li>
+</ul>
+<h4 id="《魔鬼经济学》-amp-《超爆魔鬼经济学》"><a href="#《魔鬼经济学》-amp-《超爆魔鬼经济学》" class="headerlink" title="《魔鬼经济学》&amp;《超爆魔鬼经济学》"></a><a href="http://book.douban.com/subject/1473250/" target="_blank" rel="external">《魔鬼经济学》</a>&amp;<a href="http://book.douban.com/subject/4720572/" target="_blank" rel="external">《超爆魔鬼经济学》</a></h4><ul>
+<li>名字比较俗，第二本是中信出版的。内容确实很有意思，值得一读。对于毒品、气候变暖等领域的论述也被很多人推荐过。类似的还有一本<a href="http://book.douban.com/subject/5408891/" target="_blank" rel="external">《反常识经济学》</a>，合著者波斯纳是著名的法经济学家，当时感觉有趣就借来读了，值得一读。</li>
+</ul>
+<h4 id="传记类书籍：《乔布斯传》、《周鸿祎自述》"><a href="#传记类书籍：《乔布斯传》、《周鸿祎自述》" class="headerlink" title="传记类书籍：《乔布斯传》、《周鸿祎自述》"></a>传记类书籍：<a href="http://book.douban.com/subject/6798611/" target="_blank" rel="external">《乔布斯传》</a>、<a href="http://book.douban.com/subject/25928983/" target="_blank" rel="external">《周鸿祎自述》</a></h4><ul>
+<li><p>《乔布斯传》这本书就不再多说了。传记类的书籍还有很多，有些是人物志集结出版的图书，也非常值得阅读。</p>
+</li>
+<li><p>《周鸿祎自传》这本书是实习期间借阅的Leader的图书。这本自述，再加上知乎最近开始黑百度/阿里，顺道宣扬下360的黑科技，使我对周鸿祎的感官改变不少。印象比较深刻的是书里周鸿祎提到新老交替的问题，周希望下一代互联网人能独立起来，不希望在互联网的论坛上老是见到老人。能说出这一点，我表示尤为钦佩。</p>
+</li>
+<li><p>之所以特别推荐阅读这些大佬的传记，是因为我在阅读的过程中发现，写传记的人（国内）大多是第一代关注互联网的媒体人，传主本人也是第一代互联网人，于是乎在传记里不得不提到上个世纪九十年代发生的那些故事，对我理解国内互联网的发展脉络尤为有用。</p>
+</li>
+<li><p>说到这里再多推荐一个人，「博客中国」的方兴东，他之前参与编写的一些书籍对那个时代的发展有不少的论述。如果想了解中国互联网世纪之交前后的的故事，可以找来他的书或者文章读一读。上面也提到过，方兴东在2004年主编的一套《IT史记》可以看看，人物志集结，书比较老，行文略为浮夸，所以不推荐精度。</p>
+</li>
+<li><p>除此之外，读几本传记类的书籍，也会有一些其他的帮助，至少知道雷军是武大科班出身，两年完成学业；刘强东人大出身，而不仅仅是从农村跑出来的乡巴佬。毕竟每一个有所成就的人必定有所依仗。</p>
+</li>
+</ul>
+<h4 id="互联网的历史：《浪潮之巅》"><a href="#互联网的历史：《浪潮之巅》" class="headerlink" title="互联网的历史：《浪潮之巅》"></a>互联网的历史：<a href="http://book.douban.com/subject/6709783/" target="_blank" rel="external">《浪潮之巅》</a></h4><ul>
+<li><p>吴军博士的作品，据传他的《数学之美》也是一本好书。《浪潮之巅》总体上是按照公司来分章节写作的，严格来说应该属于讲述计算机科学在商业领域的兴衰起伏的故事，而不是单纯讲互联网发展的历史。极力推荐阅读。</p>
+</li>
+<li><p>类似的书籍还有很多，比如雷军特别喜欢的那本<a href="http://book.douban.com/subject/26306584/" target="_blank" rel="external">《硅谷之火》</a>，前几天发现去年出了新的版本。除此之外，比较遗憾的是没有发现质量比较高地描述「越过长城走向世界」（Across the Great Wall we can reach every corner in the world）以来中国互联网发展脉络的书籍（因为中国互联网的发展时间相对较短、所以特别希望有编年史结构的书籍出现），如果你看过这方面不错的书籍欢迎推荐给我。</p>
+</li>
+</ul>
+<h4 id="《暗时间》"><a href="#《暗时间》" class="headerlink" title="《暗时间》"></a><a href="http://book.douban.com/subject/6709809/" target="_blank" rel="external">《暗时间》</a></h4><ul>
+<li><p>国内一直流行时间管理相关的书籍，我不是很喜欢这种类型的畅销书，包括李笑来广为流传的那本《把时间当朋友》。</p>
+</li>
+<li><p>相对来说，《暗时间》虽然一个博文合集，质量上并不低；其次推荐这本书还因为其有相当多的引用内容，意味着可以按图索骥找到更多心理学/逻辑学的书籍。作者的博客在「媒体和博客」篇里有介绍，不再多说。</p>
+</li>
+<li><p>毕竟心理学也是一门学科，一本书洋洋洒洒写了几十万字全是自己的经验和想法，没有理论支撑，或者全然是案例，很难让人信服。从这个角度上来说，阅读畅销书籍的时候有选择地阅读专业人士写作的书籍，比较容易能够保证书籍的质量。</p>
+</li>
+</ul>
+<h4 id="克里斯坦森：颠覆式创新"><a href="#克里斯坦森：颠覆式创新" class="headerlink" title="克里斯坦森：颠覆式创新"></a><a href="http://book.douban.com/subject/25807982/" target="_blank" rel="external">克里斯坦森</a>：颠覆式创新</h4><ul>
+<li><p>他的书籍还没有阅读过，暂时放在我的待读书单里面。之前在阅读《周鸿祎自述》一书的时候，里面多次提到「颠覆式创新」这个概念，在《缔造企鹅》一书里作者也引用了一些克里斯坦森的著作。再加上公司的一位Leader多次提到「颠覆式创新」，就留意了一下。推荐一个链接：<a href="http://read.douban.com/ebook/5751423/" title="豆瓣阅读" target="_blank" rel="external">我只有一套理论</a>。</p>
+</li>
+<li><p>还有一本《<a href="http://book.douban.com/subject/10945606/" target="_blank" rel="external">精益创业</a>》，没读过，Leader在分享会上讲到过。准备空余时间多的时候拿来翻翻。</p>
+</li>
+</ul>
+<h3 id="（三）其他"><a href="#（三）其他" class="headerlink" title="（三）其他"></a>（三）其他</h3><ul>
+<li><p>开篇说过，这个书单本身是想做成一个产品经理的推荐阅读书单，写到最后发现写篇了，大致成了一个扩展书单，索性就再发散一下，推荐一些其他的书籍。</p>
+</li>
+<li><p>《<a href="UNIX编程艺术">UNIX编程艺术</a>》&amp;《<a href="http://book.douban.com/subject/7564417/" target="_blank" rel="external">LINUX/UNIX设计思想</a>》——第一本书的作者还写过一本书《<a href="http://book.douban.com/subject/25881855/" target="_blank" rel="external">大教堂和集市</a>》，讲开源运动的，如果对开源运动特别感兴趣推荐阅读。作者Eric S. Raymond算是老一辈的黑客，他的这两本书我都属于挑自己感兴趣的部分阅读，有些地方实在是不了解背景加上技术能力略差，就直接跳过了。这两本书应该是比较经典地描写开源运动以及较早的UNIX的设计思想的书籍。后面那本《Linux/Unix设计思想》比较薄，很容易翻完，图灵出版的，读完后发现有很多不同领域的东西都有某种相通的部分，例如这本书里的「小即是美」、互联网思维里面的「极致思维」、产品快速迭代讲究的「极简思维」等等。</p>
+</li>
+<li><p>《<a href="http://book.douban.com/subject/6021440/" target="_blank" rel="external">黑客与画家</a>》——作者保罗·格雷厄姆是Y Combinator（YC）创始人，算得上言行合一的一位人物，阮一峰翻译，质量上有保证。不过想要理解内容还是需要一定的技术背景，我因为技术功底略差，有些部分读得云里雾里，所以有兴趣的文科生可以跳着看这本书。阮一峰的博客上有这本书的一些内容，链接如下：《<a href="http://www.ruanyifeng.com/docs/pg/" target="_blank" rel="external">Paul Graham文选</a>》。</p>
+</li>
+<li><p>《<a href="http://book.douban.com/subject/10799984/" target="_blank" rel="external">大数据</a>》——以大数据为名的书籍这几年比较多了，这本书算是较早的一本。不过这本书应该算是历史书，我推荐这本书并不是因为大数据，而是其中对美国「数据开放」历史的叙述，行文流畅，值得一读。同时推荐观看“万维网之父”<a href="http://www.ted.com/speakers/tim_berners_lee" target="_blank" rel="external"> Tim Berners-Lee 在TED</a>的几个演说，2010年关于「open data」的演说尤为推荐。扯远一点，数据挖掘以及数据开放，都面临着隐私权的问题；这也是知乎上经常调侃用户不看各种「使用条款」的原因，注册时候确定确定再确定，相当于把自己的隐私拱手想让。比较遗憾的是，「数据开放」在中国并没有实质性进展。</p>
+</li>
+<li><p>《<a href="http://book.douban.com/subject/10546925/" target="_blank" rel="external">白帽子讲WEB安全</a>》——很有意思一本书，作者是阿里的安全工程师，微信公众号刚上线的时候，作者的公众号「道哥的黑板报」有几篇干货可以阅读（在媒体和博客里有链接）。这本书基本上涵盖了web领域的大多数入侵技术，当然书里不会教你怎么入侵。对安全有兴趣的同学可以阅读。印象中这本书出版的前后的那段时间，<a href="http://security.tencent.com/" target="_blank" rel="external">腾讯</a>、<a href="http://aq.163.com/index.html" target="_blank" rel="external">网易</a>等大一点的互联网公司都成立了自己的应急响应中心，加上安全这个领域在中国很特殊，很多老一辈人都是黑帽子转白帽子，出身野路子的比较多，也不讲究科班出身。较早转型做白帽子的有「知道创宇」和「乌云」两家。另外，搞安全的年轻人比较多，这个领域又比较刺激，所以有各种大大小小的团队，泡这些团队内部论坛很发现很多哭笑不得的漏洞，感叹大千世界无奇不有。</p>
+</li>
+<li><p>社科类的图书：推荐<a href="http://book.douban.com/search/%E5%88%98%E7%91%9C" target="_blank" rel="external">刘瑜</a>、<a href="http://book.douban.com/search/%E7%86%8A%E5%9F%B9%E4%BA%91" target="_blank" rel="external">熊培云</a>和<a href="http://book.douban.com/search/%E6%9E%97%E8%BE%BE" target="_blank" rel="external">林达</a>三位作者，内容比较浅显，读完之后可以根据内容选择深入阅读一些原本。另外特别推荐蔡定剑的《<a href="http://book.douban.com/subject/4240969/" target="_blank" rel="external">民主是一种现代生活</a>》，我读过的国内讲民主最好的的一本书。法学专业除了帮助我形成一定的逻辑思维，还有一个意外收获就是学会了读原本，即使读不懂外文，也要找来好的译本读一读。之所以不喜欢中信出版社的书籍，不是因为选材，而是因为大多数书籍的翻译质量实在惨不忍睹。读原本有两个好处，一是不用嚼别人吃过的饭，二是读原本实在是畅快，别人理解的毕竟是别人的想法，读一读原本会有属于自己的体悟。</p>
+</li>
+<li><p>离职之前Leader推荐我阅读小米的那两本《<a href="http://book.douban.com/subject/25942507/" target="_blank" rel="external">参与感</a>》和《<a href="http://book.douban.com/subject/26330959/" target="_blank" rel="external">超预期</a>》，我对其的了解只有那句“口碑的真谛是超越用户的期望值via雷军”。还没有阅读，值得一提的是，这两本相对来说都是比较新的书，读新书是一种学习，但是如果找到合适的旧书买来补档学习，也是一个很好的经历。</p>
+</li>
+</ul>
+<p>如果你对某些作者的作品特别喜欢，可以持续关注这些作者的新书，及时阅读；一般而言，这样可以在一定程度上保证阅读的质量。</p>
+<h3 id="（四）通识类书籍"><a href="#（四）通识类书籍" class="headerlink" title="（四）通识类书籍"></a>（四）通识类书籍</h3><h4 id="文学类：《文学回忆录》"><a href="#文学类：《文学回忆录》" class="headerlink" title="文学类：《文学回忆录》"></a>文学类：<a href="http://book.douban.com/subject/20440644/" target="_blank" rel="external">《文学回忆录》</a></h4><ul>
+<li>根据陈丹青笔记整理的木心老师的讲义，极为精彩。从古希腊罗马神话一路讲到拉美的魔幻现实主义，极为精彩。看讲义，你会真的以为木心是在历史中游走，讲拜伦、讲魏晋、讲巴黎、讲日本文学，妙不可言。更妙的是，这本书本身是木心讲课时的讲义，虽然按照时间顺序从前到后，但是整体上看各章节之间的联系没有那么紧密，所以完全可以先选择自己特别感兴趣的一些内容阅读，最后再补上没阅读过的内容。给我的感觉，读每一章都很舒畅。</li>
+</ul>
+<h4 id="哲学类：《西方哲学史》"><a href="#哲学类：《西方哲学史》" class="headerlink" title="哲学类：《西方哲学史》"></a>哲学类：<a href="http://book.douban.com/subject/2283920/" target="_blank" rel="external">《西方哲学史》</a></h4><ul>
+<li>一直以来对哲学比较感兴趣，也只到感兴趣这个地步。偶尔翻过一些尼采等人的著作，看不大懂。罗素大师的这本《西方哲学史》的结构很像木心的文学回忆录，从苏格拉底一路讲到逻辑分析哲学。虽然我并没有从头到尾读完，但并不是很推荐跳读，建议稍微规划下逐步阅读，以掌握哲学的发展脉络。同《文学回忆录》，极力推荐！另，商务印书馆出版的15卷版的《罗素文集》中的第七部内容是《西方哲学史》，可以借阅。</li>
+</ul>
+<h4 id="人工智能：《哥德尔、艾舍尔、巴赫：集异璧之大成》"><a href="#人工智能：《哥德尔、艾舍尔、巴赫：集异璧之大成》" class="headerlink" title="人工智能：《哥德尔、艾舍尔、巴赫：集异璧之大成》"></a>人工智能：<a href="http://book.douban.com/subject/1291204/" target="_blank" rel="external">《哥德尔、艾舍尔、巴赫：集异璧之大成》</a></h4><ul>
+<li>大学四年没有再认真接触过数学，关于数学的部分基本略过没看，重点看了第十七、十八章人工智能相关的内容。可以从另一个角度了解下「图灵测试」。很有必要一读，即使文科生也可以读读其中通识的部分。引用书中的一句话：“人工智能工作的奇异之处就是试图将一长串严格形式化的规则放在一起，用这些规则教给不灵活的机器如何能灵活起来。”总而言之这是一本非常值得了解的书籍，关于人工智能还推荐阅读谢熊猫君在知乎翻译的一篇文章：<a href="http://zhuanlan.zhihu.com/xiepanda/19950456" target="_blank" rel="external">为什么最近有很多名人，比如比尔盖茨，马斯克、霍金等，让人们警惕人工智能？</a></li>
+</ul>
+<h4 id="其他：《上帝掷骰子吗》、《三体》"><a href="#其他：《上帝掷骰子吗》、《三体》" class="headerlink" title="其他：《上帝掷骰子吗》、《三体》"></a>其他：<a href="http://book.douban.com/subject/1467022/" target="_blank" rel="external">《上帝掷骰子吗》</a>、<a href="http://book.douban.com/subject_search?search_text=%E4%B8%89%E4%BD%93" target="_blank" rel="external">《三体》</a></h4><ul>
+<li><p>前者是国内少有的精品科普读物，非常值得一读，以了解量子力学的相关内容。豆瓣有人评论说这本书科学史的程度大于其科普的程度，不过也足够非物理专业的人了解一些量子力学相关的内容了。除了这本书，霍金的科普读物也值得阅读。这里顺便推荐《三体》，只是作为粉丝夹带的私货，高三最后一个月的晚上都献给这本书了。</p>
+</li>
+<li><p>说到这里多提一句，物理学的科普读物看看就好了，千万不要看完之后胡思乱想认为自己从物理学的角度走到了哲学，超越了一众科学家。看科普是好事，看成民科就是坏事。举个例子：<a href="http://www.duichenlun.com/" target="_blank" rel="external">《对称论》</a>。另外，像<a href="http://book.douban.com/subject/4242172/" target="_blank" rel="external">《天才在做疯子在右》</a>之类的书籍，建议少看为妙。</p>
+</li>
+</ul>
+<p>通识类以及科普类的书籍非常值得一读，诸如《<a href="http://book.douban.com/subject/1102715/" target="_blank" rel="external">从一到无穷大</a>》、《<a href="http://book.douban.com/subject/1320282/" target="_blank" rel="external">什么是数学</a>》、《<a href="http://book.douban.com/subject/2256351/" target="_blank" rel="external">乌合之众</a>》等等。很多时候的通识类书籍深入一点就涉及到相应的社会科学或者自然科学知识，多读一读非常有好处。很多人都说要思考，并且不能错误地思考，我想阅读更多的通识类/科普类书籍有助于自己更好地思考。</p>
+<p>抛开这些不谈，一本好的通识读物，读进去之后肯定是享受的。相应地，产品经理的好奇心也体现在阅读这一点上，在好奇心地驱动下不断阅读新领域的、不同领域的、原本领域更为深入的书籍。这一点尤为重要，套用知乎上的某个回答，最可怕的是「你不知道自己不知道哪些东西」，这一点完全构成了一个人的认知盲区，造就了一个人的偏见。</p>
+<p>阅读是一件值得享受的事情，但也不是每一个人都喜欢和习惯从阅读中学习，这一点是强迫不来的。换句话，我并不期望这篇文章能够让更多地人开始阅读，而更希望更多人开始学习；阅读，只是学习地一种方式，仅此而已。</p>
+<hr>
+<h2 id="八、媒体和博客"><a href="#八、媒体和博客" class="headerlink" title="八、媒体和博客"></a>八、媒体和博客</h2><p>这个章节性质比较简单，推荐一些科技媒体和独立博客，以及我比较喜欢的几个播客。最后会给出整理好的订阅可用的OPML文件，方便有需要的同学导入自己的RSS阅读器。（OPML文件下载地址：<a href="http://pan.baidu.com/s/1i3Efi4X" target="_blank" rel="external">百度网盘</a>）</p>
+<p>这篇文章共四部分：科技媒体、产品经理博客、独立博客、播客。如果你也经常关注科技媒体，第一部分可忽略，直接跳过阅读剩下的内容。</p>
+<h3 id="（一）科技媒体"><a href="#（一）科技媒体" class="headerlink" title="（一）科技媒体"></a>（一）科技媒体</h3><p>在知乎的一个回答中，<a href="http://www.zhihu.com/question/20489143/answer/15273003" target="_blank" rel="external">@黄赞志</a>提到，即使是初入行的产品经理，也要有一定的大局观，便于跟Leader沟通。这一点我非常认同的，阅读36氪等科技博客并不一定就是CEO要做的事情，适当了解一些行业的信息，有助于把握Leader/BOSS的思路，降低沟通成本。</p>
+<h4 id="知乎"><a href="#知乎" class="headerlink" title="知乎"></a><a href="http://www.zhihu.com/" target="_blank" rel="external">知乎</a></h4><ul>
+<li><p>不再介绍，「<a href="http://www.zhihu.com/topic/19552131" target="_blank" rel="external">产品</a>」、「<a href="http://www.zhihu.com/topic/19551325" target="_blank" rel="external">产品经理</a>」、「<a href="http://www.zhihu.com/topic/19551958" target="_blank" rel="external">产品运营</a>」、「<a href="http://www.zhihu.com/topic/19551625" target="_blank" rel="external">产品设计</a>」「<a href="http://www.zhihu.com/topic/19556231" target="_blank" rel="external">交互设计</a>」等话题都有很多精华回答，可以补档学习。</p>
+</li>
+<li><p>新浪微博/微信公众号也都有很多可以学习的资源和获取资讯的途径，例如「小道消息」、「道哥的黑板报」（推荐阅读他的<a href="http://taosay.net/index.php/tag/%E4%B8%AD%E5%9B%BD%E9%BB%91%E5%AE%A2%E4%BC%A0%E8%AF%B4/" target="_blank" rel="external">中国黑客传说系列</a>）、「100offer」、「3W互联网深度精选」等等，不再一一推荐。值得一提的是，简书里也有很多TMT相关的内容，前段时间<a href="http://www.yinwang.org/" target="_blank" rel="external">王垠</a>也开始在<a href="http://www.jianshu.com/users/b1dd2b2c87a8/latest_articles" target="_blank" rel="external">简书</a>写作，有点出乎意料。</p>
+</li>
+<li><p>最后记得掌握主动，敢于利用微博/微信/电子邮件向产品经理前辈请教，交流互动也是学习的一个过程。</p>
+</li>
+</ul>
+<p>注：下面的科技媒体基本上都有对应的微信公众号/微博，可以自行订阅/关注，这里不再整理他们的公众号二维码/微博地址。</p>
+<h4 id="36氪"><a href="#36氪" class="headerlink" title="36氪"></a><a href="http://36kr.com/" target="_blank" rel="external">36氪</a></h4><ul>
+<li>一个比较成熟的关注创业的科技媒体。</li>
+</ul>
+<h4 id="爱范儿"><a href="#爱范儿" class="headerlink" title="爱范儿"></a><a href="http://www.ifanr.com/" target="_blank" rel="external">爱范儿</a></h4><ul>
+<li>偏向关注移动相关的科技媒体。</li>
+</ul>
+<h4 id="虎嗅"><a href="#虎嗅" class="headerlink" title="虎嗅"></a><a href="http://www.huxiu.com/" target="_blank" rel="external">虎嗅</a></h4><ul>
+<li>不好评价，个人不是很喜欢其风格，不过有时候会在其他地方看到转载自虎嗅的干货。</li>
+</ul>
+<h4 id="i黑马"><a href="#i黑马" class="headerlink" title="i黑马"></a><a href="http://www.iheima.com/" target="_blank" rel="external">i黑马</a></h4><ul>
+<li>关注创业，感觉风格比较浮夸，关注i黑马是因为之前其做过一个90后创业家的专题，有马佳佳等，印象比较深刻。</li>
+</ul>
+<h4 id="品玩（PingWest）"><a href="#品玩（PingWest）" class="headerlink" title="品玩（PingWest）"></a><a href="http://www.pingwest.com/" target="_blank" rel="external">品玩（PingWest）</a></h4><ul>
+<li>个人感觉比较偏硬件，有段时间特斯拉相关的信息都是在这里找到的。</li>
+</ul>
+<p>以上这五个媒体是我比较常关注的，相对来说属于综合性质的科技媒体，下面还有一些关注特定领域或者我并不经常阅读的科技媒体。</p>
+<h4 id="极客公园"><a href="#极客公园" class="headerlink" title="极客公园"></a><a href="http://www.geekpark.net/" target="_blank" rel="external">极客公园</a></h4><ul>
+<li>不是极客学院；比较早的极客媒体，不过在我脑子里存在感比较低，不常关注。</li>
+</ul>
+<h4 id="雷锋网"><a href="#雷锋网" class="headerlink" title="雷锋网"></a><a href="http://www.leiphone.com/" target="_blank" rel="external">雷锋网</a></h4><ul>
+<li>关注智能硬件，单纯因为名字不喜欢。</li>
+</ul>
+<h4 id="钛媒体"><a href="#钛媒体" class="headerlink" title="钛媒体"></a><a href="http://www.tmtpost.com/" target="_blank" rel="external">钛媒体</a></h4><ul>
+<li>又一家科技媒体，单纯因为名字不喜欢。</li>
+</ul>
+<h4 id="Engadget（瘾科技）"><a href="#Engadget（瘾科技）" class="headerlink" title="Engadget（瘾科技）"></a><a href="http://cn.engadget.com/" target="_blank" rel="external">Engadget（瘾科技）</a></h4><ul>
+<li>关注硬件，感觉质量还是比较高的。</li>
+</ul>
+<h4 id="cnBeta"><a href="#cnBeta" class="headerlink" title="cnBeta"></a><a href="http://www.cnbeta.com/" target="_blank" rel="external">cnBeta</a></h4><ul>
+<li>老牌资讯站，可靠。同样老牌的还有个<a href="http://www.techweb.com.cn/" target="_blank" rel="external">TechWeb</a>。</li>
+</ul>
+<p>接下来推荐一个比较偏门的。</p>
+<h4 id="FreeBuf"><a href="#FreeBuf" class="headerlink" title="FreeBuf"></a><a href="http://www.freebuf.com/" target="_blank" rel="external">FreeBuf</a></h4><ul>
+<li>关注黑客和极客，对安全领域有兴趣的一定记得订阅，即使不懂安全相关的技术，看新闻有时候也会很欢乐。强力推荐。如果有对这方面特别感兴趣，可以关注「<a href="http://drops.wooyun.org/" target="_blank" rel="external">乌云知识库</a>」。</li>
+</ul>
+<p>除了上面提到的这些科技媒体，还有传统门户中的「<a href="http://tech.sina.com.cn/" target="_blank" rel="external">新浪科技</a>」、「<a href="http://tech.qq.com/" target="_blank" rel="external">腾讯科技</a>」等等，以及各有侧重的「<a href="http://tech2ipo.com/" target="_blank" rel="external">TECH2IPO创见</a>」、「<a href="http://www.sootoo.com/" target="_blank" rel="external">速途网</a>」等等。不再一一叙述，找几个自己喜欢的订阅就好。</p>
+<p>这里推荐一个网址导航：<a href="http://gate.guokr.com/" target="_blank" rel="external">果壳任意门</a>，里面有很多很有意思也很有用的网站，可以自己探索。</p>
+<h3 id="（二）产品经理博客"><a href="#（二）产品经理博客" class="headerlink" title="（二）产品经理博客"></a>（二）产品经理博客</h3><h4 id="互联网早读课"><a href="#互联网早读课" class="headerlink" title="互联网早读课"></a><a href="http://zaodula.com/" target="_blank" rel="external">互联网早读课</a></h4><ul>
+<li>今年年初开始订阅，每天一篇，务实，感觉比较靠谱，值得订阅，算是一个学习充电的好途径。</li>
+</ul>
+<h4 id="互联网那点事"><a href="#互联网那点事" class="headerlink" title="互联网那点事"></a><a href="http://www.alibuybuy.com/" target="_blank" rel="external">互联网那点事</a></h4><ul>
+<li>不是很喜欢，只是偶尔想起来去订阅里翻翻。</li>
+</ul>
+<h4 id="人人都是产品经理"><a href="#人人都是产品经理" class="headerlink" title="人人都是产品经理"></a><a href="http://www.woshipm.com/" target="_blank" rel="external">人人都是产品经理</a></h4><ul>
+<li>质量倒是还可以，就是感觉太务虚，不算太喜欢。</li>
+</ul>
+<p>类似科技媒体的产品经理博客就只列出这三个，其他的还有「<a href="http://www.masterchat.cn/" target="_blank" rel="external">产品邦</a>」、「<a href="">产品100</a>」等等，腾讯的「<a href="http://tech.qq.com/biznext/bizlist.htm" target="_blank" rel="external">企鹅智酷</a>」和「<a href="http://djt.qq.com/" target="_blank" rel="external">腾讯大讲堂</a>」也值得关注。</p>
+<p>有收集强迫症的同学可以收藏三个书签：「<a href="http://dh.woshipm.com/" target="_blank" rel="external">产品经理网址导航</a>」、「<a href="http://nav80.com/" target="_blank" rel="external">设计师网址导航</a>」、「<a href="http://www.daqianduan.com/nav" target="_blank" rel="external">前端网址导航</a>」。</p>
+<p>下面推荐我关注的一些大公司的专业UE/UX以及前端/交互团队。我最初是从<a href="http://cdc.tencent.com/" target="_blank" rel="external">腾讯CDC</a>团队一个个跟过去的，CDC是我关注最久也是最向往的一个团队，不过<a href="http://www.zhihu.com/question/21065990" target="_blank" rel="external">据说</a>几年前拆分重组之后职能有所变化，知乎上还有一些<a href="http://www.zhihu.com/question/21043124" target="_blank" rel="external">八卦</a>。</p>
+<p>其他还有网易/百度的一些专业团队，有心的直接从CDC的友情链接一个个跳过去就能找全。顺便提一句360的前端团队<a href="http://www.75team.com/" target="_blank" rel="external">奇舞团</a>，他们还做了一个奇舞周刊，学习前端知识的时候有订阅；不过总是感觉他们团队都是男生，好奇为什么起了一个这么女性化的名字，冏。</p>
+<blockquote>
+<ul>
+<li>一些<a href="http://www.cnblogs.com/shaweng/p/3825689.html" target="_blank" rel="external">名词区分</a>：<ol>
+<li>UI (User Interface)：用户界面</li>
+<li>UE/UX (User Experience)：用户体验</li>
+<li>ID (Interaction design)：交互设计</li>
+<li>UID (User Interface Design)：用户界面设计</li>
+<li>UED (User-Experience Design)：用户体验设计</li>
+<li>UCD (User-Centered Design)：以用户为中心的设计 </li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p>声明，下面这部分严格意义上来说不完全是产品经理的范围，是之前出于个人兴趣了解的一些UE/UX以及前端/交互团队团队博客，有兴趣了解的可以关注。主要推荐的是腾迅系几个团队的博客，其他公司内部专业团队的博客可以从友情链接很方便地跟过去，不再详细介绍。</p>
+<h4 id="腾讯CDC团队"><a href="#腾讯CDC团队" class="headerlink" title="腾讯CDC团队"></a><a href="http://cdc.tencent.com/" target="_blank" rel="external">腾讯CDC团队</a></h4><ul>
+<li>全称Customer Research &amp; User Experience Design Center（用户研究与体验设计中心）。出版过<a href="http://book.douban.com/subject/20471302/" target="_blank" rel="external">《在你身边，为你设计》</a>一书，推荐阅读这本书。感觉CDC团队偏向桌面应用和WEB端，现在似乎没有几年前活跃了。</li>
+</ul>
+<h4 id="腾讯ISUX"><a href="#腾讯ISUX" class="headerlink" title="腾讯ISUX"></a><a href="http://isux.tencent.com/" target="_blank" rel="external">腾讯ISUX</a></h4><ul>
+<li>全称Internet Social User Experience（社交用户体验设计）。转译过<a href="http://isux.tencent.com/?s=%E4%BA%BA%E6%9C%BA%E7%95%8C%E9%9D%A2%E6%8C%87%E5%8D%97" target="_blank" rel="external">《iOS 8人机界面指南》</a>，实习期间补档学习，避免画原型的时候出现低级错误。另外，ISUX博客里前端设计相关的文章质量很高。另外推荐一下ISUX团队一名成员的博客：<a href="http://www.beforweb.com/" target="_blank" rel="external">Be For Web</a>，原创译文博客，质量很高。</li>
+</ul>
+<h4 id="腾讯MXD"><a href="#腾讯MXD" class="headerlink" title="腾讯MXD"></a><a href="http://mxd.tencent.com/" target="_blank" rel="external">腾讯MXD</a></h4><ul>
+<li>全称Mobile Experience Design Center（移动互联网设计团队）。移动设计相关的文章很不错，翻译了不少有质量的文章。</li>
+</ul>
+<h4 id="腾讯-Alloy-Team"><a href="#腾讯-Alloy-Team" class="headerlink" title="腾讯 Alloy Team"></a><a href="http://www.alloyteam.com/" target="_blank" rel="external">腾讯 Alloy Team</a></h4><ul>
+<li>腾讯Web前端团队，对前端有兴趣的时候看过一段时间，发现没开发天赋之后就不再关注了。</li>
+</ul>
+<h4 id="腾讯TGideas"><a href="#腾讯TGideas" class="headerlink" title="腾讯TGideas"></a><a href="http://tgideas.qq.com/" target="_blank" rel="external">腾讯TGideas</a></h4><ul>
+<li>腾讯游戏官方设计团队，关注不多。</li>
+</ul>
+<h4 id="京东JDC"><a href="#京东JDC" class="headerlink" title="京东JDC"></a><a href="http://jdc.jd.com/" target="_blank" rel="external">京东JDC</a></h4><ul>
+<li>原来的腾讯EDC——E-Commerce User Experience Design（电商用户体验设计部），现在的京东设计中心。没有深入关注过，只是之前搜索到他家一篇文章所以有印象。</li>
+</ul>
+<p>腾讯的CDC/ISUX/MXD的博客文章是读的比较多的，其他一些团队，不在详细展开，下面给一个简单的列表，注意友情链接很容易能够找到其他的团队：</p>
+<ol>
+<li><a href="http://uedc.163.com/" target="_blank" rel="external">网易UED</a></li>
+<li><a href="http://ued.baidu.com/" target="_blank" rel="external">百度UED</a></li>
+<li><a href="http://ued.taobao.com/" target="_blank" rel="external">淘宝UED</a></li>
+<li><a href="http://fex.baidu.com/" target="_blank" rel="external">百度FEX</a></li>
+<li><a href="http://www.75team.com/" target="_blank" rel="external">360奇舞团</a></li>
+<li><a href="http://mux.alimama.com/" target="_blank" rel="external">阿里妈妈MUX</a></li>
+<li><a href="http://www.aliued.cn/" target="_blank" rel="external">阿里巴巴UED</a></li>
+<li><a href="http://ifed.me/" target="_blank" rel="external">蚂蚁金服：互联网金融体验设计中心</a></li>
+</ol>
+<p>如果还有兴趣了解其他的，可以在上面这些博客里翻翻友情链接，也可以在这个<a href="http://www.daqianduan.com/nav#2" target="_blank" rel="external">网站导航</a>里找到。</p>
+<h3 id="（三）独立博客"><a href="#（三）独立博客" class="headerlink" title="（三）独立博客"></a>（三）独立博客</h3><p>下面这些博客只有一部分是产品经理的博客，主要是实习期间补课阅读的一些博客；另外一些有程序员或者设计师，适当了解一下其他职业的想法也是很有必要的。</p>
+<h4 id="胡澈"><a href="#胡澈" class="headerlink" title="胡澈"></a><a href="http://huchao.me/" target="_blank" rel="external">胡澈</a></h4><ul>
+<li>前腾讯产品经理，《缔造企鹅》一书作者。推荐他的两个PPT演讲：《<a href="http://huchao.me/product-from-zero-to-one" target="_blank" rel="external">从0到1：我是如何做产品的</a>》、《<a href="http://huchao.me/what-are-product-manager-thinking-about" target="_blank" rel="external">产品经理在想什么</a>》。</li>
+</ul>
+<h4 id="苏杰"><a href="#苏杰" class="headerlink" title="苏杰"></a><a href="http://iamsujie.com/" target="_blank" rel="external">苏杰</a></h4><ul>
+<li>前阿里巴巴产品经理，《人人都是产品经理》一书作者。推荐他的配书文档《<a href="http://iamsujie.com/9000/9078/" target="_blank" rel="external">产品经理的常用文档</a>》，方便学习格式化的文案。</li>
+</ul>
+<h4 id="王垠"><a href="#王垠" class="headerlink" title="王垠"></a><a href="http://www.yinwang.org/" target="_blank" rel="external">王垠</a></h4><ul>
+<li>这个就不再介绍了，我对他不是很了解，只是之前听说过很多关于他的事迹。他的博客并不完全是技术相关的，有些文章看看还是很有趣的。</li>
+</ul>
+<h4 id="学而时嘻之"><a href="#学而时嘻之" class="headerlink" title="学而时嘻之"></a><a href="http://www.geekonomics10000.com/" target="_blank" rel="external">学而时嘻之</a></h4><ul>
+<li>文科生可以多读一读，学一学理科生思维也是好的。</li>
+</ul>
+<h4 id="劣松"><a href="#劣松" class="headerlink" title="劣松"></a><a href="http://liesong.me/" target="_blank" rel="external">劣松</a></h4><ul>
+<li>网易的产品经理。</li>
+</ul>
+<h4 id="郎启旭"><a href="#郎启旭" class="headerlink" title="郎启旭"></a><a href="http://langqixu.com/" target="_blank" rel="external">郎启旭</a></h4><ul>
+<li>好像是UC的产品设计师。翻译过《<a href="http://langqixu.com/post/ios-human-interface-guidelines-chinese" target="_blank" rel="external">iOS 7人机界面准则</a>》，有PDF版的。</li>
+</ul>
+<h4 id="木遥"><a href="#木遥" class="headerlink" title="木遥"></a><a href="http://blog.farmostwood.net/" target="_blank" rel="external">木遥</a></h4><ul>
+<li>学数学的，不过博文的文笔很好，不像理科生。</li>
+</ul>
+<h4 id="陈皓"><a href="#陈皓" class="headerlink" title="陈皓"></a><a href="http://coolshell.cn/" target="_blank" rel="external">陈皓</a></h4><ul>
+<li>以前在亚马逊，现在在阿里。很有意思一个工程师，博文不全是关于技术的，可以关注下。</li>
+</ul>
+<h4 id="阮一峰"><a href="#阮一峰" class="headerlink" title="阮一峰"></a><a href="http://www.ruanyifeng.com/blog/" target="_blank" rel="external">阮一峰</a></h4><ul>
+<li>除了技术，还会写一些奇奇怪怪的东西，比如<a href="http://www.ruanyifeng.com/blog/2015/01/border-of-copyright.html" target="_blank" rel="external">版权</a>、<a href="http://www.ruanyifeng.com/blog/2014/11/basic-charts.html" target="_blank" rel="external">图表</a>之类的。推荐订阅。</li>
+</ul>
+<h4 id="刘未鹏"><a href="#刘未鹏" class="headerlink" title="刘未鹏"></a><a href="http://mindhacks.cn/" target="_blank" rel="external">刘未鹏</a></h4><ul>
+<li>《<a href="http://book.douban.com/subject/6709809/" target="_blank" rel="external">暗时间</a>》作者，微软工程师。博客本来已经两三年没更新了，今年年初诈尸一下，把《逃出你的肖申克》系列完结了。可以直接阅读他的那本《暗时间》，博客右侧推荐的几个<a href="http://www.douban.com/people/pongba/doulists/all" target="_blank" rel="external">豆列</a>都相当不错。</li>
+</ul>
+<p>独立博客的订阅需要慢慢地搜集，某天看到一篇文章不错订阅作者的博客，积累下来就形成了自己的信息源和学习资源，是一个非常好的途径，这里只是列举了几个长期以来关注或者近期发现的很不错的独立博客。如果想要找程序员的博客，可以直接从「<a href="http://blogwall.us/" target="_blank" rel="external">程序员博客墙</a>」找到一些不错的技术博客。产品经理我暂时没有找到合适的独立博客导航页面，之后有机会的话尝试做一个。</p>
+<h3 id="（四）播客推荐"><a href="#（四）播客推荐" class="headerlink" title="（四）播客推荐"></a>（四）播客推荐</h3><p>手头的iPad最常用的功能就是「播客」，这里不多做推荐，只推荐我非常喜欢的几款播客。</p>
+<h4 id="IT公论"><a href="#IT公论" class="headerlink" title="IT公论"></a><a href="http://ipn.li/itgonglun/" target="_blank" rel="external">IT公论</a></h4><ul>
+<li><p><a href="http://apple4us.com/" target="_blank" rel="external">APPLE4US</a>和字节社的李如一主播的一款播客，搭档是Rio。感觉Rio声音有点小受，不过蛮好听的。评论部分比较好，视野比较开阔，实习期间上班路上听，很不错。对年初那期<a href="http://ipn.li/itgonglun/134/" target="_blank" rel="external">《终究悲哀的电子邮件》</a>印象深刻。</p>
+</li>
+<li><p>值得一提的是，IPN播客网络旗下的另外几款播客也值得订阅，「<a href="https://ipn.li/taiyilaile/" target="_blank" rel="external">太医来了</a>」比较喜欢，「<a href="https://ipn.li/kernelpanic/" target="_blank" rel="external">内核恐慌</a>」有一期请来了我非常喜欢的<a href="http://blog.farmostwood.net/" target="_blank" rel="external">木遥</a>做嘉宾，同样推荐。</p>
+</li>
+</ul>
+<h4 id="Teahour-fm"><a href="#Teahour-fm" class="headerlink" title="Teahour.fm"></a><a href="http://teahour.fm/" target="_blank" rel="external">Teahour.fm</a></h4><ul>
+<li><p>对最初几期的印象比较深刻，中间有很长一段时间没听，年初又想起来再去找新出的播客，有惊喜，特别是那期《<a href="http://teahour.fm/2015/01/29/growth-hacking-in-strikingly.html" target="_blank" rel="external">Strikingly 的 Growth Hacking 之路</a>》，对想要了解<a href="http://www.zhihu.com/question/20629136" target="_blank" rel="external">Growth Hacker</a>这个职位的同学是个大大的福利。</p>
+</li>
+<li><p>这档博客的缺点就是音频质量普遍较差，对音质要求不高的同学强烈推荐订阅。</p>
+</li>
+</ul>
+<h4 id="友的聊"><a href="#友的聊" class="headerlink" title="友的聊"></a><a href="http://ydlbk.com/" target="_blank" rel="external">友的聊</a></h4><ul>
+<li>这档播客听得不多，只是偶尔听一些其中的科技类的节目。属于一款老牌的博客，质量上还有保证。</li>
+</ul>
+<p>主要推荐的就这三档博客，另外还有一些其他的播客可以自己去寻找下。ibuick做的六期的<a href="https://itunes.apple.com/us/podcast/ibuick-italk/id969849693" target="_blank" rel="external">《ibuick, italk》</a>的最后两期《我的十年》可以下载听一听，对世纪初、主要是2003年之后在软件公司工作经历的讲述还是蛮真实的，权当了解一下那几年程序员的状况。</p>
+<p>多提一句网易云音乐。之前<a href="http://site.douban.com/izaobaomusic/" target="_blank" rel="external">《枣听乐纪》</a>还在更新的时候一直订阅，算是爱枣报留下的一个念想；后来停更之后，发现网易云音乐的<a href="http://music.163.com/#/discover/djradio" target="_blank" rel="external">主播电台</a>里有不少非常好的音乐播客，喜欢音乐的可以去找几个听听。</p>
+<h3 id="（五）其他"><a href="#（五）其他" class="headerlink" title="（五）其他"></a>（五）其他</h3><h4 id="TED"><a href="#TED" class="headerlink" title="TED"></a><a href="http://www.ted.com/" target="_blank" rel="external">TED</a></h4><ul>
+<li>不再介绍，可以在官网首页右下角直接邮件订阅。两年前想把TOP 100的演讲压制成双语的高清视频，结果做了不到50个太监掉了，并且因为不知名原因好多视频无法分享，以后有机会再填坑。推荐一个下载字幕和视频好地方：<a href="http://ted2srt.org/" target="_blank" rel="external">TED2SRT</a>，可以下载官网已经翻译过的视频字幕以及视频文件和MP3文件，非常方便。</li>
+</ul>
+<h4 id="V2EX"><a href="#V2EX" class="headerlink" title="V2EX"></a><a href="http://www.v2ex.com/" target="_blank" rel="external">V2EX</a></h4><ul>
+<li>“创意工作者的社区”，貌似设计师比较多，不过会有很多奇奇怪怪的东西，氛围不错。</li>
+</ul>
+<p>最后列举一些其他的独立博客和网站，有兴趣可以自行订阅：</p>
+<ol>
+<li><a href="http://www.read.org.cn/" target="_blank" rel="external">战隼的学习探索</a>：经常分享有趣的书籍，偏向个人管理，类似的还有<a href="http://www.mifengtd.cn/" target="_blank" rel="external">褪墨</a>。</li>
+<li><a href="http://90s.wtf/" target="_blank" rel="external">丧心病狂的90后</a>：GitCafe创始人<a href="http://blog.ghostunix.org/" target="_blank" rel="external">Thomas Yao</a>一群人做的博客，更新频率较低。</li>
+<li><a href="http://blog.xiqiao.info/" target="_blank" rel="external">西乔的九卦</a>：《程序员》杂志最后的漫画《神秘的程序员们》的作者，设计师，现在跑去<a href="http://mp.weixin.qq.com/s?__biz=MzAxMzMxNDIyOA==&amp;mid=206496608&amp;idx=1&amp;sn=adc8b6494d8d2cee713b603871d3c0b6&amp;scene=2&amp;from=timeline&amp;isappinstalled=0#rd" target="_blank" rel="external">微信</a>更新了。</li>
+<li><a href="http://www.21ccom.net/" target="_blank" rel="external">共识网</a>：很有意思的一个网站，可以了解政治相关的信息。</li>
+</ol>
+<p>不得不说现在越来越多的博主开始搬到微信公众账号，很多高质量的文章也只能在公众号里看到；说不出好坏，总感觉不在web端留个页面少了些什么。高质量的独立博客/公众账号同样需要慢慢积累，看到一篇不错的文章，订阅下来，久而久之就有了属于自己的信息源。即便靠谱的博客/公众号大家都会订阅，但是总有一些比较小众的博客/公众号，这些博客/公众号的文章组成了你独有学习资源。</p>
+<p>另外，博客虽好，不要忘记看书哟！</p>
+<p>想靠这么一篇文章网罗筛选出全部有价值的「科技媒体」、「产品经理博客」、「独立博客」、「播客」和好的「社区」是不现实的，我只是把曾对自己有所帮助的一些资源整理一下，有这样一个机会整理自己的思路、整理自己的得失是非常难得的一件事。也期待你的分享。</p>
+<p>世界很大，世界很大，世界很大；我真的想好好看看这个世界。</p>
+<p>OPML文件下载地址：<a href="http://pan.baidu.com/s/1i3Efi4X" target="_blank" rel="external">百度网盘</a></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/67116-df74c735746727d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="RSS Llist"></p>
+<h2 id="九、风口篇"><a href="#九、风口篇" class="headerlink" title="九、风口篇"></a>九、风口篇</h2><p>这是比较失败的的一篇总结，功力不足没有写出应有的感觉。</p>
+<p>之前一直认为，国外IT领域的技术是全面的，可能在任何一个点上突破；而中国IT技术的不全面，导致所有人都在某一个点上寻求突破。这段时间总理一直为「互联网+」摇旗呐喊，知乎上也有人提到，中国的互联网不可能老是模仿，总要慢慢创新，把自己的idea落到实处。尽管如此，还是会发现目前的很多国外的创业公司也都可以找到对应的中国模式。</p>
+<p>上个月在朋友圈看到一篇关于美国<a href="http://www.wtoutiao.com/a/2450819.html" target="_blank" rel="external">独角兽公司</a>的文章，于是想把我所知道的能对应上的中国创业公司总结出来，整理如下。整理的肯定不完整，毕竟这些公司分属不同行业，希望能有更多人给出建议，补充完整；如有错误，期待得到指证。</p>
+<h3 id="1-Affirmed：开发用于经营移动网络的软件"><a href="#1-Affirmed：开发用于经营移动网络的软件" class="headerlink" title="1.Affirmed：开发用于经营移动网络的软件"></a>1.<a href="http://www.affirmednetworks.com/" target="_blank" rel="external">Affirmed</a>：开发用于经营移动网络的软件</h3><ul>
+<li>暂时不了解对应的中国公司，根据介绍应该面向企业级市场。由于是移动网络领域，感觉在国内出现这种类型的创业公司应该比较困难。</li>
+</ul>
+<h3 id="2-Avant：发放个人贷款"><a href="#2-Avant：发放个人贷款" class="headerlink" title="2.Avant：发放个人贷款"></a>2.<a href="https://www.avant.com/" target="_blank" rel="external">Avant</a>：发放个人贷款</h3><ul>
+<li>暂时不了解对应的中国公司，需要注意的是该领域并不是P2P。国内的P2P发展很快，不过我对金融了解不多，不再多说，有兴趣可以去知乎<a href="http://www.zhihu.com/topic/19619194" target="_blank" rel="external">P2P 网络借贷平台</a>话题学习下。</li>
+</ul>
+<h3 id="3-Beepi：在线二手车市场"><a href="#3-Beepi：在线二手车市场" class="headerlink" title="3.Beepi：在线二手车市场"></a>3.<a href="https://www.beepi.com/" target="_blank" rel="external">Beepi</a>：在线二手车市场</h3><ul>
+<li><p>国内二手车领域的创业公司还是比较多的。有C2C的<a href="http://www.renrenche.com/" target="_blank" rel="external">人人车</a>、<a href="http://souche.com/" target="_blank" rel="external">大搜车</a>，有B2C的<a href="http://www.cheyipai.com/" target="_blank" rel="external">车易拍</a>、<a href="http://www.youxinpai.com/" target="_blank" rel="external">优信拍</a>，还有<a href="http://www.geeche.com/" target="_blank" rel="external">G车网</a>、<a href="http://www.gongpingjia.com/" target="_blank" rel="external">公平价</a>等等。</p>
+</li>
+<li><p>最初了解二手车市场是因为知乎上的一个回答：<a href="http://www.zhihu.com/question/28341064/answer/41635389" target="_blank" rel="external">你辞职以后找到新工作这个过程是怎样的？</a>有软文的意思，不过值得一看。二手车市场还是比较大的，之前有一位在网络上聊得来的朋友去新西兰之后，就自己创业做二手车生意，感觉过得颇为滋润。</p>
+</li>
+</ul>
+<h3 id="4-Blue-Apron：订用式食材配送服务"><a href="#4-Blue-Apron：订用式食材配送服务" class="headerlink" title="4.Blue Apron：订用式食材配送服务"></a>4.<a href="http://www.blueapron.com/" target="_blank" rel="external">Blue Apron</a>：订用式食材配送服务</h3><ul>
+<li>面向家庭，即直接面向消费者。国内的<a href="http://www.farmlink.cn/index.html" target="_blank" rel="external">链农</a>、<a href="http://www.dachuwang.com/index.html" target="_blank" rel="external">大厨网</a>更类似<a href="http://sysco.com/" target="_blank" rel="external">Sysco</a>，属于面向中小餐饮商家。还未发现国内有直接面向家庭的类似创业公司。</li>
+</ul>
+<h3 id="5-Cyanogen：手机操作系统"><a href="#5-Cyanogen：手机操作系统" class="headerlink" title="5.Cyanogen：手机操作系统"></a>5.<a href="http://www.cyanogenmod.org/" target="_blank" rel="external">Cyanogen</a>：手机操作系统</h3><ul>
+<li><p>安卓第三方ROM。国内最早的知名第三方ROM应该是点心，后来<a href="http://www.huxiu.com/article/104457/1.html" target="_blank" rel="external">被百度收购后内部拆分</a>，再到后来<a href="http://tech.163.com/15/0311/22/AKF9PV6500094ODU.html" target="_blank" rel="external">百度云OS也暂停更新</a>。到现在比较优质的纯第三方ROM只剩下<a href="http://www.lewaos.com/" target="_blank" rel="external">乐蛙OS</a>等，其他的都不太知名，更多的都是搭载在自家手机上的定制ROM，相比较而言没有那么纯粹。</p>
+</li>
+<li><p>目前国内比知名的第三方定制ROM有小米的<a href="http://www.miui.com/" target="_blank" rel="external">MIUI</a>、锤子科技的Smartisan OS、魅族的<a href="http://flyme.cn/" target="_blank" rel="external">Flyme OS</a>、阿里巴巴的<a href="http://www.yunos.com/" target="_blank" rel="external">YunOS</a>，基本目的都是为了做手机，而不是为了做手机操作系统。</p>
+</li>
+</ul>
+<h3 id="6-Datastax：数据库平台"><a href="#6-Datastax：数据库平台" class="headerlink" title="6.Datastax：数据库平台"></a>6.<a href="http://www.datastax.com/" target="_blank" rel="external">Datastax</a>：数据库平台</h3><ul>
+<li>数据库相关的服务我不大了解，根据介绍这家公司的服务也是面向企业级市场。</li>
+</ul>
+<h3 id="7-Deliveroo：餐厅食物外送"><a href="#7-Deliveroo：餐厅食物外送" class="headerlink" title="7.Deliveroo：餐厅食物外送"></a>7.<a href="https://deliveroo.co.uk/" target="_blank" rel="external">Deliveroo</a>：餐厅食物外送</h3><ul>
+<li><p>一家英国公司。外卖这个领域就不多说了，比较知名的有饿了么、美团外卖和百度外卖。</p>
+</li>
+<li><p>我本身在威海读书，前段时间在北京实习。有种感觉，饿了么在北京等大城市似乎口碑更好；而美团外卖则因为之前做团购的优势，在二三线城市过得很滋润。</p>
+</li>
+</ul>
+<h3 id="8-Docker：一个用于开发和运行应用程序的开放平台"><a href="#8-Docker：一个用于开发和运行应用程序的开放平台" class="headerlink" title="8.Docker：一个用于开发和运行应用程序的开放平台"></a>8.<a href="http://www.docker.com/" target="_blank" rel="external">Docker</a>：一个用于开发和运行应用程序的开放平台</h3><ul>
+<li><p>这个领域不熟悉。</p>
+</li>
+<li><p>国内更多的是云服务，除了阿里云之外，还有「七牛云存储」、「又拍云」以及「<a href="https://www.leancloud.cn/" target="_blank" rel="external">LeanCloud</a>」。</p>
+</li>
+</ul>
+<h3 id="9-Doordash：餐厅食物外送"><a href="#9-Doordash：餐厅食物外送" class="headerlink" title="9.Doordash：餐厅食物外送"></a>9.<a href="http://www.doordash.com/" target="_blank" rel="external">Doordash</a>：餐厅食物外送</h3><ul>
+<li><p>同第7个公司。</p>
+</li>
+<li><p>说个不相干的，快递「最后一公里」和「最前一公里」的公司。前者有「闪送」和「<a href="http://daojia.jd.com/html/welcome.html" target="_blank" rel="external">京东到家</a>」等，后者有「快递兔」。</p>
+</li>
+</ul>
+<h3 id="10-Grand-Rounds：向患者和医疗专家提供牵线搭桥服务"><a href="#10-Grand-Rounds：向患者和医疗专家提供牵线搭桥服务" class="headerlink" title="10.Grand Rounds：向患者和医疗专家提供牵线搭桥服务"></a>10.<a href="https://www.grandrounds.com/" target="_blank" rel="external">Grand Rounds</a>：向患者和医疗专家提供牵线搭桥服务</h3><ul>
+<li>该公司属于在线医疗领域。医疗健康这两年被称为一个新的风口，<a href="http://www.dxy.cn/" target="_blank" rel="external">丁香园</a>和<a href="http://chunyuyisheng.com/" target="_blank" rel="external">春雨医生</a>两家创业公司是其中的翘楚。至于在线医疗蛋糕有多大，想想前段时间莆田系和百度的斗争就应该有所了解了。</li>
+</ul>
+<h3 id="11-Kreditech：为“无银行账户的人”提供数字化银行业务服务"><a href="#11-Kreditech：为“无银行账户的人”提供数字化银行业务服务" class="headerlink" title="11.Kreditech：为“无银行账户的人”提供数字化银行业务服务"></a>11.<a href="https://www.kreditech.com/" target="_blank" rel="external">Kreditech</a>：为“无银行账户的人”提供数字化银行业务服务</h3><ul>
+<li>比较奇怪的金融领域，国内应该不会有这种创业公司存在吧。</li>
+</ul>
+<h3 id="12-Lithium：社交化客户管理软件"><a href="#12-Lithium：社交化客户管理软件" class="headerlink" title="12.Lithium：社交化客户管理软件"></a>12.<a href="http://www.lithium.com/" target="_blank" rel="external">Lithium</a>：社交化客户管理软件</h3><ul>
+<li>国内更多的是社会化营销的公司。这方面不是很清楚，也属于企业级市场。</li>
+</ul>
+<h3 id="13-Mixpanel：分析软件"><a href="#13-Mixpanel：分析软件" class="headerlink" title="13.Mixpanel：分析软件"></a>13.<a href="https://mixpanel.com/" target="_blank" rel="external">Mixpanel</a>：分析软件</h3><ul>
+<li>企业级市场。暂时不清楚国内是否有类似的公司。</li>
+</ul>
+<h3 id="14-Orchard-Platform：用于P2P（端至端）放贷的分析平台"><a href="#14-Orchard-Platform：用于P2P（端至端）放贷的分析平台" class="headerlink" title="14.Orchard Platform：用于P2P（端至端）放贷的分析平台"></a>14.<a href="http://www.orchardplatform.com/" target="_blank" rel="external">Orchard Platform</a>：用于P2P（端至端）放贷的分析平台</h3><ul>
+<li><p>P2P在国内是比较火的。该公司属于P2P的延伸领域，感觉只有P2P领域足够成熟的时候，才会出现这种帮助用户分析的平台。</p>
+</li>
+<li><p>国内P2P领域是否有这种平台不清楚，不过类似的是二手车市场的「二手车评估」，给个知乎的链接：<a href="http://www.zhihu.com/question/28463957/answer/41769619" target="_blank" rel="external">从二手车评估切入二手车市场，是否可行</a>。</p>
+</li>
+</ul>
+<h3 id="15-Raise：未用礼品卡的交易平台"><a href="#15-Raise：未用礼品卡的交易平台" class="headerlink" title="15.Raise：未用礼品卡的交易平台"></a>15.<a href="https://www.raise.com/" target="_blank" rel="external">Raise</a>：未用礼品卡的交易平台</h3><ul>
+<li>还没有在国内发现类似的平台，国内更多的是做类似「返利网」的平台。</li>
+</ul>
+<h3 id="16-Redfin：在线房地产交易平台"><a href="#16-Redfin：在线房地产交易平台" class="headerlink" title="16.Redfin：在线房地产交易平台"></a>16.<a href="https://www.redfin.com/" target="_blank" rel="external">Redfin</a>：在线房地产交易平台</h3><ul>
+<li>在线买卖房屋的不多，国内倒是有不少租房的创业公司。两者相差较大，不再多说。</li>
+</ul>
+<h3 id="17-SimpliVity：销售数据中心硬件，将通常单独销售的组件汇集在一起"><a href="#17-SimpliVity：销售数据中心硬件，将通常单独销售的组件汇集在一起" class="headerlink" title="17.SimpliVity：销售数据中心硬件，将通常单独销售的组件汇集在一起"></a>17.<a href="http://www.simplivity.com/" target="_blank" rel="external">SimpliVity</a>：销售数据中心硬件，将通常单独销售的组件汇集在一起</h3><ul>
+<li>企业级市场，属于IT基础设施领域。国内不了解。</li>
+</ul>
+<h3 id="18-Skyhigh-Networks：云安全"><a href="#18-Skyhigh-Networks：云安全" class="headerlink" title="18.Skyhigh Networks：云安全"></a>18.<a href="https://www.skyhighnetworks.com/" target="_blank" rel="external">Skyhigh Networks</a>：云安全</h3><ul>
+<li>云安全不是很清楚，安全领域可参考第20个公司提到的「知道创宇」。另外，个人认为阿里的云安全做的还是比较不错的，毕竟有<a href="http://www.zhihu.com/people/yunshu" target="_blank" rel="external">@云舒</a>和<a href="http://www.zhihu.com/people/aullik5" target="_blank" rel="external">@道哥</a>一批比较早转型白帽子的人在。</li>
+</ul>
+<h3 id="19-Social-Finance：助学贷款再融资、个人贷款和抵押贷款"><a href="#19-Social-Finance：助学贷款再融资、个人贷款和抵押贷款" class="headerlink" title="19.Social Finance：助学贷款再融资、个人贷款和抵押贷款"></a>19.<a href="http://socialfinanceus.org/" target="_blank" rel="external">Social Finance</a>：助学贷款再融资、个人贷款和抵押贷款</h3><ul>
+<li>没有关注。</li>
+</ul>
+<h3 id="20-Tanium：网络安全平台"><a href="#20-Tanium：网络安全平台" class="headerlink" title="20.Tanium：网络安全平台"></a>20.<a href="https://www.tanium.com/" target="_blank" rel="external">Tanium</a>：网络安全平台</h3><ul>
+<li>国内安全领域最知名的公司应该就是「<a href="http://www.knownsec.com/" target="_blank" rel="external">知道创宇</a>」了，比较早成立，技术实力很强。对安全有兴趣的同学可以考虑下，并且国内安全相关的公司大都注重实战能力不大看重学历。推荐链接：<a href="http://blog.knownsec.com/Knownsec_RD_Checklist/v2.2.html" target="_blank" rel="external">知道创宇研发技能表</a>。</li>
+</ul>
+<h3 id="21-Teespring：电子商务平台"><a href="#21-Teespring：电子商务平台" class="headerlink" title="21.Teespring：电子商务平台"></a>21.<a href="http://teespring.com/" target="_blank" rel="external">Teespring</a>：电子商务平台</h3><ul>
+<li>初看有种凡客的感觉。不是很了解这种模式，隐约感觉跟社会化营销有些关联。</li>
+</ul>
+<h3 id="22-Thumbtack：服务发布平台"><a href="#22-Thumbtack：服务发布平台" class="headerlink" title="22.Thumbtack：服务发布平台"></a>22.<a href="https://www.thumbtack.com/" target="_blank" rel="external">Thumbtack</a>：服务发布平台</h3><ul>
+<li><p>跟之前的威客不同，相对来说行业属于蓝海。国内这种综合性的创业公司是否存在还不是很了解，因为之前实习工作，倒是知道在教育里家教这个细分领域出现一批家教O2O的初创公司。</p>
+</li>
+<li><p>除此之外，前段时间果壳刚刚上线的新产品「<a href="http://www.zaih.com/" target="_blank" rel="external">在行</a>」值得关注，蓝海行业，不过因为了解不多，不知道前景如何。可以看下36氪的<a href="http://36kr.com/p/220932.html" target="_blank" rel="external">这篇报道</a>。</p>
+</li>
+</ul>
+<h3 id="23-Viptela：网络架构"><a href="#23-Viptela：网络架构" class="headerlink" title="23.Viptela：网络架构"></a>23.<a href="http://viptela.com/" target="_blank" rel="external">Viptela</a>：网络架构</h3><ul>
+<li>企业级市场，不了解。</li>
+</ul>
+<h3 id="24-Wish：手机购物平台"><a href="#24-Wish：手机购物平台" class="headerlink" title="24.Wish：手机购物平台"></a>24.<a href="https://www.wish.com/" target="_blank" rel="external">Wish</a>：手机购物平台</h3><ul>
+<li><p>移动领域C2C电商平台。</p>
+</li>
+<li><p>看到这个想到的第一个词是「微商」，关于「微商」就不多说了，感觉搞得像传销。国内做C2C的大都想分淘宝的红利，暂时不知晓是否有独立的C2C电商平台。另外不讲C2C的话，「礼物说」是比较值得关注的一个移动端电商平台，主打细分市场。</p>
+</li>
+</ul>
+<h3 id="25-Zenefits：销售医疗保险，并且向小企业提供人力资源软件"><a href="#25-Zenefits：销售医疗保险，并且向小企业提供人力资源软件" class="headerlink" title="25.Zenefits：销售医疗保险，并且向小企业提供人力资源软件"></a>25.<a href="http://www.zenefits.com/" target="_blank" rel="external">Zenefits</a>：销售医疗保险，并且向小企业提供人力资源软件</h3><ul>
+<li>此领域没有关注，不了解。可参考36氪的报道：<a href="http://36kr.com/p/532862.html" target="_blank" rel="external">Zenefits</a>。</li>
+</ul>
+<h3 id="几个关键词：企业级、O2O、医疗健康、移动互联网"><a href="#几个关键词：企业级、O2O、医疗健康、移动互联网" class="headerlink" title="几个关键词：企业级、O2O、医疗健康、移动互联网"></a>几个关键词：企业级、O2O、医疗健康、移动互联网</h3><p><strong>企业级</strong>：整理这篇文章时候有种感觉，当我们把目光聚集在BAT等互联网公司的时候，会有意无意忽略网络本身的技术属性。不同于消费者市场，企业市场要求初创公司有更可靠的技术背景，同样的，面向企业的市场也有很多的金矿没有发掘出来，不知道这会不会是下一个风口。想提一下IBM，虽然被人嘲讽「老笨重」，但是其之前的一些战略选择还是凸显了老牌公司对市场的敏锐，给出两个较早的知乎链接：<a href="http://www.zhihu.com/question/19868295/answer/13201822" target="_blank" rel="external">为什么 IBM 的市值会追上微软</a>、<a href="http://www.zhihu.com/question/22446141/answer/21401946" target="_blank" rel="external">2013 年末，IBM 连续 6 个季度业绩下降，是出了什么问题</a>。另外，国内也有越来越多的创业公司针对的是企业级市场而非消费者市场（如GitCafe、<a href="https://www.ustack.com/" target="_blank" rel="external">有云</a>等等），跟之前有很大不同。</p>
+<p><strong>O2O</strong>：O2O依然在发展，相关联的LBS、地图等都还处于飞速成长的阶段，但不可否认依然有一些领域还正等待被挖掘；反过来看社交网络（SNS），已经逐步深入到「针对社交行为的分析/针对社交客户的管理」这些在行业成熟之前不可能发展起来的领域。相应的，似乎更多的新兴领域最初走消费者市场抢占用户构筑壁垒，蓝海变红海之后，企业级市场开始逐步扩张。</p>
+<p><strong>医疗健康</strong>：传统的商业模式正逐步在线上重构，医疗、教育等等，虽然不知道到底会有怎样一种未来，但是毫无疑问，随着互联网的发展，会有越来越多的传统商业被「搬」到线上。加上总理今年力推「互联网+」，鼓励青年创业，虽然残酷的现实仍旧残酷，但是趋势依然是趋势，下一波浪潮终将到来。另外，虽然这篇文章的列表中没有提到智能家居相关的公司，但还是要提一下另一个词IOT（The Internet of things）。物联网这个词前几年被搞臭了，一直都被当概念炒作，没有实际的产品出现。但是不可否认，这段时间无论是智能汽车还是智能自行车，以及其他的IOT产品（包括手环、手表），虽然依然有炒作在其中，但是机会也蕴含在其中。毕竟已经从宏大的概念变成了一个个实在的产品；产品low不low是一回事，再low的产品只要有机会，也能麻雀变凤凰。</p>
+<p><strong>移动互联网</strong>：我不是很喜欢这个概念。移动互联网带来的是碎片化，但是我认为人对深度的追求不会消失。换句话说移动互联网是网络的一部分、一个类型，而不是一种取代互联网的一种新型的网络。没有在这方面深入思考过，不再多说。希望可以跟长期关注移动互联网的朋友可以交流一下。</p>
+<hr>
+<h2 id="补遗兼后记"><a href="#补遗兼后记" class="headerlink" title="补遗兼后记"></a>补遗兼后记</h2><p>三个月的实习收获良多，实习期间工作内容跟正式员工也相差无几，这一点上非常感谢BOSS和Leader对我的支持和信任。虽然最后，考虑一些个人因素，加之学校还有毕业相关的一些杂事，又想返校整理一下工作的经验，思考毕业后的一些事情，最终选择了离职返校，也才有了这篇学习笔记/实习总结，无论叫哪个名字都不是完全贴切，这些文章的很多内容都是之前一直在思考和学习，加上工作期间进行实践和再学习，形成的一些感触。之前有个HR说过，「自己做过的事情一定要非常清楚」，加上从来没有如此认真整理过自己的思路和生活，有这样一个机会也是蛮不错的。</p>
+<p>去年12月底的时候，面对未知的城市未知的生活，心情非常焦虑，极为惶恐。坐火车的前一个晚上还通宵在豆瓣租房小组刷帖子希望能尽快租到合适的房子。最后感谢好运的伴随，到达北京的第二天就在58同城上找到了一个不错的房东。独自一人到陌生的城市实习经历，加上之前校招的一些经验和教训，希望能够给明年毕业的同学一些借鉴。</p>
+<p><strong>首先也是最重要的，如果可以，一定要尽早确定工作方向，之后趁早找工作；即使在校招中，也有诸多名牌高校的研究生跑来降维打击，实力稍差就遭遇失利。</strong>如果确定了方向，大三下学期基本上就要开始关注求职相关的事情了，特别是大三下学期春招期间的实习，非常重要。而当时我还在犹豫是否要认真复习司考，给自己的专业一个交代，最后拖到九月份之后才认真对待求职这件事，接下来遭遇了连续两个月的校招失利。虽然如此，能够加入一家初创公司，与团队奋战三个月都是一件值得回忆的故事。在这期间，成长很多，但也伴随着惶恐。相比较而言，初创公司更加锻炼人，但确实不是一个可以可以安稳系统地进行学习充电和提升的好地方，期间有太多风险需要考量。</p>
+<p>一直都在泡知乎、关注各种科技媒体和产品经理的博客，也有人提过一些产品经理入门的方法，简单总结一下。快速积累经验/入门产品经理有两种方式：一是找到一些产品经理和科技媒体的博客，把近一个月的内容通读一遍，然后持续有选择地订阅一些优质博客，不断积累，这一点可以参考学习笔记里中的「媒体和博客」那一章；二是把AppStore里个分类排行榜靠前的应用下载下来体验一番，写一堆分析报告。当然了，我感觉这两种方式是可以交叉进行的，各有侧重，并不冲突。</p>
+<p>实习有个意外收获就是扭转了之前一直失调的生物钟，虽然近期又有失调的倾向，不过还可以接受。必须要说，掌握产品的前提是掌握自己，有所坚持，不能偷懒。实习期间能够较快适应职场的节奏，调整自己，也是另一种意义上的进步。学无止境，抱有好奇心，不断学习新的东西；与其说产品经理是要把设想的东西做出来，毋宁说其是在做的过程中探索新的需求，予以解决。</p>
+<p>加入初创公司的另外一个好处就是有很多机会可以熟悉不同领域的东西。毕竟空想不如实践，做新产品不如对已有产品进行解构并构思新版本，在这方面初创公司可以提供相当多的机会；这样既思考新版本，又能更深入了解现有版本。不断学习，不断思考思考和积累，应该是一种相当棒的工作状态。</p>
+<p>说到这里不得不提一句，大公司有大公司的好处，数据挖掘、用户研究、前端、设计、后台，虽然很难避免成为螺丝钉，不过如果善于学习，应该是一件很幸福的事情，不会因为无法确定某个数据、无法找到合适的内测用户而苦恼。</p>
+<p>——2015年4-5月</p>
+<hr>
+<p>再次整理这个系列的文章，没想到自己竟然写了5万多字，逆境逼迫人呢。这是真正两年前的文章了，再次看还有很多不足，也还有很多亮点，其中的一些思维决定了现在的我。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/29/二十四岁这一年/" rel="next" title="二十四岁这一年">
+                <i class="fa fa-chevron-left"></i> 二十四岁这一年
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/06/18/证券投资基金经典课程/" rel="prev" title="证券投资基金经典课程">
+                证券投资基金经典课程 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.png"
+               alt="Tyrion Y. Chang" />
+          <p class="site-author-name" itemprop="name">Tyrion Y. Chang</p>
+           
+              <p class="site-description motion-element" itemprop="description">自知者明、强行者有志</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">90</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、思维和沟通"><span class="nav-number">1.</span> <span class="nav-text">一、思维和沟通</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#（一）什么是产品经理"><span class="nav-number">1.1.</span> <span class="nav-text">（一）什么是产品经理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（二）两个概念：场景分析和关键路径"><span class="nav-number">1.2.</span> <span class="nav-text">（二）两个概念：场景分析和关键路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（三）可用性设计（以及用户体验设计）"><span class="nav-number">1.3.</span> <span class="nav-text">（三）可用性设计（以及用户体验设计）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（四）批判性思维"><span class="nav-number">1.4.</span> <span class="nav-text">（四）批判性思维</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（五）沟通"><span class="nav-number">1.5.</span> <span class="nav-text">（五）沟通</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（六）互联网思维和用户体验要素"><span class="nav-number">1.6.</span> <span class="nav-text">（六）互联网思维和用户体验要素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（七）马斯洛金字塔"><span class="nav-number">1.7.</span> <span class="nav-text">（七）马斯洛金字塔</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（八）其他：虚与实、小与大"><span class="nav-number">1.8.</span> <span class="nav-text">（八）其他：虚与实、小与大</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、文案和其他能力"><span class="nav-number">2.</span> <span class="nav-text">二、文案和其他能力</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#（一）文案三个关键词：简洁、讲明白、有逻辑"><span class="nav-number">2.1.</span> <span class="nav-text">（一）文案三个关键词：简洁、讲明白、有逻辑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（二）产品需求文档-PRD、BRD和MRD"><span class="nav-number">2.2.</span> <span class="nav-text">（二）产品需求文档:PRD、BRD和MRD</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、技术和设计"><span class="nav-number">3.</span> <span class="nav-text">三、技术和设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#（一）关于技术"><span class="nav-number">3.1.</span> <span class="nav-text">（一）关于技术</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#HTML-CSS-JavaScript"><span class="nav-number">3.1.1.</span> <span class="nav-text">HTML/CSS/JavaScript</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Basic"><span class="nav-number">3.1.2.</span> <span class="nav-text">Basic</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#C-C-C"><span class="nav-number">3.1.3.</span> <span class="nav-text">C/C++/C</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#JAVA"><span class="nav-number">3.1.4.</span> <span class="nav-text">JAVA</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Python-Ruby"><span class="nav-number">3.1.5.</span> <span class="nav-text">Python/Ruby</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Linux"><span class="nav-number">3.1.6.</span> <span class="nav-text">Linux</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据库"><span class="nav-number">3.1.7.</span> <span class="nav-text">数据库</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（二）关于软件工程"><span class="nav-number">3.2.</span> <span class="nav-text">（二）关于软件工程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、运营和测试"><span class="nav-number">4.</span> <span class="nav-text">四、运营和测试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#（一）关于运营"><span class="nav-number">4.1.</span> <span class="nav-text">（一）关于运营</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（二）关于测试"><span class="nav-number">4.2.</span> <span class="nav-text">（二）关于测试</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、数据和市场"><span class="nav-number">5.</span> <span class="nav-text">五、数据和市场</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六、工具篇"><span class="nav-number">6.</span> <span class="nav-text">六、工具篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#（一）基础性工具"><span class="nav-number">6.1.</span> <span class="nav-text">（一）基础性工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（二）技能类工具"><span class="nav-number">6.2.</span> <span class="nav-text">（二）技能类工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#原型草图：Balsamiq-Mockups"><span class="nav-number">6.2.1.</span> <span class="nav-text">原型草图：Balsamiq Mockups</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#原型工具：Axure"><span class="nav-number">6.2.2.</span> <span class="nav-text">原型工具：Axure</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#流程图：visio"><span class="nav-number">6.2.3.</span> <span class="nav-text">流程图：visio</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图像处理类：画图"><span class="nav-number">6.2.4.</span> <span class="nav-text">图像处理类：画图</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（三）辅助性工具"><span class="nav-number">6.3.</span> <span class="nav-text">（三）辅助性工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#笔记类软件：OneNote"><span class="nav-number">6.3.1.</span> <span class="nav-text">笔记类软件：OneNote</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文本编辑器：Sublime-Text"><span class="nav-number">6.3.2.</span> <span class="nav-text">文本编辑器：Sublime Text</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#写作软件：MarkdownPad"><span class="nav-number">6.3.3.</span> <span class="nav-text">写作软件：MarkdownPad</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#思维导图：xMind"><span class="nav-number">6.3.4.</span> <span class="nav-text">思维导图：xMind</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#邮箱客户端：Outlook-Foxmail"><span class="nav-number">6.3.5.</span> <span class="nav-text">邮箱客户端：Outlook/Foxmail</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#同步盘：暂时没有使用过"><span class="nav-number">6.3.6.</span> <span class="nav-text">同步盘：暂时没有使用过</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#订阅软件：阅读空间"><span class="nav-number">6.3.7.</span> <span class="nav-text">订阅软件：阅读空间</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（四）其他工具"><span class="nav-number">6.4.</span> <span class="nav-text">（四）其他工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Git-GitHub"><span class="nav-number">6.4.1.</span> <span class="nav-text">Git/GitHub</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Project-2013"><span class="nav-number">6.4.2.</span> <span class="nav-text">Project 2013</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#七、书籍篇"><span class="nav-number">7.</span> <span class="nav-text">七、书籍篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#（一）产品经理入门书籍"><span class="nav-number">7.1.</span> <span class="nav-text">（一）产品经理入门书籍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#推荐阅读：缔造企鹅"><span class="nav-number">7.1.1.</span> <span class="nav-text">推荐阅读：缔造企鹅</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（二）扩展阅读书单"><span class="nav-number">7.2.</span> <span class="nav-text">（二）扩展阅读书单</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#克里斯·安德森"><span class="nav-number">7.2.1.</span> <span class="nav-text">克里斯·安德森</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#马尔科姆·格拉德威尔"><span class="nav-number">7.2.2.</span> <span class="nav-text">马尔科姆·格拉德威尔</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#凯文·凯利"><span class="nav-number">7.2.3.</span> <span class="nav-text">凯文·凯利</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#劳伦斯·莱斯格"><span class="nav-number">7.2.4.</span> <span class="nav-text">劳伦斯·莱斯格</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#《怪诞心理学》-amp-《怪诞心理学2》"><span class="nav-number">7.2.5.</span> <span class="nav-text">《怪诞心理学》&《怪诞心理学2》</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#《怪诞行为学》-amp-《怪诞行为学2》"><span class="nav-number">7.2.6.</span> <span class="nav-text">《怪诞行为学》&《怪诞行为学2》</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#《魔鬼经济学》-amp-《超爆魔鬼经济学》"><span class="nav-number">7.2.7.</span> <span class="nav-text">《魔鬼经济学》&《超爆魔鬼经济学》</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#传记类书籍：《乔布斯传》、《周鸿祎自述》"><span class="nav-number">7.2.8.</span> <span class="nav-text">传记类书籍：《乔布斯传》、《周鸿祎自述》</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#互联网的历史：《浪潮之巅》"><span class="nav-number">7.2.9.</span> <span class="nav-text">互联网的历史：《浪潮之巅》</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#《暗时间》"><span class="nav-number">7.2.10.</span> <span class="nav-text">《暗时间》</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#克里斯坦森：颠覆式创新"><span class="nav-number">7.2.11.</span> <span class="nav-text">克里斯坦森：颠覆式创新</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（三）其他"><span class="nav-number">7.3.</span> <span class="nav-text">（三）其他</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（四）通识类书籍"><span class="nav-number">7.4.</span> <span class="nav-text">（四）通识类书籍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#文学类：《文学回忆录》"><span class="nav-number">7.4.1.</span> <span class="nav-text">文学类：《文学回忆录》</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#哲学类：《西方哲学史》"><span class="nav-number">7.4.2.</span> <span class="nav-text">哲学类：《西方哲学史》</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#人工智能：《哥德尔、艾舍尔、巴赫：集异璧之大成》"><span class="nav-number">7.4.3.</span> <span class="nav-text">人工智能：《哥德尔、艾舍尔、巴赫：集异璧之大成》</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其他：《上帝掷骰子吗》、《三体》"><span class="nav-number">7.4.4.</span> <span class="nav-text">其他：《上帝掷骰子吗》、《三体》</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#八、媒体和博客"><span class="nav-number">8.</span> <span class="nav-text">八、媒体和博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#（一）科技媒体"><span class="nav-number">8.1.</span> <span class="nav-text">（一）科技媒体</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#知乎"><span class="nav-number">8.1.1.</span> <span class="nav-text">知乎</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#36氪"><span class="nav-number">8.1.2.</span> <span class="nav-text">36氪</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#爱范儿"><span class="nav-number">8.1.3.</span> <span class="nav-text">爱范儿</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#虎嗅"><span class="nav-number">8.1.4.</span> <span class="nav-text">虎嗅</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#i黑马"><span class="nav-number">8.1.5.</span> <span class="nav-text">i黑马</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#品玩（PingWest）"><span class="nav-number">8.1.6.</span> <span class="nav-text">品玩（PingWest）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#极客公园"><span class="nav-number">8.1.7.</span> <span class="nav-text">极客公园</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#雷锋网"><span class="nav-number">8.1.8.</span> <span class="nav-text">雷锋网</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#钛媒体"><span class="nav-number">8.1.9.</span> <span class="nav-text">钛媒体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Engadget（瘾科技）"><span class="nav-number">8.1.10.</span> <span class="nav-text">Engadget（瘾科技）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#cnBeta"><span class="nav-number">8.1.11.</span> <span class="nav-text">cnBeta</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#FreeBuf"><span class="nav-number">8.1.12.</span> <span class="nav-text">FreeBuf</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（二）产品经理博客"><span class="nav-number">8.2.</span> <span class="nav-text">（二）产品经理博客</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#互联网早读课"><span class="nav-number">8.2.1.</span> <span class="nav-text">互联网早读课</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#互联网那点事"><span class="nav-number">8.2.2.</span> <span class="nav-text">互联网那点事</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#人人都是产品经理"><span class="nav-number">8.2.3.</span> <span class="nav-text">人人都是产品经理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#腾讯CDC团队"><span class="nav-number">8.2.4.</span> <span class="nav-text">腾讯CDC团队</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#腾讯ISUX"><span class="nav-number">8.2.5.</span> <span class="nav-text">腾讯ISUX</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#腾讯MXD"><span class="nav-number">8.2.6.</span> <span class="nav-text">腾讯MXD</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#腾讯-Alloy-Team"><span class="nav-number">8.2.7.</span> <span class="nav-text">腾讯 Alloy Team</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#腾讯TGideas"><span class="nav-number">8.2.8.</span> <span class="nav-text">腾讯TGideas</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#京东JDC"><span class="nav-number">8.2.9.</span> <span class="nav-text">京东JDC</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（三）独立博客"><span class="nav-number">8.3.</span> <span class="nav-text">（三）独立博客</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#胡澈"><span class="nav-number">8.3.1.</span> <span class="nav-text">胡澈</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#苏杰"><span class="nav-number">8.3.2.</span> <span class="nav-text">苏杰</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#王垠"><span class="nav-number">8.3.3.</span> <span class="nav-text">王垠</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#学而时嘻之"><span class="nav-number">8.3.4.</span> <span class="nav-text">学而时嘻之</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#劣松"><span class="nav-number">8.3.5.</span> <span class="nav-text">劣松</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#郎启旭"><span class="nav-number">8.3.6.</span> <span class="nav-text">郎启旭</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#木遥"><span class="nav-number">8.3.7.</span> <span class="nav-text">木遥</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#陈皓"><span class="nav-number">8.3.8.</span> <span class="nav-text">陈皓</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#阮一峰"><span class="nav-number">8.3.9.</span> <span class="nav-text">阮一峰</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#刘未鹏"><span class="nav-number">8.3.10.</span> <span class="nav-text">刘未鹏</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（四）播客推荐"><span class="nav-number">8.4.</span> <span class="nav-text">（四）播客推荐</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#IT公论"><span class="nav-number">8.4.1.</span> <span class="nav-text">IT公论</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Teahour-fm"><span class="nav-number">8.4.2.</span> <span class="nav-text">Teahour.fm</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#友的聊"><span class="nav-number">8.4.3.</span> <span class="nav-text">友的聊</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（五）其他"><span class="nav-number">8.5.</span> <span class="nav-text">（五）其他</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#TED"><span class="nav-number">8.5.1.</span> <span class="nav-text">TED</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#V2EX"><span class="nav-number">8.5.2.</span> <span class="nav-text">V2EX</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#九、风口篇"><span class="nav-number">9.</span> <span class="nav-text">九、风口篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Affirmed：开发用于经营移动网络的软件"><span class="nav-number">9.1.</span> <span class="nav-text">1.Affirmed：开发用于经营移动网络的软件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Avant：发放个人贷款"><span class="nav-number">9.2.</span> <span class="nav-text">2.Avant：发放个人贷款</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Beepi：在线二手车市场"><span class="nav-number">9.3.</span> <span class="nav-text">3.Beepi：在线二手车市场</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Blue-Apron：订用式食材配送服务"><span class="nav-number">9.4.</span> <span class="nav-text">4.Blue Apron：订用式食材配送服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Cyanogen：手机操作系统"><span class="nav-number">9.5.</span> <span class="nav-text">5.Cyanogen：手机操作系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-Datastax：数据库平台"><span class="nav-number">9.6.</span> <span class="nav-text">6.Datastax：数据库平台</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-Deliveroo：餐厅食物外送"><span class="nav-number">9.7.</span> <span class="nav-text">7.Deliveroo：餐厅食物外送</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-Docker：一个用于开发和运行应用程序的开放平台"><span class="nav-number">9.8.</span> <span class="nav-text">8.Docker：一个用于开发和运行应用程序的开放平台</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-Doordash：餐厅食物外送"><span class="nav-number">9.9.</span> <span class="nav-text">9.Doordash：餐厅食物外送</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-Grand-Rounds：向患者和医疗专家提供牵线搭桥服务"><span class="nav-number">9.10.</span> <span class="nav-text">10.Grand Rounds：向患者和医疗专家提供牵线搭桥服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-Kreditech：为“无银行账户的人”提供数字化银行业务服务"><span class="nav-number">9.11.</span> <span class="nav-text">11.Kreditech：为“无银行账户的人”提供数字化银行业务服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-Lithium：社交化客户管理软件"><span class="nav-number">9.12.</span> <span class="nav-text">12.Lithium：社交化客户管理软件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-Mixpanel：分析软件"><span class="nav-number">9.13.</span> <span class="nav-text">13.Mixpanel：分析软件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14-Orchard-Platform：用于P2P（端至端）放贷的分析平台"><span class="nav-number">9.14.</span> <span class="nav-text">14.Orchard Platform：用于P2P（端至端）放贷的分析平台</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15-Raise：未用礼品卡的交易平台"><span class="nav-number">9.15.</span> <span class="nav-text">15.Raise：未用礼品卡的交易平台</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16-Redfin：在线房地产交易平台"><span class="nav-number">9.16.</span> <span class="nav-text">16.Redfin：在线房地产交易平台</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#17-SimpliVity：销售数据中心硬件，将通常单独销售的组件汇集在一起"><span class="nav-number">9.17.</span> <span class="nav-text">17.SimpliVity：销售数据中心硬件，将通常单独销售的组件汇集在一起</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#18-Skyhigh-Networks：云安全"><span class="nav-number">9.18.</span> <span class="nav-text">18.Skyhigh Networks：云安全</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#19-Social-Finance：助学贷款再融资、个人贷款和抵押贷款"><span class="nav-number">9.19.</span> <span class="nav-text">19.Social Finance：助学贷款再融资、个人贷款和抵押贷款</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#20-Tanium：网络安全平台"><span class="nav-number">9.20.</span> <span class="nav-text">20.Tanium：网络安全平台</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#21-Teespring：电子商务平台"><span class="nav-number">9.21.</span> <span class="nav-text">21.Teespring：电子商务平台</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-Thumbtack：服务发布平台"><span class="nav-number">9.22.</span> <span class="nav-text">22.Thumbtack：服务发布平台</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23-Viptela：网络架构"><span class="nav-number">9.23.</span> <span class="nav-text">23.Viptela：网络架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#24-Wish：手机购物平台"><span class="nav-number">9.24.</span> <span class="nav-text">24.Wish：手机购物平台</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#25-Zenefits：销售医疗保险，并且向小企业提供人力资源软件"><span class="nav-number">9.25.</span> <span class="nav-text">25.Zenefits：销售医疗保险，并且向小企业提供人力资源软件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#几个关键词：企业级、O2O、医疗健康、移动互联网"><span class="nav-number">9.26.</span> <span class="nav-text">几个关键词：企业级、O2O、医疗健康、移动互联网</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#补遗兼后记"><span class="nav-number">10.</span> <span class="nav-text">补遗兼后记</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  1992 - 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tyrion Y. Chang</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

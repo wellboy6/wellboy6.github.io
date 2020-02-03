@@ -1,0 +1,736 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="有限通讯" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="有限通讯" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="独立博客架构完毕，以后主要就在独立博客里厮混了，有想法就在GAE和SAE上多建立几个网站就好了，这里，就留着吧！我的博客：www.wellboy.net
+
+本来这篇文章的名字是《博客搭建手记：利用GAE和micolog搭建博客》，不过草稿存了好几天都未完稿，发现除了搭建博客之外还有很多话要说，后面的副标题就被我舍弃了。这次建博，是一个新的开始。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客搭建手记（旧）">
+<meta property="og:url" content="http://blog.zhangyahui.cn/2017/05/25/博客搭建手记/index.html">
+<meta property="og:site_name" content="有限通讯">
+<meta property="og:description" content="独立博客架构完毕，以后主要就在独立博客里厮混了，有想法就在GAE和SAE上多建立几个网站就好了，这里，就留着吧！我的博客：www.wellboy.net
+
+本来这篇文章的名字是《博客搭建手记：利用GAE和micolog搭建博客》，不过草稿存了好几天都未完稿，发现除了搭建博客之外还有很多话要说，后面的副标题就被我舍弃了。这次建博，是一个新的开始。">
+<meta property="og:updated_time" content="2017-05-25T14:08:54.612Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="博客搭建手记（旧）">
+<meta name="twitter:description" content="独立博客架构完毕，以后主要就在独立博客里厮混了，有想法就在GAE和SAE上多建立几个网站就好了，这里，就留着吧！我的博客：www.wellboy.net
+
+本来这篇文章的名字是《博客搭建手记：利用GAE和micolog搭建博客》，不过草稿存了好几天都未完稿，发现除了搭建博客之外还有很多话要说，后面的副标题就被我舍弃了。这次建博，是一个新的开始。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://blog.zhangyahui.cn/2017/05/25/博客搭建手记/"/>
+
+
+
+
+
+  <title> 博客搭建手记（旧） | 有限通讯 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">有限通讯</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Ltd. News</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.zhangyahui.cn/2017/05/25/博客搭建手记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tyrion Y. Chang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有限通讯">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                博客搭建手记（旧）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-25T22:00:15+08:00">
+                2017-05-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">随笔</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>独立博客架构完毕，以后主要就在独立博客里厮混了，有想法就在GAE和SAE上多建立几个网站就好了，这里，就留着吧！<br>我的博客：www.wellboy.net</p>
+<hr>
+<p>本来这篇文章的名字是《博客搭建手记：利用GAE和micolog搭建博客》，不过草稿存了好几天都未完稿，发现除了搭建博客之外还有很多话要说，后面的副标题就被我舍弃了。这次建博，是一个新的开始。</p>
+<a id="more"></a>
+<p>11月5号在新网了wellboy.cn域名，然后在GAE上用Micolog上搭建了博客，结果发现.cn域名很难解析到GAE上，只能放弃。11月11号在新网注册wellboy.net，然后注册Google App for Business试用版，通过Google App Engine Launcher将Micolog上传到GAE。</p>
+<p>11月15号通过DNSPoD把域名解析到GAE，至此，博客正式搭建完成。</p>
+<p>中间少不了很纠结的事情，最开始因为域名解析不到GAE、想用SAE搭建wordpress，弄好之后发现.cn域名不备案不解析，加上GAE对.cn支持也很差，就注册了wellboy.net。后来写了一个《关于域名用于接入境外网站说明书》，域名解析才给解禁。这时候wellboy.net已经解析好了，就只能暂时将wellboy.cn冷藏。</p>
+<p>期间也发生了很多事情，例如寻找windows下Emacs安装教程时，遇到了独酌逸醉，然后得到了博客的第一个友情链接。例如根据自己安装使用Code::Blocks和Microsoft Visual Studio 2010 Express的经验写了一篇教程《Windows下C&amp;C++非盗版IDE搭建之Code::Blocks与Microsoft Visual C++ 2010 Express安装和基本设置》，因此获得了法客论坛的邀请码。事事顺心如意，这真的是一个好的开始。</p>
+<h2 id="利用GAE和Micolog搭建独立博客"><a href="#利用GAE和Micolog搭建独立博客" class="headerlink" title="利用GAE和Micolog搭建独立博客"></a>利用GAE和Micolog搭建独立博客</h2><h3 id="A-注册域名。"><a href="#A-注册域名。" class="headerlink" title="A.注册域名。"></a>A.注册域名。</h3><p>如果你英文足够好，推荐在国外的域名注册商例如Go Daddy那里注册域名，服务好限制少。当然，如果你对.cn域名比较痴迷，就只能在国内注册了。国内两大域名注册商万网和新网可以自己选一家，万网被阿里巴巴收购了，相对服务要好一点，收费也会贵一点。推荐域名注册商进行优惠活动期间购买域名。</p>
+<h3 id="B-域名解析。"><a href="#B-域名解析。" class="headerlink" title="B.域名解析。"></a>B.域名解析。</h3><p>推荐使用国内的DNSPoD。国外的也有OpenDNS和谷歌的Google Public DNS，不过不推荐使用，主要是不大符合国情，你们懂的。</p>
+<h3 id="C-GAE注册"><a href="#C-GAE注册" class="headerlink" title="C.GAE注册"></a>C.GAE注册</h3><p>首先使用Google账号登陆GAE，地址：<a href="https://appengine.google.com/。登陆后新建应用即可。" target="_blank" rel="external">https://appengine.google.com/。登陆后新建应用即可。</a></p>
+<p>然后下载Google App Engine Launcher和Python2.5。有些网络教程中说2.X的版本即可，但是一开始我下载Python2.7安装后Google App Engine Launcher无法使用，所以推荐安装Python2.5。</p>
+<h3 id="D-Micolog安装"><a href="#D-Micolog安装" class="headerlink" title="D.Micolog安装"></a>D.Micolog安装</h3><p>Micolog是基于GAE的类似于wordpress的使用Python语言编写的开源博客程序。作者徐明。</p>
+<p>下载Micolog源程序，解压后首先根据readme的指引进行修改，然后复制源程序到Google App Engine安装文件夹。然后使用Google App Engine Launcher添加上传至应用即可。</p>
+<h3 id="E-域名绑定"><a href="#E-域名绑定" class="headerlink" title="E.域名绑定"></a>E.域名绑定</h3><p>注册Google App for Education。一定不要注册Google App for Business！前者是免费的，且不需翻墙，后者免费使用一个月，并且有可能需要翻墙，看你运气了，所以一定要注册前者。注册时记得使用要绑定的域名。另外Google App套件不支持.cn的域名，虽然注册后可以添加，但是还是需要你首先拥有一个非.cn的域名。</p>
+<p>注册完成后最好进行域名所有权验证。然后登陆GAE进入相应的应用，到应用设置里面添加域名即可，具体可以搜索网络教程。当然如果有机会我也会写一个关于Micolog的系列教程，暂时不会详细讲解了，毕竟网络上已经有足够的教程了。</p>
+<p>域名绑定的帖子网络上也有不少，如果找不到解决方法也可以邮件我。</p>
+<hr>
+<p>因为谷歌赠送给GAE应用的appspot.com二级域名全部被墙，所以就必须要绑定顶级域名了。这种情况下，也是可以使用SAE来搭建博客的。例如leo108的博客就是在SAE上利用wordpress搭建的。不过如果域名不备案，所要消耗的云豆（SAE使用的计费单位）是已备案域名的双倍。也是因为个人技术能力不够没法获得SAE的开发者认证，才最终决定注册.net域名并使用GAE的。</p>
+<p>不过好的是，SAE支持PHP语言，并且逐渐开始支持Python以及JAVA。如果要架构网站，PHP语言无疑是最好的选择。</p>
+<hr>
+<p>从现在开始，我的主要活动空间就转移到WellBoy上来了。至于Qzone和新浪博客，会进行保留，如果想要了解我的最新消息，就只能来我的博客了。</p>
+<p>当然，欢迎对我的博客进行RSS订阅。订阅地址：<a href="http://www.wellboy.net/feed" target="_blank" rel="external">http://www.wellboy.net/feed</a></p>
+<hr>
+<p>The quieter you become, the more you are able to hear…</p>
+<p>WellBoy</p>
+<p>2012.11.22</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/25/斗争/" rel="next" title="斗争，只能赢取利益，无法创造价值">
+                <i class="fa fa-chevron-left"></i> 斗争，只能赢取利益，无法创造价值
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/05/25/关于博客/" rel="prev" title="关于博客（旧）">
+                关于博客（旧） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.png"
+               alt="Tyrion Y. Chang" />
+          <p class="site-author-name" itemprop="name">Tyrion Y. Chang</p>
+           
+              <p class="site-description motion-element" itemprop="description">自知者明、强行者有志</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">90</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#利用GAE和Micolog搭建独立博客"><span class="nav-number">1.</span> <span class="nav-text">利用GAE和Micolog搭建独立博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A-注册域名。"><span class="nav-number">1.1.</span> <span class="nav-text">A.注册域名。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#B-域名解析。"><span class="nav-number">1.2.</span> <span class="nav-text">B.域名解析。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C-GAE注册"><span class="nav-number">1.3.</span> <span class="nav-text">C.GAE注册</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#D-Micolog安装"><span class="nav-number">1.4.</span> <span class="nav-text">D.Micolog安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#E-域名绑定"><span class="nav-number">1.5.</span> <span class="nav-text">E.域名绑定</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  1992 - 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tyrion Y. Chang</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
